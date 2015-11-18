@@ -3,7 +3,7 @@ package com.icss.service;
 import java.util.List;
 import java.util.Map;
 
-import com.icss.pojo.Course_info;
+import com.icss.pojo.test.Course_info;
 
 public interface ITestService {
 	public void add();

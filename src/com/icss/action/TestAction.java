@@ -2,7 +2,7 @@ package com.icss.action;
 
 import java.util.List;
 
-import com.icss.pojo.Course_info;
+import com.icss.pojo.test.Course_info;
 import com.icss.service.ITestService;
 import com.icss.service.impl.TestService;
 import com.opensymphony.xwork2.ActionSupport;

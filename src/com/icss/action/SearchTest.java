@@ -12,7 +12,6 @@ public class SearchTest {
 	private Map<String,Object> map = new HashMap<String,Object>();
 	
 	
-
 	public String getKeyword() {
 		return keyword;
 	}

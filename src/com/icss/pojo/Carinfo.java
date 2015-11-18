@@ -1,4 +1,4 @@
-package com.icss.pojo.test;
+package com.icss.pojo;
 
 public class Carinfo {
 	private Integer CarId;

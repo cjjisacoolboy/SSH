@@ -10,7 +10,7 @@ import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
-import com.icss.pojo.Course_info;
+import com.icss.pojo.test.Course_info;
 
 public class Test {
 	private static Course_info course_info = new Course_info();

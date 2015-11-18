@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="myBatis.Carinfo">
+<mapper namespace="com.icss.dao.ITestDao">
     <!-- <resultMap type="com.icss.pojo.Stuinfo" id="rmStuinfo"> -->
-    <resultMap type="com.icss.pojo.test.Carinfo" id="rmCarinfo">
+    <resultMap type="com.icss.pojo.Carinfo" id="rmCarinfo">
         <!-- 将实体类中的属性与数据库中的字段对应 -->
         <result property="CarId" column="CarId"/>
 	    <result property="PId" column="PId"/>
@@ -19,12 +19,12 @@
         select * from course_info_demo
     </select>
      -->
-    <select id="selectCarinfoByCarName" parameterType="String" 
+    <select id="findCarByCarName" parameterType="String" 
         resultMap="rmCarinfo">
     	select *from Carinfo ci where ci.carName like #{carName}  
     </select>
     
-    <select id="selectCarinfoByCarType" parameterType="String" 
+    <select id="findCarByCarType" parameterType="String" 
         resultMap="rmCarinfo">
     	select *from Carinfo ci where ci.carType like #{carType}  
     </select>

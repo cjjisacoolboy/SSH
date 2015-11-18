@@ -10,6 +10,8 @@
   	<param-name>contextConfigLocation</param-name>
   	<param-value>classpath*:spring-config/spring_*.xml</param-value>
   </context-param>
+
+  
   <filter>
     <filter-name>STRUTS2</filter-name>
     <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>

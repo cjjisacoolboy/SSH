@@ -1,27 +1,13 @@
-package com.icss.pojo;
+package com.icss.pojo.test;
 
 public class Course_info {
 	private int course_id;
 	private String course_name;
 	private float credit;
 	private int period;
-	private Teacher_info teacher_info;
 	private String lessontime;
 	private String introduction;
-	public Teacher_info getTeacher_info() {
-		return teacher_info;
-	}
-	public void setTeacher_info(Teacher_info teacher_info) {
-		this.teacher_info = teacher_info;
-	}
-	public Academe_info getAcademe_info() {
-		return academe_info;
-	}
-	public void setAcademe_info(Academe_info academe_info) {
-		this.academe_info = academe_info;
-	}
 	private int stunumber;
-	private Academe_info academe_info;
 	
 	public int getCourse_id() {
 		return course_id;

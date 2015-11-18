@@ -12,8 +12,10 @@
     <!-- 登录的spring 
     <bean id="testDao" class="com.icss.dao.impl.TestDao">
     	<property name="jt" ref="jt"></property>
-    </bean>
-    
+    </bean>   
     -->
-
+    <bean id="testDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
+        <property name="mapperInterface" value="com.icss.dao.ITestDao"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
 </beans>
