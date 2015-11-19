@@ -16,7 +16,7 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 
 import com.icss.dao.ITestDao;
-import com.icss.pojo.Carinfo;
+import com.icss.pojo.CarInfo;
 import com.icss.pojo.test.Course_info;
 
 public class TestDao implements ITestDao {
@@ -40,13 +40,13 @@ public class TestDao implements ITestDao {
 	}
 
 	@Override
-	public List<Carinfo> findCarByCarName(String keyword) {
+	public List<CarInfo> findCarByCarName(String keyword) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Carinfo> findCarByCarType(String keyword) {
+	public List<CarInfo> findCarByCarType(String keyword) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -123,11 +123,11 @@ public class TestDao implements ITestDao {
 //			session = factory.openSession();
 //			
 //			//System.out.println("8888888888");
-//			List<Carinfo> list = 
+//			List<CarInfo> list = 
 //					session.selectList("myBatis.Carinfo.selectCarinfoByCarName",this.keyword);
 //			//System.out.println(list);
 ////			for (int i = 0;i < list.size();i ++) {
-////				Carinfo ci = list.get(i);
+////				CarInfo ci = list.get(i);
 ////				Integer carId = ci.getCarId();
 ////				Integer PId = ci.getPId();
 ////				String carName = ci.getCarName();
@@ -164,11 +164,11 @@ public class TestDao implements ITestDao {
 //					session = factory.openSession();
 //					
 //					//System.out.println("8888888888");
-//					List<Carinfo> list = 
+//					List<CarInfo> list = 
 //							session.selectList("myBatis.Carinfo.selectCarinfoByCarType",this.keyword);
 //					//System.out.println(list);
 //					for (int i = 0;i < list.size();i ++) {
-//						Carinfo ci = list.get(i);
+//						CarInfo ci = list.get(i);
 //						Integer carId = ci.getCarId();
 //						Integer PId = ci.getPId();
 //						String carName = ci.getCarName();

@@ -5,11 +5,11 @@ function doSearch() {
 	//var keyword = $('#1').html();//去列表的第一个元素
 	
 	alert(keyword);
-	//$.ajax({
-	//	url : "",
-	//	type : "post",
-	//	data : {"keyword" : keyword},
-	//	success : function(data) {
+	$.ajax({
+		url : "",
+		type : "post",
+		data : {"keyword" : keyword},
+		success : function(data) {
 			//获取显示数据的表格
 			var table = $("#content");
 			//清楚表格中内容
@@ -48,6 +48,6 @@ function doSearch() {
 //				}									
 //			} 
 //			table.append($(html));
-	//	}
-	//});
+		}
+	});
 }

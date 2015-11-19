@@ -18,4 +18,8 @@
         <property name="mapperInterface" value="com.icss.dao.ITestDao"></property>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
     </bean>
+    <bean id="carDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
+        <property name="mapperInterface" value="com.icss.dao.ICarDao"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
 </beans>

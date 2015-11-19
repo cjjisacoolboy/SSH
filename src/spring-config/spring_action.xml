@@ -18,5 +18,7 @@
 	<bean id="searchAction" class="com.icss.action.SearchTest">
 		<property name="testService" ref="testService"></property>
 	</bean>
-	
+	<bean id="searchSaleCarAction" class="com.icss.action.SearchSaleCarAction">
+		<property name="visitorService" ref="visitorService"></property>
+	</bean>
 </beans>

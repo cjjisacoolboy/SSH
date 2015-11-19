@@ -1,6 +1,6 @@
 package com.icss.pojo;
 
-public class Userinfo {
+public class UserInfo {
 	private Integer userId;
 	private Integer account;
 	private String password;

@@ -36,5 +36,10 @@
 		<property name="testDao" ref="testDao"></property>
 	</bean>
 	
+	<bean id="visitorService" class="com.icss.service.impl.VisitorService">
+		<property name="carDao" ref="carDao"></property>
+	</bean>
+	
+	
 
 </beans>

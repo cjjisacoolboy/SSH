@@ -7,14 +7,14 @@ import java.util.Map;
 
 import com.icss.dao.ITestDao;
 import com.icss.dao.impl.TestDao;
-import com.icss.pojo.Carinfo;
+import com.icss.pojo.CarInfo;
 import com.icss.pojo.test.Course_info;
 import com.icss.service.ITestService;
 
 public class TestService implements ITestService {
 	private ITestDao testDao;
 	private Map<String,Object>map = new HashMap<String,Object>();
-	private Carinfo carinfo;
+	private CarInfo carInfo;
 	
 	public void setMap(Map<String, Object> map) {
 		this.map = map;
@@ -24,8 +24,8 @@ public class TestService implements ITestService {
 		this.testDao = testDao;
 	}
 		
-	public void setCarinfo(Carinfo carinfo) {
-		this.carinfo = carinfo;
+	public void setCarinfo(CarInfo carInfo) {
+		this.carInfo = carInfo;
 	}
 
 	@Override
@@ -36,11 +36,11 @@ public class TestService implements ITestService {
 	@Override
 	public Map<String,Object> findCar(String keyword) {
 		String findword = keyword+"%";
-		//carinfo.setCarName(findword);
-		List<Carinfo> list = new ArrayList<Carinfo>();
+		//carInfo.setCarName(findword);
+		List<CarInfo> list = new ArrayList<CarInfo>();
 		// TODO Auto-generated method stub
 		list = testDao.findCarByCarName(findword);
-		//list = (List<Carinfo>) map.get("list");
+		//list = (List<CarInfo>) map.get("list");
 		int listSize = list.size();
 		System.out.println(listSize);
 		if(0 == listSize){
