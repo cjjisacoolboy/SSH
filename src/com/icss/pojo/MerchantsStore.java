@@ -3,7 +3,7 @@ package com.icss.pojo;
 public class MerchantsStore {
 	private Integer store_id;
 	private String businessName;
-	private Integer tel;
+	private long tel;
 	private String password;
 	private String companyName;
 	private String dealerType;
@@ -22,10 +22,10 @@ public class MerchantsStore {
 	public void setBusinessName(String businessName) {
 		this.businessName = businessName;
 	}
-	public Integer getTel() {
+	public long getTel() {
 		return tel;
 	}
-	public void setTel(Integer tel) {
+	public void setTel(long tel) {
 		this.tel = tel;
 	}
 	public String getPassword() {

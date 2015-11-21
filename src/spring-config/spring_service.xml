@@ -16,12 +16,12 @@
     <!-- 定义事务的传播特性 -->
     <tx:advice id="txAdvice">
        <tx:attributes>
-      	  
+      	   <tx:method name="insert*" propagation="REQUIRED" />
            <tx:method name="add*" propagation="REQUIRED" />
            <tx:method name="edit*" propagation="REQUIRED" />
            <tx:method name="delete*" propagation="REQUIRED" />
            <tx:method name="update*" propagation="REQUIRED" />
-      
+     	 	<tx:method name="find*" propagation="REQUIRED" />
        </tx:attributes>
     </tx:advice>
      <!-- 配置事务切面 -->
@@ -35,11 +35,24 @@
 	<bean id="testService" class="com.icss.service.impl.TestService">
 		<property name="testDao" ref="testDao"></property>
 	</bean>
-	
+	<!-- 吴志浩游客 -->
 	<bean id="visitorService" class="com.icss.service.impl.VisitorService">
 		<property name="carDao" ref="carDao"></property>
+		<property name="userDao" ref="userDao"></property>
 	</bean>
 	
+	<!-- 用户 -->
+	
+	
+	<!-- 商家 -->
+	
+	
+	
+	<!-- 后台管理员 -->
+	<bean id="adminService" class="com.icss.service.impl.AdminService">
+		<property name="merchantsStoreDao" ref="merchantsStoreDao"></property>
+		<property name="merchantsStoreDao_auditDao" ref="merchantsStoreDao_auditDao"></property>
+	</bean>
 	
 
 </beans>

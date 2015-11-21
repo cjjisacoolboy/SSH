@@ -17,6 +17,37 @@
         </action>
 	</package>
 	 -->
+	
+    <!-- Add packages here -->
+	<!-- 吴志浩 -->
+	<package name="visitor" namespace="/visitor" extends="struts-default">
+		 <action name="loginAC" class="com.icss.action.LoginAction">
+            <result>/index.jsp</result>
+        </action>
+	</package>
+	<!-- 陈俊杰 -->
+	
+	<!-- 吕岳荣 -->
+	
+	<!-- 陈锐华 -->
+	
+	<package name="admin" namespace="/admin" extends="struts-default">
+		 <action name="findMerStoreAC" class="com.icss.action.FindMerStoreAction">
+            <result>/Admin/merchantsInfo.jsp</result>
+        </action>
+         
+        <action name="findMerStore_auditAC" class="com.icss.action.FindMerStore_auditAction">
+            <result>/Admin/merchantsInfo_audit.jsp</result>
+        </action>
+
+        <action name="doMer_auditAC" class="com.icss.action.DoMer_auditAction">
+            <result>/Admin/merchantsInfo_audit.jsp</result>
+        </action>
+
+         
+	</package>
+	
+	<!-- 这里使用ajax -->
 	<package name="demo" namespace="/demo" extends="json-default">
     	<action name="searchTest" class="com.icss.action.SearchTest">
     		<result type="json">
@@ -31,7 +62,23 @@
     			<param name="contentType">text/html</param>
     		</result>	
     	</action>
-	</package>
-    <!-- Add packages here -->
-
+    	<action name="findMerStoreAction" class="com.icss.action.FindMerStoreAction">
+    		<result type="json">
+    			<param name="root">map</param>
+    			<param name="contentType">text/html</param>
+    		</result>	
+    	</action>
+    	<action name="findMerStore_auditAction" class="com.icss.action.FindMerStore_auditAction">
+    		<result type="json">
+    			<param name="root">map</param>
+    			<param name="contentType">text/html</param>
+    		</result>	
+    	</action>
+    	<action name="doMer_auditAC" class="com.icss.action.DoMer_auditAction">
+            <result type="json">
+    			<param name="root">map</param>
+    			<param name="contentType">text/html</param>
+    		</result>	
+        </action>
+    </package>
 </struts>

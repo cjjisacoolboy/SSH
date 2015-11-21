@@ -2,7 +2,7 @@ package com.icss.pojo;
 
 public class UserInfo {
 	private Integer userId;
-	private Integer account;
+	private String tel;
 	private String password;
 	private String role;
 	
@@ -12,11 +12,12 @@ public class UserInfo {
 	public void setUserId(Integer userId) {
 		this.userId = userId;
 	}
-	public Integer getAccount() {
-		return account;
+	
+	public String getTel() {
+		return tel;
 	}
-	public void setAccount(Integer account) {
-		this.account = account;
+	public void setTel(String tel) {
+		this.tel = tel;
 	}
 	public String getPassword() {
 		return password;

@@ -7,6 +7,8 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-	
+		<a href="admin/findMerStoreAC.action">进入商家信息表</a>
+		<a href="admin/findMerStore_auditAC.action">进入商家的审核表</a>
+		
 	</body>
 </html>

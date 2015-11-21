@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icss.dao.IMerchantsStore_auditDao">
+    <!-- <resultMap type="com.icss.pojo.Stuinfo" id="rmStuinfo"> -->
+    <resultMap type="com.icss.pojo.MerchantsStore_audit" id="rmMerchantsStore_audit">
+        <!-- 将实体类中的属性与数据库中的字段对应 -->
+        <result property="audit_id" column="audit_id"/>
+	    <result property="businessName" column="businessName"/>
+	    <result property="tel" column="tel"/>
+	    <result property="password" column="password"/>  
+	    <result property="companyName" column="companyName"/>
+	    <result property="dealerType" column="dealerType"/>
+	    <result property="dealerAddress" column="dealerAddress"/>
+	    <result property="applyState" column="applyState"/>
+	    	    
+    </resultMap>
+	
+	<select id="findMerchantsStore_audit" resultMap="rmMerchantsStore_audit">
+		select *from sys.MerchantsStore_audit msa where msa.applyState like '待审核'
+	
+	</select>
+	
+	<select id="findMerchantsStore_auditById" parameterType = "com.icss.pojo.MerchantsStore_audit" resultMap="rmMerchantsStore_audit" 
+		>
+		select *from sys.MerchantsStore_audit msa where msa.audit_id = ${audit_id}
+	
+	</select>
+ 
+	<update id="updateApplyState" parameterType="com.icss.pojo.MerchantsStore_audit">
+		update sys.MerchantsStore_audit msa set msa.applyState = #{applyState} 
+		where msa.audit_id = #{audit_id}
+	</update>
+
+		
+		
+
+
+
+
+
+
+</mapper>

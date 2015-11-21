@@ -1,5 +1,6 @@
 package com.icss.service;
 
+import java.util.List;
 import java.util.Map;
 
 import com.icss.pojo.MerchantsStore;
@@ -14,7 +15,7 @@ public interface IVisitorService {
 	//游客可以申请成为商家，
 	public boolean applyAsBussiness(MerchantsStore merchantsStore);
 	//游客登录为用户
-	public boolean loginInUser(UserInfo userInfo);
+	public List<UserInfo> loginInUser(UserInfo userInfo);
 	//游客登录为商家
 	public boolean loginInBussiness(MerchantsStore merchantsStore);
 	//游客可以加入车辆对比

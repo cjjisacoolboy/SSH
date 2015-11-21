@@ -22,4 +22,25 @@
         <property name="mapperInterface" value="com.icss.dao.ICarDao"></property>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
     </bean>
+    <!-- 游客 -->
+    <bean id="userDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
+        <property name="mapperInterface" value="com.icss.dao.IUserDao"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
+    <!-- 用户 -->
+    
+    
+	<!-- 商家 -->
+	
+	
+	
+	<!-- 后台管理员 -->
+    <bean id="merchantsStoreDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
+        <property name="mapperInterface" value="com.icss.dao.IMerchantsStoreDao"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
+    <bean id="merchantsStoreDao_auditDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
+        <property name="mapperInterface" value="com.icss.dao.IMerchantsStore_auditDao"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
 </beans>

@@ -10,7 +10,6 @@ public class SearchSaleCarAction {
 	private IVisitorService visitorService;
 	private Map<String,Object> map = new HashMap<String,Object>();
 	
-	
 	public String getKeyword() {
 		return keyword;
 	}
@@ -33,7 +32,6 @@ public class SearchSaleCarAction {
 	}
 
 	public String execute(){
-		
 		map = visitorService.findCar("°ÂµÏQ3(½ø¿Ú)");
 		//System.out.println(map.get("list"));
 		return "success";
