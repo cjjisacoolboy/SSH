@@ -2,26 +2,26 @@ package com.icss.pojo;
 
 public class CarInfo {
 	//Î´Íê³É
-	private Integer CarId;
-	private Integer PId;
+	private int CarId;
+	private int PId;
 	private String carName;
 	private String carType;
-	private Integer price;
+	private int price;
 	private CarEngine carEngine;
 	private CarbodyInfo CarbodyInfo;
 	private BasicParameters BasicParameters;
 	private ParametersConfig parametersConfig;
 	
-	public Integer getCarId() {
+	public int getCarId() {
 		return CarId;
 	}
-	public void setCarId(Integer carId) {
+	public void setCarId(int carId) {
 		CarId = carId;
 	}
-	public Integer getPId() {
+	public int getPId() {
 		return PId;
 	}
-	public void setPId(Integer pId) {
+	public void setPId(int pId) {
 		PId = pId;
 	}
 	public String getCarName() {
@@ -36,10 +36,10 @@ public class CarInfo {
 	public void setCarType(String carType) {
 		this.carType = carType;
 	}
-	public Integer getPrice() {
+	public int getPrice() {
 		return price;
 	}
-	public void setPrice(Integer price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 	public CarEngine getCarEngine() {

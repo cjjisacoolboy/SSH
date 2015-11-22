@@ -7,7 +7,7 @@ import com.icss.pojo.MerchantsStore_audit;
 import com.icss.service.IAdminService;
 
 public class DoMer_auditAction {
-	private IAdminService adminService;
+	private IAdminService adminToMerStoreService;
 	private int audit_id;
 	private String applyState;
 	private MerchantsStore_audit merchantsStore_audit;
@@ -45,8 +45,9 @@ public class DoMer_auditAction {
 		this.merchantsStore_audit = merchantsStore_audit;
 	}
 
-	public void setAdminService(IAdminService adminService) {
-		this.adminService = adminService;
+
+	public void setAdminToMerStoreService(IAdminService adminToMerStoreService) {
+		this.adminToMerStoreService = adminToMerStoreService;
 	}
 
 	public String execute(){
@@ -55,7 +56,7 @@ public class DoMer_auditAction {
 		//System.out.println(applyState);
 		merchantsStore_audit.setAudit_id(audit_id);
 		merchantsStore_audit.setApplyState(applyState);
-		map = adminService.updateMerchantsStore_audit(merchantsStore_audit);
+		map = adminToMerStoreService.updateMerchantsStore_audit(merchantsStore_audit);
 		//System.out.println(merchantsStore_audit);
 		System.out.println("½øÈëµ½action");
 		return "success";

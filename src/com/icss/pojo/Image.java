@@ -1,14 +1,14 @@
 package com.icss.pojo;
 
 public class Image {
-	private Integer imageId;
+	private int imageId;
 	private String imageSrc;
 	
 	
-	public Integer getImageId() {
+	public int getImageId() {
 		return imageId;
 	}
-	public void setImageId(Integer imageId) {
+	public void setImageId(int imageId) {
 		this.imageId = imageId;
 	}
 	public String getImageSrc() {

@@ -1,21 +1,21 @@
 package com.icss.pojo;
 
 public class CarEngine {
-	private Integer engineId;
+	private int engineId;
 	private String supplyMode;
 	private String fuelGrade;
 	private String fuelForm;
-	private Integer maxTorqueSpeed;
-	private Integer maximumTorque;
-	private Integer maximumPowerSpeed;
-	private Integer maximumPower;
+	private int maxTorqueSpeed;
+	private int maximumTorque;
+	private int maximumPowerSpeed;
+	private int maximumPower;
 	private String airInlet;
 	private double displacement;
 	
-	public Integer getEngineId() {
+	public int getEngineId() {
 		return engineId;
 	}
-	public void setEngineId(Integer engineId) {
+	public void setEngineId(int engineId) {
 		this.engineId = engineId;
 	}
 	public String getSupplyMode() {
@@ -36,28 +36,28 @@ public class CarEngine {
 	public void setFuelForm(String fuelForm) {
 		this.fuelForm = fuelForm;
 	}
-	public Integer getMaxTorqueSpeed() {
+	public int getMaxTorqueSpeed() {
 		return maxTorqueSpeed;
 	}
-	public void setMaxTorqueSpeed(Integer maxTorqueSpeed) {
+	public void setMaxTorqueSpeed(int maxTorqueSpeed) {
 		this.maxTorqueSpeed = maxTorqueSpeed;
 	}
-	public Integer getMaximumTorque() {
+	public int getMaximumTorque() {
 		return maximumTorque;
 	}
-	public void setMaximumTorque(Integer maximumTorque) {
+	public void setMaximumTorque(int maximumTorque) {
 		this.maximumTorque = maximumTorque;
 	}
-	public Integer getMaximumPowerSpeed() {
+	public int getMaximumPowerSpeed() {
 		return maximumPowerSpeed;
 	}
-	public void setMaximumPowerSpeed(Integer maximumPowerSpeed) {
+	public void setMaximumPowerSpeed(int maximumPowerSpeed) {
 		this.maximumPowerSpeed = maximumPowerSpeed;
 	}
-	public Integer getMaximumPower() {
+	public int getMaximumPower() {
 		return maximumPower;
 	}
-	public void setMaximumPower(Integer maximumPower) {
+	public void setMaximumPower(int maximumPower) {
 		this.maximumPower = maximumPower;
 	}
 	public String getAirInlet() {

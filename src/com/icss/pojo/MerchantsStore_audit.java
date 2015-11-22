@@ -1,7 +1,7 @@
 package com.icss.pojo;
 
 public class MerchantsStore_audit {
-	private Integer audit_id;
+	private int audit_id;
 	private String businessName;
 	private String tel;
 	private String password;
@@ -10,10 +10,10 @@ public class MerchantsStore_audit {
 	private String dealerAddress;
 	private String applyState;
 	
-	public Integer getAudit_id() {
+	public int getAudit_id() {
 		return audit_id;
 	}
-	public void setAudit_id(Integer audit_id) {
+	public void setAudit_id(int audit_id) {
 		this.audit_id = audit_id;
 	}
 	public String getBusinessName() {

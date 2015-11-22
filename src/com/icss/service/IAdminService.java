@@ -15,6 +15,7 @@ public interface IAdminService {
 	//修改审核表的状态，接受过来的状态就行update,ma可以返回一个html代码
 	public Map<String, Object> updateMerchantsStore_audit(MerchantsStore_audit merchantsStore_audit);
 	//查看二手车的车辆，
+	public Map<String, Object> findAllSaleCar(String keyword,Integer page,Integer size);
 	
 	
 }

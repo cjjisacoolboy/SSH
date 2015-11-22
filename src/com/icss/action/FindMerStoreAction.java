@@ -12,7 +12,7 @@ public class FindMerStoreAction {
 	private int size=5;
 	private MerchantsStore merchantsStore;
 	private Map<String,Object> map = new HashMap<String,Object>();
-	private IAdminService adminService;
+	private IAdminService adminToMerStoreService;
 	
 	
 	public int getPage() {
@@ -47,10 +47,9 @@ public class FindMerStoreAction {
 		this.map = map;
 	}
 
-	public void setAdminService(IAdminService adminService) {
-		this.adminService = adminService;
+	public void setAdminToMerStoreService(IAdminService adminToMerStoreService) {
+		this.adminToMerStoreService = adminToMerStoreService;
 	}
-
 
 	public String execute(){
 		merchantsStore = new MerchantsStore();
@@ -59,7 +58,7 @@ public class FindMerStoreAction {
 		//merchantsStore.setCompanyName("seven head公司");
 		//merchantsStore.setDealerType("打劫");
 		//merchantsStore.setDealerAddress("广东");
-		map = adminService.findMerchantsStore(merchantsStore,page,size);
+		map = adminToMerStoreService.findMerchantsStore(merchantsStore,page,size);
 		System.out.println(map);
 		//System.out.println(list.get(0).getBusinessName());
 		

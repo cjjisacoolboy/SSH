@@ -1,29 +1,29 @@
 package com.icss.pojo;
 
 public class BasicParameters {
-	private Integer basicParametersId;
-	private Integer acceleration;
-	private Integer speed;
+	private int basicParametersId;
+	private int acceleration;
+	private int speed;
 	private String l_w_h;
 	private String engine;
 	private String carType;
 	
-	public Integer getBasicParametersId() {
+	public int getBasicParametersId() {
 		return basicParametersId;
 	}
-	public void setBasicParametersId(Integer basicParametersId) {
+	public void setBasicParametersId(int basicParametersId) {
 		this.basicParametersId = basicParametersId;
 	}
-	public Integer getAcceleration() {
+	public int getAcceleration() {
 		return acceleration;
 	}
-	public void setAcceleration(Integer acceleration) {
+	public void setAcceleration(int acceleration) {
 		this.acceleration = acceleration;
 	}
-	public Integer getSpeed() {
+	public int getSpeed() {
 		return speed;
 	}
-	public void setSpeed(Integer speed) {
+	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
 	public String getL_w_h() {

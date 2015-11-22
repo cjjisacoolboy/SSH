@@ -43,4 +43,9 @@
         <property name="mapperInterface" value="com.icss.dao.IMerchantsStore_auditDao"></property>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
     </bean>
+    <bean id="sellerCarDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
+        <property name="mapperInterface" value="com.icss.dao.ISellerCarDao"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
+    
 </beans>

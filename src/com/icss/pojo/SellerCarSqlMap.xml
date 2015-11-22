@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icss.dao.ISellerCarDao">
+    <!-- <resultMap type="com.icss.pojo.Stuinfo" id="rmStuinfo"> -->
+    <resultMap type="com.icss.pojo.SellerCar" id="rmSellerCar">
+        <!-- 将实体类中的属性与数据库中的字段对应 -->
+        <result property="sellerCarId" column="sellerCarId"/>
+	    <result property="address" column="address"/>
+	    <result property="carName" column="carName"/>
+	    <result property="tel" column="tel"/>  
+	    <result property="carPlate" column="carPlate"/>
+	    <result property="saleState" column="saleState"/>
+	    <association property="seller" column="sellerId"
+        		javaType="com.icss.pojo.Seller" select="findSellerById">
+        	<id property="sellerId" column="sellerId"></id>	
+        	<result property="supplyMode" column="supplyMode"></result>
+        	<result property="tel" column="tel"></result>
+        	<result property="orderTime" column="orderTime"></result> 	
+        </association>
+        <association property="merchantsStore" column="store_id"
+        		javaType="com.icss.pojo.MerchantsStore" select="findMerchantsStoreById">
+        	<id property="store_id" column="store_id"></id>	
+        	<result property="tel" column="tel"></result>
+        	<result property="companyName" column="companyName"></result> 
+        	<result property="dealerType" column="dealerType"></result> 
+        	<result property="dealerAddress" column="dealerAddress"></result>        	
+        </association>
+	    <association property="secondPrice" column="secondpriceid"
+        		javaType="com.icss.pojo.SecondPrice" select="findSecondPriceById">
+        	<id property="secondpriceid" column="secondpriceid"></id>	
+        	<result property="secondPrice" column="secondPrice"></result>
+        	<result property="km" column="km"></result>
+        	<result property="buyTime" column="buyTime"></result> 
+        	<association property="checkerInfo" column="checkerId" 
+        			javaType="com.icss.pojo.CheckerInfo" select="findCheckerInfoById">
+        		<id property="checkerId" column="checkerId"></id>	
+        		<result property="checkerName" column="checkerName"></result>
+        		<result property="checkerLevel" column="checkerLevel"></result>
+        		<result property="checkCar" column="checkCar"></result> 
+        	</association>      	
+        </association>	
+	    <association property="image" column="imageId" 
+        		javaType="com.icss.pojo.Image" select="findImageById">
+        	<id property="imageId" column="imageId"></id>	
+        	<result property="imageSrc" column="imageSrc"></result>
+        </association>
+	    <association property="procedureInfo" column="procedureId" 
+	    		javaType="com.icss.pojo.ProcedureInfo" select="findProcedureInfoById">
+	    	<id property="procedureId" column="procedureId"></id>	
+	    	<result property="transferNumber" column="transferNumber"></result>
+	    	<result property="useProperties" column="useProperties"></result>
+	    	<result property="transferProcedures" column="transferProcedures"></result>
+	    	<result property="lastDate" column="lastDate"></result>
+	    	<result property="validityPeriod" column="validityPeriod"></result>
+	    	<result property="maintenance" column="maintenance"></result>
+	    </association>    
+    </resultMap>
+    
+    
+    <select id="findSaleCar"  resultMap="rmSellerCar">
+    	select *from sys.SELLERCAR sc 
+    </select>
+    
+    <select id="findSellerById" parameterType="int" resultType="com.icss.pojo.Seller">
+    	select *from sys.SELLER s where s.sellerId = #{sellerId}
+    </select>
+    <select id="findMerchantsStoreById" parameterType="int" resultType="com.icss.pojo.MerchantsStore">
+    	select *from sys.MerchantsStore ms where ms.store_id = #{store_id}
+    </select>
+    
+    <select id="findSecondPriceById" parameterType="int" resultType="com.icss.pojo.SecondPrice">
+    	select *from sys.SecondPrice sp where sp.secondpriceid = #{secondpriceid}
+    </select>    
+    
+    <select id="findCheckerInfoById" parameterType="int" resultType="com.icss.pojo.CheckerInfo">
+    	select *from sys.CheckerInfo ci where ci.checkerId = #{checkerId}
+    </select>  
+    
+    <select id="findImageById" parameterType="int" resultType="com.icss.pojo.Image">
+    	select *from sys.Image i where i.imageId = #{imageId}
+    </select> 
+    
+    <select id="findProcedureInfoById" parameterType="int" resultType="com.icss.pojo.ProcedureInfo">
+    	select *from sys.ProcedureInfo pi where pi.procedureId = #{procedureId}
+    </select>            
+ </mapper>

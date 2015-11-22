@@ -18,8 +18,8 @@
     </resultMap>
 	
 	<select id="findMerchantsStore_audit" resultMap="rmMerchantsStore_audit">
-		select *from sys.MerchantsStore_audit msa where msa.applyState like '待审核'
-	
+		select *from sys.MerchantsStore_audit msa
+	<!--  where msa.applyState like '待审核' -->
 	</select>
 	
 	<select id="findMerchantsStore_auditById" parameterType = "com.icss.pojo.MerchantsStore_audit" resultMap="rmMerchantsStore_audit" 

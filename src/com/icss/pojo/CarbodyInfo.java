@@ -1,7 +1,7 @@
 package com.icss.pojo;
 
 public class CarbodyInfo {
-	private Integer carbodyId;
+	private int carbodyId;
 	private double trunkVolume;
 	private double tankVolume;
 	private double kerbMass;
@@ -10,10 +10,10 @@ public class CarbodyInfo {
 	private String bodyStructure;
 	
 	
-	public Integer getCarbodyId() {
+	public int getCarbodyId() {
 		return carbodyId;
 	}
-	public void setCarbodyId(Integer carbodyId) {
+	public void setCarbodyId(int carbodyId) {
 		this.carbodyId = carbodyId;
 	}
 	public double getTrunkVolume() {

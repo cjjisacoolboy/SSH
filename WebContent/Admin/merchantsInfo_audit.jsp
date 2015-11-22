@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div>
-			<table id="showtable">
+			<table id="showtable" border = "1">
 				
 			
 			</table>
@@ -47,19 +47,26 @@
 				    						"<td>公司名</td><td>经销商类型</td>"+
 				    						"<td>地址</td><td>审核状态</td><td>审核操作</td></tr>");	
 				    		for (var i = count;i < rows.length;i ++) {
-				   				$('#showtable').append("<tr><td>"+rows[i].businessName+"</td>"+
+				   				
+				   				if('待审核' == rows[i].applyState){
+				   					$('#showtable').append("<tr><td>"+rows[i].businessName+"</td>"+
 				   						"<td>"+rows[i].tel+"</td><td>"+rows[i].companyName+"</td>"+
 				   						"<td>"+rows[i].dealerType+"</td><td>"+rows[i].dealerAddress+"</td>"+
-				   						"<td>"+rows[i].applyState+"</td><td>"+
-				   						"<input type='button' id='pass' name='"+rows[i].audit_id+"' value='通过'  />"+
-				   						"<input type='button' id='fail' name='"+rows[i].audit_id+"' value='不通过' /></td></tr></table>");
+				   						"<td>"+rows[i].applyState+"</td><td><input type='button' id='pass' name='"+rows[i].audit_id+"' value='通过'  />"+
+				   						"<input type='button' id='fail' name='"+rows[i].audit_id+"' value='不通过' /></td></tr>");
+				   				} else {
+				   					$('#showtable').append("<tr><td>"+rows[i].businessName+"</td>"+
+					   						"<td>"+rows[i].tel+"</td><td>"+rows[i].companyName+"</td>"+
+					   						"<td>"+rows[i].dealerType+"</td><td>"+rows[i].dealerAddress+"</td>"+
+					   						"<td>"+rows[i].applyState+"</td><td>已审核</td></tr>");
+				   				}
 				   				//<a href='../admin/doMer_auditAC.action'>审核通过</a>
 				   				size++;
 				   				if(size>=5){
 				   					break;
 				   				}
 				    		}
-				    			
+				    		//$('#showtable').append("</table>");	
 				    		for (var j = 0; j < pageSize; j++) {		
 				    			$('#pageSize').append("<a id='1' name='"+(j+1)+"'>["+(j+1)+"]</a>");
 				    		}
@@ -75,6 +82,7 @@
 				
 				//审核按钮
 				$('#showtable').delegate('#pass','click',function(){
+					//点击完后完成操作后将这条记录消失
 					var audit_id = $(this).attr('name');
 					alert($(this).attr('name'))
 					var applyState = $(this).attr('value');
@@ -88,7 +96,7 @@
 								"applyState":applyState
 				    		},
 				    	success:function(data) {
-				    		alert("成功");
+				    		doAjax(page,url);
 				    	}
 					});
 				});
@@ -106,7 +114,7 @@
 								"applyState":applyState
 				    		},
 				    	success:function(data) {
-				    		alert("成功");
+				    		doAjax(page,url);
 				    	}
 					});
 				});

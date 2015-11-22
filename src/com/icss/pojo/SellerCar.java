@@ -1,20 +1,22 @@
 package com.icss.pojo;
 
 public class SellerCar {
-	private Integer sellerCarId;
+	private int sellerCarId;
 	private Seller seller; //卖家的信息id
 	private MerchantsStore merchantsStore; //商家的信息id
 	private CarInfo carInfo;  //车辆的信息
 	private SecondPrice secondPrice; //二手价格的id
 	private Image image; //图片的id
 	private String address;//看车地点
-	private Integer tel;
+	private String tel;
 	private String carPlate;//车牌号码
 	private ProcedureInfo procedureInfo; //手续情况id
-	public Integer getSellerCarId() {
+	private String saleState; //已售 上架中 状态
+	
+	public int getSellerCarId() {
 		return sellerCarId;
 	}
-	public void setSellerCarId(Integer sellerCarId) {
+	public void setSellerCarId(int sellerCarId) {
 		this.sellerCarId = sellerCarId;
 	}
 	public Seller getSeller() {
@@ -53,10 +55,10 @@ public class SellerCar {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public Integer getTel() {
+	public String getTel() {
 		return tel;
 	}
-	public void setTel(Integer tel) {
+	public void setTel(String tel) {
 		this.tel = tel;
 	}
 	public String getCarPlate() {

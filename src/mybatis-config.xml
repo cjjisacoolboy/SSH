@@ -18,5 +18,6 @@
 		<mapper resource="com/icss/pojo/MerchantsStoreSqlMap.xml"/>
 		<mapper resource="com/icss/pojo/MerchantsStore_auditSqlMap.xml"/>
 		<mapper resource="com/icss/pojo/UserInfoSqlMap.xml"/>
+		<mapper resource="com/icss/pojo/SellerCarSqlMap.xml"/>
     </mappers>
 </configuration>

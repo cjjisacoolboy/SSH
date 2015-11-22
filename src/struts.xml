@@ -43,6 +43,11 @@
         <action name="doMer_auditAC" class="com.icss.action.DoMer_auditAction">
             <result>/Admin/merchantsInfo_audit.jsp</result>
         </action>
+        
+        <action name="findAllsaleCarsAC" class="com.icss.action.FindAllsaleCarsAction">
+            <result>/Admin/findSecondCar.jsp</result>
+        </action>
+        
 
          
 	</package>

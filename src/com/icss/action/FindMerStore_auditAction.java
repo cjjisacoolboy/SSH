@@ -11,7 +11,7 @@ public class FindMerStore_auditAction {
 	private int page=1;
 	private int size=1;
 	private Map<String,Object> map = new HashMap<String,Object>(); 
-	private IAdminService adminService;
+	private IAdminService adminToMerStoreService;
 	
 	
 	public void setPage(int page) {
@@ -33,15 +33,15 @@ public class FindMerStore_auditAction {
 	}
 
 
-	public void setAdminService(IAdminService adminService) {
-		this.adminService = adminService;
+	public void setAdminToMerStoreService(IAdminService adminToMerStoreService) {
+		this.adminToMerStoreService = adminToMerStoreService;
 	}
 
 
 	public String execute(){
 		if(size != 1){
 		//MerchantsStore_audit merchantsStore_audit = new MerchantsStore_audit();
-		map = adminService.findMerchantsStore_audit(page,size);
+		map = adminToMerStoreService.findMerchantsStore_audit(page,size);
 		}
 		return "success";
 	}

@@ -1,19 +1,19 @@
 package com.icss.pojo;
 
 public class MerchantsStore {
-	private Integer store_id;
+	private int store_id;
 	private String businessName;
-	private long tel;
+	private String tel;
 	private String password;
 	private String companyName;
 	private String dealerType;
 	private String dealerAddress;
 	private String state;
 	
-	public Integer getStore_id() {
+	public int getStore_id() {
 		return store_id;
 	}
-	public void setStore_id(Integer store_id) {
+	public void setStore_id(int store_id) {
 		this.store_id = store_id;
 	}
 	public String getBusinessName() {
@@ -22,10 +22,10 @@ public class MerchantsStore {
 	public void setBusinessName(String businessName) {
 		this.businessName = businessName;
 	}
-	public long getTel() {
+	public String getTel() {
 		return tel;
 	}
-	public void setTel(long tel) {
+	public void setTel(String tel) {
 		this.tel = tel;
 	}
 	public String getPassword() {

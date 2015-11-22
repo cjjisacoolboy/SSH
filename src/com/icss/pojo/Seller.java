@@ -1,16 +1,16 @@
 package com.icss.pojo;
 
 public class Seller {
-	private Integer sellerId;
+	private int sellerId;
 	private String sellerName;
-	private Integer carId;
-	private Integer tel;
+	private CarInfo carInfo;
+	private String tel;
 	private String orderTime;
 	
-	public Integer getSellerId() {
+	public int getSellerId() {
 		return sellerId;
 	}
-	public void setSellerId(Integer sellerId) {
+	public void setSellerId(int sellerId) {
 		this.sellerId = sellerId;
 	}
 	public String getSellerName() {
@@ -19,16 +19,17 @@ public class Seller {
 	public void setSellerName(String sellerName) {
 		this.sellerName = sellerName;
 	}
-	public Integer getCarId() {
-		return carId;
+	
+	public CarInfo getCarInfo() {
+		return carInfo;
 	}
-	public void setCarId(Integer carId) {
-		this.carId = carId;
+	public void setCarInfo(CarInfo carInfo) {
+		this.carInfo = carInfo;
 	}
-	public Integer getTel() {
+	public String getTel() {
 		return tel;
 	}
-	public void setTel(Integer tel) {
+	public void setTel(String tel) {
 		this.tel = tel;
 	}
 	public String getOrderTime() {

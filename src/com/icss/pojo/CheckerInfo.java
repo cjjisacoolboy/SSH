@@ -1,17 +1,17 @@
 package com.icss.pojo;
 
 public class CheckerInfo {
-	private Integer checkerId;
+	private int checkerId;
 	private String checkerName;
 	private String checkerLevel;
-	private Integer checkCar;//检测的车辆数
+	private int checkCar;//检测的车辆数
 	private String checkTime;
 	
 	
-	public Integer getCheckerId() {
+	public int getCheckerId() {
 		return checkerId;
 	}
-	public void setCheckerId(Integer checkerId) {
+	public void setCheckerId(int checkerId) {
 		this.checkerId = checkerId;
 	}
 	public String getCheckerName() {
@@ -26,10 +26,10 @@ public class CheckerInfo {
 	public void setCheckerLevel(String checkerLevel) {
 		this.checkerLevel = checkerLevel;
 	}
-	public Integer getCheckCar() {
+	public int getCheckCar() {
 		return checkCar;
 	}
-	public void setCheckCar(Integer checkCar) {
+	public void setCheckCar(int checkCar) {
 		this.checkCar = checkCar;
 	}
 	public String getCheckTime() {

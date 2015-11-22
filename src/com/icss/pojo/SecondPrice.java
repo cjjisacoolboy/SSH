@@ -1,21 +1,23 @@
 package com.icss.pojo;
 
 public class SecondPrice {
-	private Integer secondpriceid;
-	private Integer secondPrice;
+	private int secondpriceid;
+	private int secondPrice;
 	private double km;
 	private String buyTime;
 	private CheckerInfo CheckerInfo;//¼ì²âÊ¦µÄId
-	public Integer getSecondpriceid() {
+	
+	
+	public int getSecondpriceid() {
 		return secondpriceid;
 	}
-	public void setSecondpriceid(Integer secondpriceid) {
+	public void setSecondpriceid(int secondpriceid) {
 		this.secondpriceid = secondpriceid;
 	}
-	public Integer getSecondPrice() {
+	public int getSecondPrice() {
 		return secondPrice;
 	}
-	public void setSecondPrice(Integer secondPrice) {
+	public void setSecondPrice(int secondPrice) {
 		this.secondPrice = secondPrice;
 	}
 	public double getKm() {

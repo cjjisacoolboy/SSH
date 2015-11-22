@@ -49,10 +49,12 @@
 	
 	
 	<!-- 后台管理员 -->
-	<bean id="adminService" class="com.icss.service.impl.AdminService">
+	<bean id="adminToMerStoreService" class="com.icss.service.impl.AdminToMerStoreService">
 		<property name="merchantsStoreDao" ref="merchantsStoreDao"></property>
 		<property name="merchantsStoreDao_auditDao" ref="merchantsStoreDao_auditDao"></property>
 	</bean>
-	
+	<bean id="adminToSaleCarService" class="com.icss.service.impl.AdminToSaleCarService">
+		<property name="sellerCarDao" ref="sellerCarDao"></property>
+	</bean>
 
 </beans>

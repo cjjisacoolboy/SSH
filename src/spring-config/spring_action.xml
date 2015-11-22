@@ -12,11 +12,9 @@
     <!-- 登录的spring -->
  	<!-- 测试放在这 -->
 	<bean id="testAction" class="com.icss.action.TestAction">
-		<property name="testService" ref="testService"></property>
 	</bean>
 	 
 	<bean id="searchAction" class="com.icss.action.SearchTest">
-		<property name="testService" ref="testService"></property>
 	</bean>
 	<bean id="searchSaleCarAction" class="com.icss.action.SearchSaleCarAction">
 		<property name="visitorService" ref="visitorService"></property>
@@ -34,13 +32,16 @@
 	
 	<!-- 管理员后台 -->
 	<bean id="findMerStoreAction" class="com.icss.action.FindMerStoreAction">
-		<property name="adminService" ref="adminService"></property>
+		<property name="adminToMerStoreService" ref="adminToMerStoreService"></property>
 	</bean>
 	<bean id="findMerStore_auditAction" class="com.icss.action.FindMerStore_auditAction">
-		<property name="adminService" ref="adminService"></property>
+		<property name="adminToMerStoreService" ref="adminToMerStoreService"></property>
 	</bean>
 	<bean id="doMer_auditAction" class="com.icss.action.DoMer_auditAction">
-		<property name="adminService" ref="adminService"></property>
+		<property name="adminToMerStoreService" ref="adminToMerStoreService"></property>
+	</bean>
+	<bean id="findAllsaleCarsAction" class="com.icss.action.FindAllsaleCarsAction">
+		<property name="adminToSaleCarService" ref="adminToSaleCarService"></property>
 	</bean>
 	
 	
