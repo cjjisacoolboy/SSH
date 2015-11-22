@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icss.dao.ICarDao">
+    <!-- <resultMap type="com.icss.pojo.Stuinfo" id="rmStuinfo"> -->
+    <resultMap type="com.icss.pojo.CarInfo" id="rmCarinfo">
+        <!-- 将实体类中的属性与数据库中的字段对应 -->
+        <result property="CarId" column="CarId"/>
+	    <result property="PId" column="PId"/>
+	    <result property="carName" column="carName"/>
+	    <result property="carType" column="carType"/>  
+	    <result property="price" column="price"/>
+	    <association property="carEngine" column="engineId" 
+	    	javaType="com.icss.pojo.CarEngine" select="findCarEngineById">
+	    	<id property="engineId" column="engineId"></id>	
+	    	<result property="supplyMode" column="supplyMode"></result>
+	    	<result property="fuelGrade" column="fuelGrade"></result>
+	    	<result property="fuelForm" column="fuelForm"></result>
+	    	<result property="maxTorqueSpeed" column="maxTorqueSpeed"></result>
+	    	<result property="maximumTorque" column="maximumTorque"></result>
+	    	<result property="maximumPowerSpeed" column="maximumPowerSpeed"></result>
+	    	<result property="maximumPower" column="maximumPower"></result>
+	    	<result property="airInlet" column="airInlet"></result>
+	    	<result property="displacement" column="displacement"></result>
+	    </association>
+	    <association property="carbodyInfo" column="carbodyId" 
+	    	javaType="com.icss.pojo.CarbodyInfo" select="findCarbodyInfoById">
+	    	<id property="carbodyId" column="carbodyId"></id>	
+	    	<result property="trunkVolume" column="trunkVolume"></result>
+	    	<result property="tankVolume" column="tankVolume"></result>
+	    	<result property="kerbMass" column="kerbMass"></result>
+	    	<result property="minimumGround" column="minimumGround"></result>
+	    	<result property="wheelbase" column="wheelbase"></result>
+	    	<result property="bodyStructure" column="bodyStructure"></result>
+	    </association>
+	    <association property="basicParameters" column="basicParametersId" 
+	    	javaType="com.icss.pojo.BasicParameters" select="findBasicParametersById">
+	    	<id property="basicParametersId" column="basicParametersId"></id>	
+	    	<result property="acceleration" column="acceleration"></result>
+	    	<result property="speed" column="speed"></result>
+	    	<result property="l_w_h" column="l_w_h"></result>
+	    	<result property="engine" column="engine"></result>
+	    	<result property="carType" column="carType"></result>
+	    </association>	    
+	    <association property="parametersConfig" column="parametersConfigId" 
+	    	javaType="com.icss.pojo.ParametersConfig" select="findParametersConfigById">
+	    	<id property="parametersConfigId" column="parametersConfigId"></id>	
+	    	<result property="transmission" column="transmission"></result>
+	    	<result property="carColor" column="carColor"></result>
+	    	<result property="envStandards" column="envStandards"></result>
+	    	<result property="fuel" column="fuel"></result>
+	    	<result property="drivingMode" column="drivingMode"></result>
+	    	<result property="manufacturer" column="manufacturer"></result>
+	    </association>	    	    
+    </resultMap>
+    
+    
+    <!-- 查询
+    <select id="selectAll" resultMap="rmCourse_info">
+        select * from course_info_demo
+    </select>
+     -->
+    <select id="findCarByCarName" parameterType="String" 
+        resultMap="rmCarinfo">
+    	select *from Carinfo ci where ci.carName like #{carName}  
+    </select>
+    
+    <select id="findCarByCarType" parameterType="String" 
+        resultMap="rmCarinfo">
+    	select *from Carinfo ci where ci.carType like #{carType}  
+    </select>
+    
+    <select id="findId" parameterType="String" 
+        resultMap="rmCarinfo">
+    	select *from Carinfo ci where ci.carName like #{carName}  
+    </select>
+    <!-- 查找引擎 -->
+    <select id="findCarEngineById" parameterType="int" 
+        resultType="com.icss.pojo.CarEngine">
+    	select *from CarEngine ce where ce.engineId = #{engineId}  
+    </select>
+    <!-- 查找车身 -->
+    <select id="findCarbodyInfoById" parameterType="int" 
+        resultType="com.icss.pojo.CarbodyInfo">
+    	select *from CarbodyInfo cbi where cbi.carbodyId = #{carbodyId}  
+    </select>
+    <!-- 查找基本参数 -->
+    <select id="findBasicParametersById" parameterType="int" 
+        resultType="com.icss.pojo.BasicParameters">
+    	select *from BasicParameters bp where bp.basicParametersId = #{basicParametersId}  
+    </select>
+    <!-- 查找参数配置 -->
+    <select id="findParametersConfigById" parameterType="int" 
+        resultType="com.icss.pojo.ParametersConfig">
+    	select *from ParametersConfig pc where pc.parametersConfigId = #{parametersConfigId}  
+    </select>
+    
+    
+
+</mapper>

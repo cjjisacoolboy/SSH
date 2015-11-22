@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 导入外部的properties文件 -->
+    <properties resource="db.properties">
+    </properties>
+    <!-- 为java类取别名
+    <typeAliases>
+        <typeAlias type="com.icss.pojo.Course_info" alias="aliCourse_info" />
+        <typeAlias type="java.util.Map" alias="aliMap" />
+    </typeAliases>
+ -->
+    <!-- 实体映射文件集合 --> 
+    <mappers>
+		<!--  <mapper resource="com/icss/pojo/Course_infoSqlMap.xml"/> -->
+		<mapper resource="com/icss/pojo/CarInfoSqlMap.xml"/>
+    </mappers>
+</configuration>

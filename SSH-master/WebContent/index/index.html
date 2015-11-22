@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我要二手车</title>
+		<link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+		<link href="../css/base.css" rel="stylesheet" type="text/css">
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
+		<link href="../css/popup.css" rel="stylesheet" type="text/css">
+		<link href="../css/page.css" rel="stylesheet" type="text/css">
+		<script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="../css/index.css" type="text/css">
+	</head>
+	<body>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-16
+        	描述：导航栏
+        -->
+	    <div class="fixed-head-wrap fix">
+	        <div class="fixed-head rel">
+			    <a href="index.html" class="fixed-logo"></a><!-- logo点击连接 -->          
+					<h1>二手车</h1>
+					<dl class="select-city fixed-city abs" id="citySelect">
+				        <dt id='current_city_id'>长沙</dt>
+				        <dd id="cityWrap">
+					<!--
+                    	添加城市列表
+                    -->
+			            </dd>
+			        </dl>
+		        <ul class="nav-list fixed-list abs">       
+				    <li><a class="a_buypage " href="../buy/buycar.html">买车</a></li>
+					<li><a class="" href="../sell/sell.html">卖车</a></li>
+					<li class="rel" class='php_li_half' id="li_halfprice" style="display:block"><a id='php_half_city_link' class="" href="../payhalf/payhalf.html" sname="">付一半</a><b class="ico hot-ico abs"></b></li>				
+					<li><a class="" href="../activity/activity.html">热门活动</a></li>
+					<li><a href="../safe/safe.html" class="" rel="nofollow">服务保障</a></li>
+					<li><a href="../downloadAPP/downloadAPP.html" target="_blank"><b class="ico app-ico fl" rel="nofollow"></b>下载App</a></li>
+					<li><a href="../apply/apply.html" id="apply_dealer" class="apply" target="_blank">商家申请</a></li>
+					<li id="xin_top_userinfo">
+						<script type="text/javascript">
+							$(function(){
+								$('#loginA').click(function(){
+									$('#popupLogin').css('display','block');
+									$('#blackground').css('display','block');
+								});
+							});
+						</script>
+						<div class="person-wrap" style="top:0px;" >
+							<a id="loginA">登录</a>/<a href="../register/register.html" id="regA" rel="nofollow">注册</a>
+						</div>
+					</li>
+				</ul>
+	  		</div>
+		 </div>
+	  <!--
+      	作者：455984146@qq.com
+      	时间：2015-11-16
+      	描述：车的类别
+      -->
+<div class="main-wrap">
+	<div class="car-search-wrap">
+		<div class="slide">
+			<a href="" class="spread61" target="_blank"></a>
+			<div class="car-search rel">
+
+				<div class="brand-search">
+					<div class="select-tit" id="liList" name="nice-select">
+						<input class="Sitem" id="chooseNext" type="button" value="车辆" readonly>
+						<b></b>
+						<ul>
+							<li class="select-car">车辆</li>
+							<li class="select-shop">店铺</li>
+						</ul>
+					</div>
+					<input type="text" value="请输入品牌、车系搜索" data-default='请输入品牌、车系搜索' id="brandSearch" class="fl Hsearch" data-carcount="1" name="q">
+					<button type="button" class="search-btn fl" for='brandSearch'><i class="index-ico abs"></i>立即搜索</button>
+				</div>
+
+				<div class="fast-search">
+					<div class="price-scope">
+						<span>价格：</span>
+						<ul>
+							<li><a href=""> 5万以下</a></li>
+							<li><a href="">5-10 万</a></li>
+							<li><a href="">10-15 万</a></li>
+							<li><a href="">15-20 万</a></li>
+						</ul>
+					</div>
+					<div class="moto-type">
+						<span>车型：</span>
+						<ul>
+							<li><a href="">SUV</a></li>
+							<li><a href="">面包车</a></li>
+							<li><a href="">MPV</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search-bar letter_index">
+			<div class="clearfix brand-bg">
+				<ul class="brand-letter">
+					<li class="tab_letter" data-ind="hot">
+						<h2><a>热门品牌</a></h2></li>
+					<li class="tab_letter cur" data-ind="A">
+						<h2><a>A</a></h2></li>
+					<li class="tab_letter" data-ind="B">
+						<h2><a>B</a></h2></li>
+					<li class="tab_letter" data-ind="C">
+						<h2><a>C</a></h2></li>
+					<li class="tab_letter" data-ind="D">
+						<h2><a>D</a></h2></li>
+					<li class="tab_letter" data-ind="F">
+						<h2><a>F</a></h2></li>
+					<li class="tab_letter" data-ind="G">
+						<h2><a>G</a></h2></li>
+					<li class="tab_letter" data-ind="H">
+						<h2><a>H</a></h2></li>
+					<li class="tab_letter" data-ind="J">
+						<h2><a>J</a></h2></li>
+					<li class="tab_letter" data-ind="K">
+						<h2><a>K</a></h2></li>
+					<li class="tab_letter" data-ind="L">
+						<h2><a>L</a></h2></li>
+					<li class="tab_letter" data-ind="M">
+						<h2><a>M</a></h2></li>
+					<li class="tab_letter" data-ind="N">
+						<h2><a>N</a></h2></li>
+					<li class="tab_letter" data-ind="O">
+						<h2><a>O</a></h2></li>
+					<li class="tab_letter" data-ind="P">
+						<h2><a>P</a></h2></li>
+					<li class="tab_letter" data-ind="Q">
+						<h2><a>Q</a></h2></li>
+					<li class="tab_letter" data-ind="R">
+						<h2><a>R</a></h2></li>
+					<li class="tab_letter" data-ind="S">
+						<h2><a>S</a></h2></li>
+					<li class="tab_letter" data-ind="T">
+						<h2><a>T</a></h2></li>
+					<li class="tab_letter" data-ind="W">
+						<h2><a>W</a></h2></li>
+					<li class="tab_letter" data-ind="X">
+						<h2><a>X</a></h2></li>
+					<li class="tab_letter" data-ind="Y">
+						<h2><a>Y</a></h2></li>
+					<li class="tab_letter" data-ind="Z">
+						<h2><a>Z</a></h2></li>
+				</ul>
+			</div>
+			<!--
+            	作者：455984146@qq.com
+            	时间：2015-11-18
+            	描述：品牌列表
+            -->
+    <script type="text/javascript">
+		$(function(){
+			$('#upnext').click(function(){
+				if($('ul.clearfix').css('left')=='-13000px'){
+					$('ul.info-wrap').animate({left:'+=1300px'},'slow');
+				}else{
+					$('ul.info-wrap').animate({left:'-=1300px'},'slow');
+				}
+			});
+			$('#upprev').click(function(){	
+				if($('ul.clearfix').css('left')>='0px'){
+					$('ul.info-wrap').animate({left:'-=1300px'},'slow');
+				}else{
+					$('ul.info-wrap').animate({left:'+=1300px'},'slow');
+				}	
+			});
+		});    
+		</script>
+<div class="letter-info">
+	<span class="index-ico abs brand-left" id="upprev"></span>
+	<span class="index-ico abs brand-right" id="upnext"></span>
+<div id="brandWrap-content" class="letter-wrap">
+<div id="brandWrap" class="brand-wrap" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 1300px;">
+<ul class="info-wrap" style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 14300px; left: -1300px;">
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+					<dl>
+						<dd class="brand-list brand-list02 ">
+							<h3><a href="/changsha/s/b121"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_121.png"><span>比亚迪</span></a></h3>
+							<div class="index-ico line"></div>
+							<div class="sub-info clearfix">
+								<a href="/changsha/s/s3174">E6</a>
+								<a href="/changsha/s/s577">F0</a>
+								<a href="/changsha/s/s381">F3</a>
+								<a href="/changsha/s/s319">F6</a>
+								<a href="/changsha/s/s1729">G3</a>
+								<a href="/changsha/s/s2146">G3R</a>
+								<a href="/changsha/s/s3028">G5</a>
+								<a href="/changsha/s/b121">更多&gt;</a>
+							</div>
+						</dd>
+						<dd class="brand-list brand-list02 last">
+							<h3><a href="/changsha/s/b51"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_51.png"><span>五菱</span></a></h3>
+							<div class="index-ico line"></div>
+							<div class="sub-info clearfix">
+								<a href="/changsha/s/s2004">PN系列货车</a>
+								<a href="/changsha/s/s268">五菱之光</a>
+								<a href="/changsha/s/s1067">兴旺</a>
+								<a href="/changsha/s/s2025">宏光</a>
+								<a href="/changsha/s/s2003">小旋风</a>
+								<a href="/changsha/s/s3182">征程</a>
+								<a href="/changsha/s/s358">扬光</a>
+								<a href="/changsha/s/b51">更多&gt;</a>
+							</div>
+						</dd>
+					</dl>
+</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+					<dl>
+						<dd class="brand-list brand-list01 ">
+							<h3><a href="/changsha/s/b84"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_84.png"><span>大众</span></a></h3>
+							<div class="index-ico line"></div>
+							<div class="sub-info clearfix">
+								<a href="/changsha/s/s1971">CC</a>
+								<a href="/changsha/s/s1993">宝来</a>
+								<a href="/changsha/s/s367">开迪</a>
+								<a href="/changsha/s/s449">捷达</a>
+								<a href="/changsha/s/s135">迈腾</a>
+								<a href="/changsha/s/s566">速腾</a>
+								<a href="/changsha/s/s266">高尔夫</a>
+								<a href="/changsha/s/s291">POLO</a>
+								<a href="/changsha/s/s3089">凌渡</a>
+								<a href="/changsha/s/s595">帕萨特</a>
+								<a href="/changsha/s/s599">志俊</a>
+								<a href="/changsha/s/b84">更多&gt;</a>
+							</div>
+						</dd>
+						<dd class="brand-list brand-list01 ">
+							<h3><a href="/changsha/s/b89"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_89.png"><span>丰田</span></a></h3>
+							<div class="index-ico line"></div>
+							<div class="sub-info clearfix">
+								<a href="/changsha/s/s1053">RAV4</a>
+								<a href="/changsha/s/s159">卡罗拉</a>
+								<a href="/changsha/s/s284">威驰</a>
+								<a href="/changsha/s/s361">皇冠</a>
+								<a href="/changsha/s/s286">花冠</a>
+								<a href="/changsha/s/s238">锐志</a>
+								<a href="/changsha/s/s100">凯美瑞</a>
+								<a href="/changsha/s/s1072">汉兰达</a>
+								<a href="/changsha/s/s2846">致炫</a>
+								<a href="/changsha/s/s2228">逸致</a>
+								<a href="/changsha/s/s339">雅力士</a>
+								<a href="/changsha/s/b89">更多&gt;</a>
+							</div>
+						</dd>
+						<dd class="brand-list brand-list01 ">
+							<h3><a href="/changsha/s/b62"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_62.png"><span>奥迪</span></a></h3>
+							<div class="index-ico line"></div>
+							<div class="sub-info clearfix">
+								<a href="/changsha/s/s3154">100</a>
+								<a href="/changsha/s/s3155">200</a>
+								<a href="/changsha/s/s3188">A3</a>
+								<a href="/changsha/s/s3149">A4</a>
+								<a href="/changsha/s/s621">A4L</a>
+								<a href="/changsha/s/s3150">A6</a>
+								<a href="/changsha/s/s269">A6L</a>
+								<a href="/changsha/s/s2728">Q3</a>
+								<a href="/changsha/s/s1919">Q5</a>
+								<a href="/changsha/s/s2011">A1(进口)</a>
+								<a href="/changsha/s/s2259">A3(进口)</a>
+								<a href="/changsha/s/b62">更多&gt;</a>
+							</div>
+						</dd>
+
+					</dl>
+				</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+	<dl>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b62"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_62.png"><span>奥迪</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s3154">100</a>
+				<a href="/changsha/s/s3155">200</a>
+				<a href="/changsha/s/s3188">A3</a>
+				<a href="/changsha/s/s3149">A4</a>
+				<a href="/changsha/s/s621">A4L</a>
+				<a href="/changsha/s/s3150">A6</a>
+				<a href="/changsha/s/s269">A6L</a>
+				<a href="/changsha/s/s2728">Q3</a>
+				<a href="/changsha/s/s1919">Q5</a>
+				<a href="/changsha/s/s2011">A1(进口)</a>
+				<a href="/changsha/s/s2259">A3(进口)</a>
+				<a href="/changsha/s/b62">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b15"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_15.png"><span>日产</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s2515">启辰D50</a>
+				<a href="/changsha/s/s2996">启辰R30</a>
+				<a href="/changsha/s/s2598">启辰R50</a>
+				<a href="/changsha/s/s2832">启辰R50X</a>
+				<a href="/changsha/s/s3090">启辰T70</a>
+				<a href="/changsha/s/s3179">启辰晨风</a>
+				<a href="/changsha/s/s317">天籁</a>
+				<a href="/changsha/s/s594">奇骏</a>
+				<a href="/changsha/s/s2289">楼兰</a>
+				<a href="/changsha/s/s2018">玛驰</a>
+				<a href="/changsha/s/s322">蓝鸟</a>
+				<a href="/changsha/s/b15">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b59"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_59.png"><span>本田</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s2785">凌派</a>
+				<a href="/changsha/s/s452">奥德赛</a>
+				<a href="/changsha/s/s80">思迪</a>
+				<a href="/changsha/s/s2053">歌诗图</a>
+				<a href="/changsha/s/s2149">理念</a>
+				<a href="/changsha/s/s3041">缤智</a>
+				<a href="/changsha/s/s612">锋范</a>
+				<a href="/changsha/s/s564">雅阁</a>
+				<a href="/changsha/s/s453">飞度</a>
+				<a href="/changsha/s/s226">CR-V</a>
+				<a href="/changsha/s/s3059">XR-V</a>
+				<a href="/changsha/s/b59">更多&gt;</a>
+			</div>
+		</dd>
+
+	</dl>
+</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+	<dl>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b59"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_59.png"><span>本田</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s2785">凌派</a>
+				<a href="/changsha/s/s452">奥德赛</a>
+				<a href="/changsha/s/s80">思迪</a>
+				<a href="/changsha/s/s2053">歌诗图</a>
+				<a href="/changsha/s/s2149">理念</a>
+				<a href="/changsha/s/s3041">缤智</a>
+				<a href="/changsha/s/s612">锋范</a>
+				<a href="/changsha/s/s564">雅阁</a>
+				<a href="/changsha/s/s453">飞度</a>
+				<a href="/changsha/s/s226">CR-V</a>
+				<a href="/changsha/s/s3059">XR-V</a>
+				<a href="/changsha/s/b59">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b98"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_98.png"><span>福特</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s178">S-MAX</a>
+				<a href="/changsha/s/s1984">嘉年华</a>
+				<a href="/changsha/s/s1979">福克斯</a>
+				<a href="/changsha/s/s3083">福睿斯</a>
+				<a href="/changsha/s/s2716">翼搏</a>
+				<a href="/changsha/s/s2695">翼虎</a>
+				<a href="/changsha/s/s394">蒙迪欧</a>
+				<a href="/changsha/s/s3185">锐界</a>
+				<a href="/changsha/s/s296">全顺</a>
+				<a href="/changsha/s/s3172">Taurus-X</a>
+				<a href="/changsha/s/s1885">嘉年华</a>
+				<a href="/changsha/s/b98">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list02 ">
+			<h3><a href="/changsha/s/b94"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_94.png"><span>铃木</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s3183">启悦</a>
+				<a href="/changsha/s/s1985">天语SX4</a>
+				<a href="/changsha/s/s391">奥拓</a>
+				<a href="/changsha/s/s2084">尚悦</a>
+				<a href="/changsha/s/s392">羚羊</a>
+				<a href="/changsha/s/s2877">锋驭</a>
+				<a href="/changsha/s/s382">雨燕</a>
+				<a href="/changsha/s/b94">更多&gt;</a>
+			</div>
+		</dd>
+
+	</dl>
+</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+	<dl>
+		<dd class="brand-list brand-list02 ">
+			<h3><a href="/changsha/s/b94"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_94.png"><span>铃木</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s3183">启悦</a>
+				<a href="/changsha/s/s1985">天语SX4</a>
+				<a href="/changsha/s/s391">奥拓</a>
+				<a href="/changsha/s/s2084">尚悦</a>
+				<a href="/changsha/s/s392">羚羊</a>
+				<a href="/changsha/s/s2877">锋驭</a>
+				<a href="/changsha/s/s382">雨燕</a>
+				<a href="/changsha/s/b94">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list02 ">
+			<h3><a href="/changsha/s/b145"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_145.png"><span>马自达</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s3010">CX-7</a>
+				<a href="/changsha/s/s1051">睿翼</a>
+				<a href="/changsha/s/s2975">阿特兹</a>
+				<a href="/changsha/s/s270">马自达6</a>
+				<a href="/changsha/s/s2072">马自达8</a>
+				<a href="/changsha/s/s2793">CX-5</a>
+				<a href="/changsha/s/s660">马自达2</a>
+				<a href="/changsha/s/b145">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b129"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_129.png"><span>起亚</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s3108">KX3傲跑</a>
+				<a href="/changsha/s/s324">千里马</a>
+				<a href="/changsha/s/s301">嘉华</a>
+				<a href="/changsha/s/s325">普莱特</a>
+				<a href="/changsha/s/s2046">智跑</a>
+				<a href="/changsha/s/s229">狮跑</a>
+				<a href="/changsha/s/s1085">福瑞迪</a>
+				<a href="/changsha/s/s1771">秀尔</a>
+				<a href="/changsha/s/s179">赛拉图</a>
+				<a href="/changsha/s/s2482">起亚K2</a>
+				<a href="/changsha/s/s2646">起亚K3</a>
+				<a href="/changsha/s/b129">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b38"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_38.png"><span>宝马</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s422">3系</a>
+				<a href="/changsha/s/s425">5系</a>
+				<a href="/changsha/s/s2487">X1</a>
+				<a href="/changsha/s/s2271">1系(进口)</a>
+				<a href="/changsha/s/s2917">2系(进口)</a>
+				<a href="/changsha/s/s2385">3系(进口)</a>
+				<a href="/changsha/s/s2784">3系GT(进口)</a>
+				<a href="/changsha/s/s2841">4系(进口)</a>
+				<a href="/changsha/s/s2464">5系(进口)</a>
+				<a href="/changsha/s/s2465">5系GT(进口)</a>
+				<a href="/changsha/s/s2272">6系(进口)</a>
+				<a href="/changsha/s/b38">更多&gt;</a>
+			</div>
+		</dd>
+
+	</dl>
+</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+	<dl>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b38"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_38.png"><span>宝马</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s422">3系</a>
+				<a href="/changsha/s/s425">5系</a>
+				<a href="/changsha/s/s2487">X1</a>
+				<a href="/changsha/s/s2271">1系(进口)</a>
+				<a href="/changsha/s/s2917">2系(进口)</a>
+				<a href="/changsha/s/s2385">3系(进口)</a>
+				<a href="/changsha/s/s2784">3系GT(进口)</a>
+				<a href="/changsha/s/s2841">4系(进口)</a>
+				<a href="/changsha/s/s2464">5系(进口)</a>
+				<a href="/changsha/s/s2465">5系GT(进口)</a>
+				<a href="/changsha/s/s2272">6系(进口)</a>
+				<a href="/changsha/s/b38">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b47"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_47.png"><span>奔驰</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s246">C级</a>
+				<a href="/changsha/s/s532">E级</a>
+				<a href="/changsha/s/s3180">GLA级</a>
+				<a href="/changsha/s/s2511">GLK级</a>
+				<a href="/changsha/s/s2671">A级(进口)</a>
+				<a href="/changsha/s/s1087">B级(进口)</a>
+				<a href="/changsha/s/s2969">CLA级(进口)</a>
+				<a href="/changsha/s/s1149">CLK级(进口)</a>
+				<a href="/changsha/s/s2673">CLS级(进口)</a>
+				<a href="/changsha/s/s1148">CL级(进口)</a>
+				<a href="/changsha/s/s2275">C级(进口)</a>
+				<a href="/changsha/s/b47">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b55"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_55.png"><span>现代</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s1697">i30</a>
+				<a href="/changsha/s/s3035">ix25</a>
+				<a href="/changsha/s/s1935">ix35</a>
+				<a href="/changsha/s/s1977">伊兰特</a>
+				<a href="/changsha/s/s2844">名图</a>
+				<a href="/changsha/s/s1511">名驭</a>
+				<a href="/changsha/s/s410">御翔</a>
+				<a href="/changsha/s/s335">悦动</a>
+				<a href="/changsha/s/s2581">朗动</a>
+				<a href="/changsha/s/s2920">瑞奕</a>
+				<a href="/changsha/s/s2076">瑞纳</a>
+				<a href="/changsha/s/b55">更多&gt;</a>
+			</div>
+		</dd>
+
+	</dl>
+</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+	<dl>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b55"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_55.png"><span>现代</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s1697">i30</a>
+				<a href="/changsha/s/s3035">ix25</a>
+				<a href="/changsha/s/s1935">ix35</a>
+				<a href="/changsha/s/s1977">伊兰特</a>
+				<a href="/changsha/s/s2844">名图</a>
+				<a href="/changsha/s/s1511">名驭</a>
+				<a href="/changsha/s/s410">御翔</a>
+				<a href="/changsha/s/s335">悦动</a>
+				<a href="/changsha/s/s2581">朗动</a>
+				<a href="/changsha/s/s2920">瑞奕</a>
+				<a href="/changsha/s/s2076">瑞纳</a>
+				<a href="/changsha/s/b55">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b115"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_115.png"><span>长城</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s1773">凌傲</a>
+				<a href="/changsha/s/s3052">哈弗H1</a>
+				<a href="/changsha/s/s2968">哈弗H2</a>
+				<a href="/changsha/s/s1969">哈弗H3</a>
+				<a href="/changsha/s/s1962">哈弗H5</a>
+				<a href="/changsha/s/s2284">哈弗H6</a>
+				<a href="/changsha/s/s3178">哈弗H6 Coupe</a>
+				<a href="/changsha/s/s3177">哈弗H8</a>
+				<a href="/changsha/s/s3053">哈弗H9</a>
+				<a href="/changsha/s/s1914">哈弗M1</a>
+				<a href="/changsha/s/s1918">哈弗M2</a>
+				<a href="/changsha/s/b115">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list02 ">
+			<h3><a href="/changsha/s/b34"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_34.png"><span>别克</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s220">GL8</a>
+				<a href="/changsha/s/s369">凯越</a>
+				<a href="/changsha/s/s609">别克</a>
+				<a href="/changsha/s/s368">君威</a>
+				<a href="/changsha/s/s83">君越</a>
+				<a href="/changsha/s/s3193">威朗</a>
+				<a href="/changsha/s/s3038">昂科威</a>
+				<a href="/changsha/s/b34">更多&gt;</a>
+			</div>
+		</dd>
+
+	</dl>
+</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+	<dl>
+		<dd class="brand-list brand-list02 ">
+			<h3><a href="/changsha/s/b34"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_34.png"><span>别克</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s220">GL8</a>
+				<a href="/changsha/s/s369">凯越</a>
+				<a href="/changsha/s/s609">别克</a>
+				<a href="/changsha/s/s368">君威</a>
+				<a href="/changsha/s/s83">君越</a>
+				<a href="/changsha/s/s3193">威朗</a>
+				<a href="/changsha/s/s3038">昂科威</a>
+				<a href="/changsha/s/b34">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b174"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_174.png"><span>标致</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s2951">2008</a>
+				<a href="/changsha/s/s552">206</a>
+				<a href="/changsha/s/s2674">207</a>
+				<a href="/changsha/s/s2692">3008</a>
+				<a href="/changsha/s/s2845">301</a>
+				<a href="/changsha/s/s2297">307</a>
+				<a href="/changsha/s/s2323">308</a>
+				<a href="/changsha/s/s3184">308S</a>
+				<a href="/changsha/s/s1900">408</a>
+				<a href="/changsha/s/s2232">508</a>
+				<a href="/changsha/s/s2081">206</a>
+				<a href="/changsha/s/b174">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b73"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_73.png"><span>雪佛兰</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s79">乐风</a>
+				<a href="/changsha/s/s336">乐骋</a>
+				<a href="/changsha/s/s2965">创酷</a>
+				<a href="/changsha/s/s357">景程</a>
+				<a href="/changsha/s/s2192">爱唯欧</a>
+				<a href="/changsha/s/s2422">科帕奇</a>
+				<a href="/changsha/s/s2823">科鲁兹</a>
+				<a href="/changsha/s/s3079">赛欧</a>
+				<a href="/changsha/s/s2479">迈锐宝</a>
+				<a href="/changsha/s/s370">乐驰</a>
+				<a href="/changsha/s/s264">S10</a>
+				<a href="/changsha/s/b73">更多&gt;</a>
+			</div>
+		</dd>
+
+	</dl>
+</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+	<dl>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b73"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_73.png"><span>雪佛兰</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s79">乐风</a>
+				<a href="/changsha/s/s336">乐骋</a>
+				<a href="/changsha/s/s2965">创酷</a>
+				<a href="/changsha/s/s357">景程</a>
+				<a href="/changsha/s/s2192">爱唯欧</a>
+				<a href="/changsha/s/s2422">科帕奇</a>
+				<a href="/changsha/s/s2823">科鲁兹</a>
+				<a href="/changsha/s/s3079">赛欧</a>
+				<a href="/changsha/s/s2479">迈锐宝</a>
+				<a href="/changsha/s/s370">乐驰</a>
+				<a href="/changsha/s/s264">S10</a>
+				<a href="/changsha/s/b73">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b42"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_42.png"><span>长安</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s308">CM8</a>
+				<a href="/changsha/s/s2661">CS35</a>
+				<a href="/changsha/s/s2956">CS75</a>
+				<a href="/changsha/s/s2057">CX20</a>
+				<a href="/changsha/s/s1961">CX30</a>
+				<a href="/changsha/s/s131">奔奔</a>
+				<a href="/changsha/s/s3176">尊行</a>
+				<a href="/changsha/s/s201">志翔</a>
+				<a href="/changsha/s/s1980">悦翔</a>
+				<a href="/changsha/s/s19">星光</a>
+				<a href="/changsha/s/s2869">星光小卡</a>
+				<a href="/changsha/s/b42">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list02 ">
+			<h3><a href="/changsha/s/b121"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_121.png"><span>比亚迪</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s3174">E6</a>
+				<a href="/changsha/s/s577">F0</a>
+				<a href="/changsha/s/s381">F3</a>
+				<a href="/changsha/s/s319">F6</a>
+				<a href="/changsha/s/s1729">G3</a>
+				<a href="/changsha/s/s2146">G3R</a>
+				<a href="/changsha/s/s3028">G5</a>
+				<a href="/changsha/s/b121">更多&gt;</a>
+			</div>
+		</dd>
+
+	</dl>
+</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+	<dl>
+		<dd class="brand-list brand-list02 ">
+			<h3><a href="/changsha/s/b121"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_121.png"><span>比亚迪</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s3174">E6</a>
+				<a href="/changsha/s/s577">F0</a>
+				<a href="/changsha/s/s381">F3</a>
+				<a href="/changsha/s/s319">F6</a>
+				<a href="/changsha/s/s1729">G3</a>
+				<a href="/changsha/s/s2146">G3R</a>
+				<a href="/changsha/s/s3028">G5</a>
+				<a href="/changsha/s/b121">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list02 last">
+			<h3><a href="/changsha/s/b51"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_51.png"><span>五菱</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s2004">PN系列货车</a>
+				<a href="/changsha/s/s268">五菱之光</a>
+				<a href="/changsha/s/s1067">兴旺</a>
+				<a href="/changsha/s/s2025">宏光</a>
+				<a href="/changsha/s/s2003">小旋风</a>
+				<a href="/changsha/s/s3182">征程</a>
+				<a href="/changsha/s/s358">扬光</a>
+				<a href="/changsha/s/b51">更多&gt;</a>
+			</div>
+		</dd>
+	</dl>
+</li>
+<li style="overflow: hidden; float: left; width: 1300px; height: 298px;">
+	<dl>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b84"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_84.png"><span>大众</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s1971">CC</a>
+				<a href="/changsha/s/s1993">宝来</a>
+				<a href="/changsha/s/s367">开迪</a>
+				<a href="/changsha/s/s449">捷达</a>
+				<a href="/changsha/s/s135">迈腾</a>
+				<a href="/changsha/s/s566">速腾</a>
+				<a href="/changsha/s/s266">高尔夫</a>
+				<a href="/changsha/s/s291">POLO</a>
+				<a href="/changsha/s/s3089">凌渡</a>
+				<a href="/changsha/s/s595">帕萨特</a>
+				<a href="/changsha/s/s599">志俊</a>
+				<a href="/changsha/s/b84">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b89"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_89.png"><span>丰田</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s1053">RAV4</a>
+				<a href="/changsha/s/s159">卡罗拉</a>
+				<a href="/changsha/s/s284">威驰</a>
+				<a href="/changsha/s/s361">皇冠</a>
+				<a href="/changsha/s/s286">花冠</a>
+				<a href="/changsha/s/s238">锐志</a>
+				<a href="/changsha/s/s100">凯美瑞</a>
+				<a href="/changsha/s/s1072">汉兰达</a>
+				<a href="/changsha/s/s2846">致炫</a>
+				<a href="/changsha/s/s2228">逸致</a>
+				<a href="/changsha/s/s339">雅力士</a>
+				<a href="/changsha/s/b89">更多&gt;</a>
+			</div>
+		</dd>
+		<dd class="brand-list brand-list01 ">
+			<h3><a href="/changsha/s/b62"><img width="50" height="50" src="http://imgs.xin.com/xin/images/brand-100/b_62.png"><span>奥迪</span></a></h3>
+			<div class="index-ico line"></div>
+			<div class="sub-info clearfix">
+				<a href="/changsha/s/s3154">100</a>
+				<a href="/changsha/s/s3155">200</a>
+				<a href="/changsha/s/s3188">A3</a>
+				<a href="/changsha/s/s3149">A4</a>
+				<a href="/changsha/s/s621">A4L</a>
+				<a href="/changsha/s/s3150">A6</a>
+				<a href="/changsha/s/s269">A6L</a>
+				<a href="/changsha/s/s2728">Q3</a>
+				<a href="/changsha/s/s1919">Q5</a>
+				<a href="/changsha/s/s2011">A1(进口)</a>
+				<a href="/changsha/s/s2259">A3(进口)</a>
+				<a href="/changsha/s/b62">更多&gt;</a>
+			</div>
+		</dd>
+
+	</dl>
+</li>
+</ul>
+</div>
+</div>
+</div>
+				</div>
+			</div>
+		</div>
+</div>
+    <!--
+    	作者：455984146@qq.com
+    	时间：2015-11-18
+    	描述：中间八块东西
+    -->
+	<div class="exhibition-wrap">
+		<ul class="car-exhibition">
+			<li>
+				<div class="fl ex-dec ex-dec01">
+					<h2><a href="changsha/s/o2a2i1l2v1u4x10/" target="_blank" >家用紧凑车推荐</a></h2>
+					<p class="brand abs">车型：<a href="changsha/s/s1979/">福克斯</a>  <a href="changsha/s/s566/">速腾</a>  <a href="changsha/s/s2823/">科鲁兹</a></p>
+				</div>
+				<div class="fl ex-info ex-info01">
+					<a href="changsha/s/o2a2i1l2v1u4x10/" target="_blank" class="title">综合性价 家用紧凑车推荐</a>
+					<a href="changsha/s/o2a2i1l2v1u4x10/" target="_blank" class="pic" click_type="special-1" target="_blank"><img src="http://imgs.xin.com/xin/images/home/car201505_01.png" width="240" height="140"></a>
+				</div>
+			</li>
+			<li class="last">
+				<div class="fl ex-dec ex-dec02">
+					<h2><a href="changsha/s/p0-20o2a2i1l6v1u5x11/" target="_blank" >经济型SUV推荐</a></h2>
+					<p class="brand abs">车型：<a href="changsha/s/s2284/">哈弗H6</a>  <a href="changsha/s/s1932/">途观</a>  <a href="changsha/s/s1072/">汉兰达</a></p>
+				</div>
+				<div class="fl ex-info ex-info02">
+					<a href="changsha/s/p0-20o2a2i1l6v1u5x11/" target="_blank" class="title">生活有态度 经济型SUV推荐</a>
+					<a href="changsha/s/p0-20o2a2i1l6v1u5x11/" target="_blank" class="pic" click_type="special-1"><img src="http://imgs.xin.com/xin/images/home/car201505_02.png" width="240" height="140"></a>
+				</div>
+			</li>
+			<li>
+				<div class="fl ex-info ex-info03">
+					<a href="changsha/s/j0-1.6o2a10i1v1u6x12/" target="_blank" class="title">不止领先 省油才是硬道理</a>
+					<a href="changsha/s/j0-1.6o2a10i1v1u6x12/" target="_blank" class="pic" click_type="special-1"><img src="http://imgs.xin.com/xin/images/home/car20150625_03.png" width="240" height="140"></a>
+				</div>
+				<div class="fl ex-dec ex-dec03">
+					<h2><a href="changsha/s/j0-1.6o2a10i1v1u6x12/" target="_blank" >节油争霸我做主</a></h2>
+					<p class="brand abs">车型：<a href="changsha/s/s1971/">CC</a>  <a href="changsha/s/s2572/">甲壳虫</a>  <a href="changsha/s/s266/">高尔夫</a></p>
+				</div>
+			</li>
+			<li class="last">
+				<div class="fl ex-info ex-info04">
+					<a href="changsha/h/" target="_blank" class="title">只需付一半 拥有爱车不是梦</a>
+					<a href="changsha/h/" target="_blank" class="pic" click_type="special-1"><img src="http://imgs.xin.com/xin/images/home/car20150625_04.png" width="240" height="140"></a>
+				</div>
+				<div class="fl ex-dec ex-dec04">
+					<h2><!--a href="changsha/s/o2a2i1f1v1u7x13/" target="_blank" >二手车分期购</a-->
+					<a href="changsha/h/" target="_blank">二手车分期购</a></h2>
+					<p class="brand abs">车型：<a href="changsha/s/s362/">瑞虎</a>  <a href="changsha/s/s381/">比亚迪F3</a>  <a href="changsha/s/s82/">马自达3</a> </p>
+				</div>
+			</li>
+		</ul>
+				<div class="promise-wrap">
+						<div class="promise-car">
+				<h2 class="index-ico promise-ico">无事故承诺</h2>
+				<h5>如若不符，15天全额包退</h5>
+				<a href="changsha/s/v2/" target="_blank" class="promise-more abs">更多 &gt;</a>
+				<div class="con-car clearfix">
+            		                    <div class="con mr20">
+                      <a href="http://che.xin.com/10734047.html" target="_blank" class="aimg">
+                      	<img src="http://imgc.xin.com/xin/201508/1717/55d1a8a012e6d266545_18.jpg" alt="别克 君威 2014款 2.0 自动 领先时尚型">
+                      </a>
+                      <div class="pad">
+                        <h4><a href="http://che.xin.com/10734047.html" title="别克 君威 2014款 2.0 自动 领先时尚型" target="_blank">别克 君威 2014款 2.0 自动 领先时尚型</a></h4>
+                        <em>¥15.18万</em>
+                        <p class="new">当前款新车价格：<del>¥16.75万</del><i>(含税)</i></p>
+                        <span>上牌 2014年 03月 <b>｜</b>里程 1.45万公里</span>
+                      </div>
+                    </div>
+					                    <div class="con mr20">
+                      <a href="http://che.xin.com/11174264.html" target="_blank" class="aimg">
+                      	<img src="http://imgc.xin.com/xin/201510/2711/562eeb51283af731350_18.jpg" alt="雪佛兰 乐风 2009款 1.4 手动 SL基本型">
+                      </a>
+                      <div class="pad">
+                        <h4><a href="http://che.xin.com/11174264.html" title="雪佛兰 乐风 2009款 1.4 手动 SL基本型" target="_blank">雪佛兰 乐风 2009款 1.4 手动 SL基本型</a></h4>
+                        <em>¥3.98万</em>
+                        <p class="new">当前款新车价格：<del>¥8.13万</del><i>(含税)</i></p>
+                        <span>上牌 2009年 09月 <b>｜</b>里程 7.32万公里</span>
+                      </div>
+                    </div>
+					                    <div class="con mr20">
+                      <a href="http://che.xin.com/10437921.html" target="_blank" class="aimg">
+                      	<img src="http://imgc.xin.com/xin/201506/2517/558bc4b897a4f328579_18.jpg" alt="别克 君威 2011款 2.0 自动 精英型">
+                      </a>
+                      <div class="pad">
+                        <h4><a href="http://che.xin.com/10437921.html" title="别克 君威 2011款 2.0 自动 精英型" target="_blank">别克 君威 2011款 2.0 自动 精英型</a></h4>
+                        <em>¥13.58万</em>
+                        <p class="new">当前款新车价格：<del>¥18.34万</del><i>(含税)</i></p>
+                        <span>上牌 2011年 11月 <b>｜</b>里程 5.00万公里</span>
+                      </div>
+                    </div>
+					                    <div class="con ">
+                      <a href="http://che.xin.com/10550626.html" target="_blank" class="aimg">
+                      	<img src="http://imgc.xin.com/xin/201507/1617/55a7730f5d6b9845792_18.jpg" alt="起亚 凯尊 2011款 2.4 自动 旗舰型">
+                      </a>
+                      <div class="pad">
+                        <h4><a href="http://che.xin.com/10550626.html" title="起亚 凯尊 2011款 2.4 自动 旗舰型" target="_blank">起亚 凯尊 2011款 2.4 自动 旗舰型</a></h4>
+                        <em>¥16.88万</em>
+                        <p class="new">当前款新车价格：<del>¥31.21万</del><i>(含税)</i></p>
+                        <span>上牌 2013年 02月 <b>｜</b>里程 6.00万公里</span>
+                      </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+   <!--
+   	作者：455984146@qq.com
+   	时间：2015-11-17
+   	描述：二手车百科
+   -->
+  
+   <script type="text/javascript">
+		$(function(){
+			setInterval(function(){abc();},4000);
+			function abc(){
+				if($('ul.clearfix').css('left')<='-3402px'){
+					$('ul.clearfix').animate({left:'+=1134px'},'slow');
+				}
+				if($('ul.clearfix').css('left')>='0px'){
+					$('ul.clearfix').animate({left:'-=1134px'},'slow');
+				}
+			}
+			$('#next').click(function(){
+				if($('ul.clearfix').css('left')=='-3402px'){
+					$('ul.clearfix').animate({left:'+=1134px'},'slow');
+				}else{
+					$('ul.clearfix').animate({left:'-=1134px'},'slow');
+				}
+			});
+			$('#prev').click(function(){	
+				if($('ul.clearfix').css('left')=='0px'){
+					$('ul.clearfix').animate({left:'-=1134px'},'slow');
+				}else{
+					$('ul.clearfix').animate({left:'+=1134px'},'slow');
+				}	
+			});
+		});    
+		</script>
+		<div class="exper-wrap">
+			<h2>二手车百科</h2>
+			<span class="index-ico prev" id="prev"></span>
+			<span class="index-ico next" id="next"></span>
+			<div id="botton-scroll" class="exper" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 1134px;">
+				<ul class="clearfix" style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 4536px; left: -2268px;"><li style="overflow: hidden; float: left; width: 377px; height: 433px;">
+					    <!--img class="shade1" src="http://imgs.xin.com/xin/images/home/person_bg.png?v=2015111701"-->
+						<a target="_blank" href="/article/view/2/280/"><img alt="家用商务两相宜 二手中级车推荐" src="http://img2.xin.com/xin/201510/2116/562749406c2df742714_22.jpg"></a>
+						<a title="家用商务两相宜 二手中级车推荐" target="_blank" class="rel name" href="/article/view/2/280/">家用商务两相宜 二手中级车推荐</a>
+						<p class="txt">今天我们给大家推荐三款最热销的中级车，分别是雅阁、凯美瑞和帕萨特，只需一款紧凑级新车的价格就能买一款不错的合资中级车，满足您家用/商务双重需求。</p>
+					</li><li style="overflow: hidden; float: left; width: 377px; height: 433px;">
+						<a target="_blank" class="rel name" href="/article/view/2/278/">两天让你的车变现，你卖不卖?</a>
+						<p class="txt">着急把车卖掉，又不知道自己的车能卖出什么价。到二手车市场转一圈儿，都说高价收车，真要卖时又被各种挑刺儿、压价，舍不得出手。说起卖车，头疼有木有？心疼有木有？</p>
+						<div class="rel">
+						<!--img class="shade2" src="http://imgs.xin.com/xin/images/home/person_bg.png"-->
+						<a target="_blank" href="/article/view/2/278/"><img src="http://img2.xin.com/xin/201510/1616/5620b4b9acd74970481_22.jpg"></a>
+						</div>
+					</li><li class="last" style="overflow: hidden; float: left; width: 377px; height: 433px;">
+					    <!--img class="shade1" src="http://imgs.xin.com/xin/images/home/person_bg.png"-->
+						<a target="_blank" href="/article/view/2/279/"><img src="http://img2.xin.com/xin/201510/1617/5620c5ae5e422273387_22.jpg"></a>
+						<a target="_blank" class="rel name" href="/article/view/2/279/">就做高富帅 热门豪华二手车推荐</a>
+						<p class="txt">选择一款广被认可的热销车型往往被看做保险的做法。近日我们根据优信二手车的车型销量排名，来介绍三款最热销的豪华车，希望对您在选购高性价比豪华二手车能时有所帮助。</p>
+					</li>
+															<li style="overflow: hidden; float: left; width: 377px; height: 433px;">
+					    <!--img class="shade1" src="http://imgs.xin.com/xin/images/home/person_bg.png?v=2015111701"-->
+						<a target="_blank" href="/article/view/2/284/"><img alt="不开车门鉴别事故车的实战技巧" src="http://img2.xin.com/xin/201511/1615/564987384da65392688_22.jpg"></a>
+						<a title="不开车门鉴别事故车的实战技巧" target="_blank" class="rel name" href="/article/view/2/284/">不开车门鉴别事故车的实战技巧</a>
+						<p class="txt">来到龙蛇混杂的二手车市场，面对林林总总的二手车。如何能够鉴别出事故车避免看走眼，成了很多网友车迷最为头疼和最为关注的问题。小编混迹二手车行业多年，看到很多朋友刚看上一辆二手车，还没有聊几句，就着急问价格然后开车门进入车内，一屁股坐在司机座关上车门，其实也没有看懂什么、看清什么就推开车门下来走了！其实真心不用开车门就能大概了解车况，鉴别出是否存在事故隐患！车况确定无误了再商讨价格才是正确的路线。</p>
+					</li>
+																				<li style="overflow: hidden; float: left; width: 377px; height: 433px;">
+						<a target="_blank" class="rel name" href="/article/view/2/283/">单身也精彩 选款车为自己代言</a>
+						<p class="txt">在二手车车型日渐丰富的今天，若选择一款能为自己代言的车型，单身生活将会更精彩，因为二手车实惠的价格既不会让你感觉压力过大也能扩大你的生活半径。</p>
+						<div class="rel">
+						<!--img class="shade2" src="http://imgs.xin.com/xin/images/home/person_bg.png"-->
+						<a target="_blank" href="/article/view/2/283/"><img src="http://img2.xin.com/xin/201511/1213/564429c2530f4481252_22.jpg"></a>
+						</div>
+					</li>
+																				<li class="last" style="overflow: hidden; float: left; width: 377px; height: 433px;">
+					    <!--img class="shade1" src="http://imgs.xin.com/xin/images/home/person_bg.png"-->
+						<a target="_blank" href="/article/view/2/282/"><img src="http://img2.xin.com/xin/201511/0219/5637425c9743d171853_22.jpg"></a>
+						<a target="_blank" class="rel name" href="/article/view/2/282/">奶爸辣妈首选 靠谱二胎车型推荐</a>
+						<p class="txt">近日， “二胎”成为热词，孩子的抚养成本对于一般家庭来说不算低，选购一辆二手车能减轻压力，今天就向大家推荐五款车源相对丰富并且靠谱的7座二手车型。</p>
+					</li>
+																				<li style="overflow: hidden; float: left; width: 377px; height: 433px;">
+					    <!--img class="shade1" src="http://imgs.xin.com/xin/images/home/person_bg.png?v=2015111701"-->
+						<a target="_blank" href="/article/view/2/280/"><img alt="家用商务两相宜 二手中级车推荐" src="http://img2.xin.com/xin/201510/2116/562749406c2df742714_22.jpg"></a>
+						<a title="家用商务两相宜 二手中级车推荐" target="_blank" class="rel name" href="/article/view/2/280/">家用商务两相宜 二手中级车推荐</a>
+						<p class="txt">今天我们给大家推荐三款最热销的中级车，分别是雅阁、凯美瑞和帕萨特，只需一款紧凑级新车的价格就能买一款不错的合资中级车，满足您家用/商务双重需求。</p>
+					</li>
+																				<li style="overflow: hidden; float: left; width: 377px; height: 433px;">
+						<a target="_blank" class="rel name" href="/article/view/2/278/">两天让你的车变现，你卖不卖?</a>
+						<p class="txt">着急把车卖掉，又不知道自己的车能卖出什么价。到二手车市场转一圈儿，都说高价收车，真要卖时又被各种挑刺儿、压价，舍不得出手。说起卖车，头疼有木有？心疼有木有？</p>
+						<div class="rel">
+						<!--img class="shade2" src="http://imgs.xin.com/xin/images/home/person_bg.png"-->
+						<a target="_blank" href="/article/view/2/278/"><img src="http://img2.xin.com/xin/201510/1616/5620b4b9acd74970481_22.jpg"></a>
+						</div>
+					</li>
+																				<li class="last" style="overflow: hidden; float: left; width: 377px; height: 433px;">
+					    <!--img class="shade1" src="http://imgs.xin.com/xin/images/home/person_bg.png"-->
+						<a target="_blank" href="/article/view/2/279/"><img src="http://img2.xin.com/xin/201510/1617/5620c5ae5e422273387_22.jpg"></a>
+						<a target="_blank" class="rel name" href="/article/view/2/279/">就做高富帅 热门豪华二手车推荐</a>
+						<p class="txt">选择一款广被认可的热销车型往往被看做保险的做法。近日我们根据优信二手车的车型销量排名，来介绍三款最热销的豪华车，希望对您在选购高性价比豪华二手车能时有所帮助。</p>
+					</li>
+														<li style="overflow: hidden; float: left; width: 377px; height: 433px;">
+					    <!--img class="shade1" src="http://imgs.xin.com/xin/images/home/person_bg.png?v=2015111701"-->
+						<a target="_blank" href="/article/view/2/284/"><img alt="不开车门鉴别事故车的实战技巧" src="http://img2.xin.com/xin/201511/1615/564987384da65392688_22.jpg"></a>
+						<a title="不开车门鉴别事故车的实战技巧" target="_blank" class="rel name" href="/article/view/2/284/">不开车门鉴别事故车的实战技巧</a>
+						<p class="txt">来到龙蛇混杂的二手车市场，面对林林总总的二手车。如何能够鉴别出事故车避免看走眼，成了很多网友车迷最为头疼和最为关注的问题。小编混迹二手车行业多年，看到很多朋友刚看上一辆二手车，还没有聊几句，就着急问价格然后开车门进入车内，一屁股坐在司机座关上车门，其实也没有看懂什么、看清什么就推开车门下来走了！其实真心不用开车门就能大概了解车况，鉴别出是否存在事故隐患！车况确定无误了再商讨价格才是正确的路线。</p>
+					</li><li style="overflow: hidden; float: left; width: 377px; height: 433px;">
+						<a target="_blank" class="rel name" href="/article/view/2/283/">单身也精彩 选款车为自己代言</a>
+						<p class="txt">在二手车车型日渐丰富的今天，若选择一款能为自己代言的车型，单身生活将会更精彩，因为二手车实惠的价格既不会让你感觉压力过大也能扩大你的生活半径。</p>
+						<div class="rel">
+						<!--img class="shade2" src="http://imgs.xin.com/xin/images/home/person_bg.png"-->
+						<a target="_blank" href="/article/view/2/283/"><img src="http://img2.xin.com/xin/201511/1213/564429c2530f4481252_22.jpg"></a>
+						</div>
+					</li><li class="last" style="overflow: hidden; float: left; width: 377px; height: 433px;">
+					    <!--img class="shade1" src="http://imgs.xin.com/xin/images/home/person_bg.png"-->
+						<a target="_blank" href="/article/view/2/282/"><img src="http://img2.xin.com/xin/201511/0219/5637425c9743d171853_22.jpg"></a>
+						<a target="_blank" class="rel name" href="/article/view/2/282/">奶爸辣妈首选 靠谱二胎车型推荐</a>
+						<p class="txt">近日， “二胎”成为热词，孩子的抚养成本对于一般家庭来说不算低，选购一辆二手车能减轻压力，今天就向大家推荐五款车源相对丰富并且靠谱的7座二手车型。</p>
+					</li></ul>
+			</div>
+			<a title="点击查看更多二手车百科内容" target="_blank" class="more" href="/article/listing/2/">查看更多</a>
+		</div>
+<!--
+	作者：455984146@qq.com
+	时间：2015-11-17
+	描述：旁边的图标（15天包换）
+-->		       
+<a href="javascript:void(0);" class="none-btn"><img src="../images/15bt_btn.png"></a>
+
+   <!--
+   	作者：455984146@qq.com
+   	时间：2015-11-16
+   	描述：宣传视频
+   -->    
+<div class="juzhong">  
+	  <div>
+	    <video width="880" height="450" controls="controls">
+			<source src="test.mp4" type="video/mp4"></source>
+			you can do it !
+		</video>
+	  </div>
+</div>	  
+<!--
+	作者：455984146@qq.com
+	时间：2015-11-16
+	描述：弹出页面
+-->
+<!-- 弹窗页面 -->
+		<div class="popup-wrap" id="popupLogin" style="display: none; left: 50%; top: 50%; margin-left: -305px; margin-top: -244px;">
+			<div class="inner">
+				<div class="popup-con2 con-height2">
+					<span class="pop-title">登录</span>
+					<script type="text/javascript">
+				    	$(function(){
+				    		//关闭
+				    		$('#closelogin').click(function(){
+				    			$('#popupLogin').css('display','none');
+				    			$('#blackground').css('display','none');
+				    		});
+				    		//点击输入
+				    		$('input').bind('focus',function(){
+				    			$(this).css('color','rgb(51,51,51)');
+				    			
+				    		});
+				    		$('input').bind('blur',function(){
+				    			$(this).css('color','rgb(191,191,191)');
+				    			
+				    		});
+						});
+		            </script>
+					<a id="closelogin" href="javascript:void(0)" class="ico_pop xBtn2 closeJs">关闭</a>
+					<div class="logintab">
+						<a href="javascript:void(0)" hidefocus="true" class="active">网站密码登录</a>
+					</div>
+					<ul class="register logincon">
+						<li>
+							<input type="text" class="ipt-box tel-bg" placeholder="请输入手机号" id="search" />
+						</li>
+						<li>
+							<input type="text" class="code" placeholder="请输入图片码" id="piccode_l">
+							<a class="PageNum"></a>
+						</li>
+						<li>
+							<input type="password" class="ipt-box code-bg" placeholder="请输入密码" id="psw5">
+							
+						</li>
+					</ul>
+					<ul class="register logincon hide">
+						<li>
+							<input type="text" class="ipt-box tel-bg" value="请输入手机号" id="search1" />
+						</li>
+						<li>
+							<input type="text" class="code" value="请输入图片码" id="piccode_r">
+							<a class="PageNum"></a>
+						</li>
+						<li>
+							<input type="text" class="code" value="六位数字验证码" id="search2">
+							<input type="button" class="getNum vm" id="need_code1" value="获取验证码" />
+						</li>
+					</ul>
+					<div class="btn-div">
+						<a href="javascript:void(0)" class="resBtn" id="login_btn">登录</a>
+					</div>
+					<div class="popBot abs">
+						<div class="loginWith fl">
+							<span>第三方登录：</span>
+							<a href="openapi/authqq" class="ico_pop tqq" rel="nofollow"></a>
+							<a href="http://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=Ug5Vh2SRNiSueexjtBi95Grs&redirect_uri=http%3A%2F%2Fwww.xin.com%2Fopenapi%2Fbaidu_rd%2F&display=popup" class="ico_pop tbd" rel="nofollow"></a>
+							<a href="https://api.weibo.com/oauth2/authorize?client_id=415981803&redirect_uri=http%3A%2F%2Fwww.xin.com%2Fopenapi%2Findex%2F&response_type=code" class="ico_pop xwb" rel="nofollow"></a>
+						</div>
+						<div class="forPass fr">
+							<a href='javascript:clear_invalid();$("#popupLogin").hide();show_popup("#forPass","#forPass .closeJs")'>忘记密码</a><a href='register/' class="noregist" rel="nofollow">还没注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-wrap" id="forPass">
+			<div class="inner">
+				<div class="popup-con con-height3">
+					<span class="pop-title">找回密码</span>
+					<div class="passtab abs">
+						<span hidefocus="true" class="active">手机号验证 ></span>
+						<span hidefocus="true">设置密码</span>
+					</div>
+					<a href="javascript:void(0)" class="ico_pop xBtn2 closeJs">关闭</a>
+					<ul class="register">
+						<li class="mt40">
+							<input type="text" class="ipt-box tel-bg" value="请输入手机号" id="search3" />
+						</li>
+						<li>
+							<input type="text" class="code" value="请输入图片码" id="piccode_g">
+							<a class="PageNum"></a>
+						</li>
+						<li>
+							<input type="text" class="code" value="六位数字验证码" id="search4">
+							<input type="button" class="getNum vm" id="need_code3" value="获取验证码" />
+						</li>
+					</ul>
+					<div class="btn-div">
+						<a href="javascript:void(0)" class="resBtn" id="next_step">下一步</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-wrap" id="forgetNext">
+			<div class="inner">
+				<div class="popup-con con-height3">
+					<span class="pop-title">找回密码</span>
+					<div class="passtab abs">
+						<span hidefocus="true" class="pass-bg active">手机号验证 ></span>
+						<span hidefocus="true" class="active">设置密码</span>
+					</div>
+					<a href="javascript:void(0)" class="ico_pop xBtn2 closeJs">关闭</a>
+					<ul class="register">
+						<li class="mt40">
+							<input type="text" class="ipt-box code-bg" value="6-20位，数字、字母、_ 、组合" id="psw7">
+							<input type="password" class="ipt-box code-bg hide" value="" id="psw8">
+						</li>
+						<li>
+							<input type="text" class="ipt-box code-bg" value="请与上面输入密码一致" id="psw9">
+							<input type="password" class="ipt-box code-bg hide" value="" id="psw10">
+						</li>
+					</ul>
+					<div class="btn-div">
+						<a href="javascript:void(0)" class="resBtn" id="reset_passwd">提交</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<!--
+    	作者：455984146@qq.com
+    	时间：2015-11-17
+    	描述：页尾
+    -->
+    <div class="footer-wrap">
+		<div class="footer">
+			<div class="contact_new">
+				<a href="aboutus/"  rel="nofollow">关于我们</a>
+				<a href="contactus/"  rel="nofollow">联系我们</a>
+				<a href="joinus/" rel="nofollow">加入我们</a>
+				<a href="help/"  rel="nofollow">帮助中心</a>
+				<a href="feedback/"  rel="nofollow">用户反馈</a>
+				<a href="finance/"  rel="nofollow">我要金融</a>
+			</div>
+			<span>业务合作单位：我估(上海) 信息科技有限公司/我要拍（北京）二手车鉴定评估有限公司</span>
+            <div class="footer3">
+				<p>copyright@2015 <strong><a href="">我要互联</a></strong> all rights reserved 版权所有 我要互联（北京）信息技术有限公司
+				<em>经营许可证编号：京ICP证120819号</em>
+                </p>
+				<!--可信网站开始-->
+				<script src="http://kxlogo.knet.cn/seallogo.dll?sn=e15102111010561082vc83000000&size=0"></script>
+				<!--可信网站结束-->
+				<!--诚信网站开始-->
+				<a id='___szfw_logo___' class="bot-logo" href='https://credit.szfw.org/CX20151104012121580123.html' target='_blank'><img src='http://imgs.xin.com/xin/images/home/bot_logo2.png' border='0' /></a>
+               <script type='text/javascript'>(function(){ document.getElementById('___szfw_logo___').oncontextmenu = function(){ return false; } })();</script>
+               <!--诚信网站结束-->
+            </div>            
+			<div class="index-code fr clearfix"> 
+				<img src="../images/code.jpg" height="100" width="100">
+				<p class="scan-txt fl rel">
+					关注我要二手车<br />微信公众号
+				</p>
+			</div>
+			<div class="index-code2 fl clearfix">
+				<img src="http://imgs.xin.com/xin/images/common/code_1.jpg" height="100" width="100">
+				<p class="scan-txt fr rel">
+					扫描我，即可下载<br />我要二手车手机版
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--
+    	作者：455984146@qq.com
+    	时间：2015-11-19
+    	描述：登录后面大背景
+    -->
+	<div id="blackground" class="shade" style="height: 3745px; z-index: 100; opacity: 0.6; display: none;"></div>
+	</body>	
+	
+</html>

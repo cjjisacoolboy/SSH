@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<!-- 测试放这里 -->
+	<package name="test" namespace="/test" extends="struts-default">
+		 <action name="testAC" class="com.icss.action.TestAction">
+            <result>/index.jsp</result>
+        </action>
+	</package>
+	<!-- 
+	<package name="test" namespace="/test" extends="struts-default">
+		 <action name="searchSaleCarAction" class="com.icss.action.SearchSaleCarAction">
+            <result>/index.jsp</result>
+        </action>
+	</package>
+	 -->
+	<package name="demo" namespace="/demo" extends="json-default">
+    	<action name="searchTest" class="com.icss.action.SearchTest">
+    		<result type="json">
+    			<param name="root">map</param>
+    			<param name="contentType">text/html</param>
+    		</result>
+    	</action>
+     
+    	<action name="searchSaleCarAction" class="com.icss.action.SearchSaleCarAction">
+    		<result type="json">
+    			<param name="root">map</param>
+    			<param name="contentType">text/html</param>
+    		</result>	
+    	</action>
+	</package>
+    <!-- Add packages here -->
+
+</struts>

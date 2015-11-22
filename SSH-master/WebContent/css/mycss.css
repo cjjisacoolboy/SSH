@@ -1,0 +1,145 @@
+.popup-wrap .inner {
+    padding: 20px 25px 0;
+    position: relative;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, span, i, b {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-wrap .con-height2 {
+    height: 468px;
+    width: 560px;
+}
+.popup-wrap .popup-con, .popup-wrap .popup-con2, .popup-wrap .popup-con3 {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.popup-wrap .popup-con .pop-title, .popup-wrap .popup-con2 .pop-title {
+    border-bottom: 1px solid #e5e5e5;
+    color: #333333;
+    display: inline-block;
+    font: 20px/60px "Microsoft YaHei";
+    text-indent: 30px;
+    width: 560px;
+}
+.popup-wrap .logintab {
+    border-bottom: 2px solid #e5e5e5;
+    height: 40px;
+    margin: 20px auto 0;
+    text-align: center;
+    width: 280px;
+}
+
+.popup-wrap .logintab a.active {
+    border-bottom: 2px solid #ff5837;
+    color: #ff5837;
+}
+.popup-wrap .logintab a {
+    color: #999999;
+    display: inline-block;
+    font: 14px/40px "Microsoft YaHei";
+    width: 138px;
+}
+a {
+    cursor: pointer;
+    outline: medium none;
+    text-decoration: none;
+}
+
+element.style {
+    display: block;
+}
+.popup-wrap ul.register {
+    margin: 0 140px;
+    padding-top: 30px;
+    width: 310px;
+}
+ol, ul, li {
+    list-style: outside none none;
+}
+element.style {
+    color: #bfbfbf;
+}
+.popup-wrap ul.register li .ipt-box {
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    color: #bfbfbf;
+    font: 14px/18px "Microsoft YaHei";
+    height: 18px;
+    padding: 8px 10px;
+    vertical-align: middle;
+    width: 260px;
+}
+.popup-wrap ul.register .tel-bg {
+    background: rgba(0, 0, 0, 0) url("http://imgs.xin.com/xin/images/popup/pop_icon.png") no-repeat scroll 255px -586px;
+}
+input, button, select, textarea {
+    outline: medium none;
+}
+element.style {
+    color: #bfbfbf;
+}
+.popup-wrap ul.register li input.code {
+    width: 140px;
+}
+.popup-wrap ul.register li .code {
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    color: #bfbfbf;
+    font: 14px/18px "Microsoft YaHei";
+    height: 18px;
+    padding: 8px 10px;
+    vertical-align: middle;
+    width: 98px;
+}
+
+.popup-wrap ul.register li .PageNum {
+    display: inline-block;
+    height: 30px;
+    margin-left: 47px;
+    width: 70px;
+}
+img {
+    border: medium none;
+}
+element.style {
+    color: #bfbfbf;
+    display: inline;
+}
+.popup-wrap ul.register li .ipt-box {
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    color: #bfbfbf;
+    font: 14px/18px "Microsoft YaHei";
+    height: 18px;
+    padding: 8px 10px;
+    vertical-align: middle;
+    width: 260px;
+}
+.popup-wrap ul.register .code-bg {
+    background: rgba(0, 0, 0, 0) url("http://imgs.xin.com/xin/images/popup/pop_icon.png") no-repeat scroll 255px -621px;
+}
+.hide {
+    display: none;
+}
+//登录按钮
+input, button, select, textarea {
+    outline: medium none;
+}
+.popup-wrap .btn-div {
+    margin-left: 140px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.popup-wrap .btn-div a.resBtn, .popup-wrap .btn-hcode a.resBtn {
+    background: #ff5837 none repeat scroll 0 0;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font: 16px/35px "Microsoft YaHei";
+    height: 35px;
+    text-align: center;
+    width: 280px;
+}
