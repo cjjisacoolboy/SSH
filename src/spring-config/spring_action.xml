@@ -43,6 +43,9 @@
 	<bean id="findAllsaleCarsAction" class="com.icss.action.FindAllsaleCarsAction">
 		<property name="adminToSaleCarService" ref="adminToSaleCarService"></property>
 	</bean>
+	<bean id="findSalCarDetailAction" class="com.icss.action.FindSalCarDetailAction">
+		<property name="adminToSaleCarService" ref="adminToSaleCarService"></property>
+	</bean>
 	
 	
 </beans>

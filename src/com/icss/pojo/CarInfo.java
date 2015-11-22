@@ -5,6 +5,8 @@ public class CarInfo {
 	private int CarId;
 	private int PId;
 	private String carName;
+	private String carBrand;
+	private String carseries;
 	private String carType;
 	private int price;
 	private CarEngine carEngine;
@@ -65,6 +67,18 @@ public class CarInfo {
 	}
 	public void setParametersConfig(ParametersConfig parametersConfig) {
 		this.parametersConfig = parametersConfig;
+	}
+	public String getCarBrand() {
+		return carBrand;
+	}
+	public void setCarBrand(String carBrand) {
+		this.carBrand = carBrand;
+	}
+	public String getCarseries() {
+		return carseries;
+	}
+	public void setCarseries(String carseries) {
+		this.carseries = carseries;
 	}
 	
 	

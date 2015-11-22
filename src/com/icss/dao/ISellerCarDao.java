@@ -5,5 +5,6 @@ import java.util.List;
 import com.icss.pojo.SellerCar;
 
 public interface ISellerCarDao {
-	List<SellerCar> findSaleCar(String keyword);
+	List<SellerCar> findSaleCars(String keyword);
+	List<SellerCar> findSellerCarById(int sellerId);
 }

@@ -54,6 +54,13 @@
 	    	<result property="manufacturer" column="manufacturer"></result>
 	    </association>	    	    
     </resultMap>
+    <resultMap type="com.icss.pojo.CarInfo" id="rmCarAllName">
+    	<result property="CarId" column="CarId"/>
+	    <result property="PId" column="PId"/>
+    	<result property="carBrand" column="carBrand"/>
+    	<result property="carseries" column="carseries"/>
+    	<result property="carName" column="carName"/>
+    </resultMap>
     
     
     <!-- 查询
@@ -61,6 +68,7 @@
         select * from course_info_demo
     </select>
      -->
+   
     <select id="findCarByCarName" parameterType="String" 
         resultMap="rmCarinfo">
     	select *from Carinfo ci where ci.carName like #{carName}  
@@ -93,9 +101,19 @@
     <!-- 查找参数配置 -->
     <select id="findParametersConfigById" parameterType="int" 
         resultType="com.icss.pojo.ParametersConfig">
-    	select *from ParametersConfig pc where pc.parametersConfigId = #{parametersConfigId}  
+    	select *from sys.ParametersConfig pc where pc.parametersConfigId = #{parametersConfigId}  
     </select>
     
+     <select id="findCarById" parameterType="int" 
+        resultMap="rmCarinfo">
+    	select *from Carinfo ci where ci.CarId like #{CarId}  
+    </select>
     
+    <select id="findCarAllNameById" parameterType="int" 
+        resultMap="rmCarAllName" >
+        select c1.carname as carBrand,c2.carname as carseries,c3.carname as carName
+        from carinfo c1,carinfo c2,carinfo c3 
+        where c1.carid = c2.pid and c2.carid = c3.pid and c3.carid = #{CarId}
+    </select>
 
 </mapper>

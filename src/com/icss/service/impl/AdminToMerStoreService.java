@@ -34,7 +34,7 @@ public class AdminToMerStoreService implements IAdminService {
 		//System.out.println(merchantsStore.getTel());
 		int allRecord = 0;//总页数
 		int pageSize = 1;
-		int count = (page-1)*size+1;   //page=2 即第二页，即从第5个开始找
+		int count = (page-1)*size;   //page=2 即第二页，即从第5个开始找
 		List<MerchantsStore> list = merchantsStoreDao.findMerchantsStore(merchantsStore);
 		allRecord = list.size();
 		pageSize = allRecord / size + 1;
@@ -52,7 +52,7 @@ public class AdminToMerStoreService implements IAdminService {
 		int allRecord = 0;//总页数
 		int pageSize = 1;
 		
-		int count = (page-1)*size+1;   //page=2 即第二页，即从第5个开始找
+		int count = (page-1)*size;   //page=2 即第二页，即从第5个开始找
 		List<MerchantsStore_audit> list = merchantsStoreDao_auditDao.findMerchantsStore_audit();
 		System.out.println("查询审核");
 		allRecord = list.size();
@@ -74,7 +74,6 @@ public class AdminToMerStoreService implements IAdminService {
 		if ("通过".equals(applyState)) {
 			int count = merchantsStoreDao_auditDao.updateApplyState(merchantsStore_audit);
 			// 把一个这个商家查出来
-			System.out.println("111111111111");
 			List<MerchantsStore_audit> list = merchantsStoreDao_auditDao
 					.findMerchantsStore_auditById(merchantsStore_audit);
 			// 把这个查出来的数据遍历出来放到merchantsStore中，因为通过审核表肯定只有一个数据
@@ -107,6 +106,12 @@ public class AdminToMerStoreService implements IAdminService {
 	public Map<String, Object> findAllSaleCar(String keyword, Integer page, Integer size) {
 		// TODO Auto-generated method stub
 		System.out.println("进入service");
+		return null;
+	}
+
+	@Override
+	public Map<String, Object> findCarDetail(int sellerCarId) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 

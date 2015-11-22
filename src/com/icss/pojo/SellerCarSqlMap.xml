@@ -12,6 +12,14 @@
 	    <result property="tel" column="tel"/>  
 	    <result property="carPlate" column="carPlate"/>
 	    <result property="saleState" column="saleState"/>
+	    <association property="carInfo" column="CarId"
+	    		javaType="com.icss.pojo.CarInfo" select="findCarInfoById">
+	    	<id property="CarId" column="CarId"></id>	
+        	<result property="PId" column="PId"></result>
+        	<result property="carName" column="carName"></result>
+        	<result property="carType" column="carType"></result>
+        	<result property="price" column="price"></result>  
+	    </association>
 	    <association property="seller" column="sellerId"
         		javaType="com.icss.pojo.Seller" select="findSellerById">
         	<id property="sellerId" column="sellerId"></id>	
@@ -27,19 +35,8 @@
         	<result property="dealerType" column="dealerType"></result> 
         	<result property="dealerAddress" column="dealerAddress"></result>        	
         </association>
-	    <association property="secondPrice" column="secondpriceid"
-        		javaType="com.icss.pojo.SecondPrice" select="findSecondPriceById">
-        	<id property="secondpriceid" column="secondpriceid"></id>	
-        	<result property="secondPrice" column="secondPrice"></result>
-        	<result property="km" column="km"></result>
-        	<result property="buyTime" column="buyTime"></result> 
-        	<association property="checkerInfo" column="checkerId" 
-        			javaType="com.icss.pojo.CheckerInfo" select="findCheckerInfoById">
-        		<id property="checkerId" column="checkerId"></id>	
-        		<result property="checkerName" column="checkerName"></result>
-        		<result property="checkerLevel" column="checkerLevel"></result>
-        		<result property="checkCar" column="checkCar"></result> 
-        	</association>      	
+	    <association property="secondPrice" column="secondpriceid" 
+        		javaType="com.icss.pojo.SecondPrice" select="findSecondPriceById" >    	
         </association>	
 	    <association property="image" column="imageId" 
         		javaType="com.icss.pojo.Image" select="findImageById">
@@ -57,10 +54,23 @@
 	    	<result property="maintenance" column="maintenance"></result>
 	    </association>    
     </resultMap>
+    <resultMap type="com.icss.pojo.SecondPrice" id="rmSecondPrice">
+         	<id property="secondpriceid" column="secondpriceid"></id>	
+        	<result property="secondPrice" column="secondPrice"></result>
+        	<result property="km" column="km"></result>
+        	<result property="buyTime" column="buyTime"></result> 
+        	<association property="checkerInfo" column="checkerId" 
+        			javaType="com.icss.pojo.CheckerInfo" select="findCheckerInfoById">
+        		<id property="checkerId" column="checkerId"></id>	
+        		<result property="checkerName" column="checkerName"></result>
+        		<result property="checkerLevel" column="checkerLevel"></result>
+        		<result property="checkCar" column="checkCar"></result> 
+        	</association>      	   
+    </resultMap>
     
     
-    <select id="findSaleCar"  resultMap="rmSellerCar">
-    	select *from sys.SELLERCAR sc 
+    <select id="findSaleCars"  resultMap="rmSellerCar">
+    	select *from sys.SELLERCAR sc where sc.AUDITSTATE = '通过'
     </select>
     
     <select id="findSellerById" parameterType="int" resultType="com.icss.pojo.Seller">
@@ -70,12 +80,12 @@
     	select *from sys.MerchantsStore ms where ms.store_id = #{store_id}
     </select>
     
-    <select id="findSecondPriceById" parameterType="int" resultType="com.icss.pojo.SecondPrice">
+    <select id="findSecondPriceById" parameterType="int" resultMap="rmSecondPrice">
     	select *from sys.SecondPrice sp where sp.secondpriceid = #{secondpriceid}
     </select>    
     
     <select id="findCheckerInfoById" parameterType="int" resultType="com.icss.pojo.CheckerInfo">
-    	select *from sys.CheckerInfo ci where ci.checkerId = #{checkerId}
+    	select *from sys.CheckerInfo ck where ck.checkerId = #{checkerId}
     </select>  
     
     <select id="findImageById" parameterType="int" resultType="com.icss.pojo.Image">
@@ -84,5 +94,13 @@
     
     <select id="findProcedureInfoById" parameterType="int" resultType="com.icss.pojo.ProcedureInfo">
     	select *from sys.ProcedureInfo pi where pi.procedureId = #{procedureId}
-    </select>            
+    </select> 
+    
+    <select id="findCarInfoById" parameterType="int" resultType="com.icss.pojo.CarInfo">
+    	select *from CarInfo ci where ci.CarId = #{CarId}
+    </select>   
+    
+    <select id="findSellerCarById" parameterType="int" resultMap="rmSellerCar">
+    	select *from sys.SELLERCAR sc where sc.sellerCarId = #{sellerCarId}
+    </select>     
  </mapper>

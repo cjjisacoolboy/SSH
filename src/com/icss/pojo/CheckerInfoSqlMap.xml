@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icss.dao.ICheckerDao">
+    <!-- <resultMap type="com.icss.pojo.Stuinfo" id="rmStuinfo"> -->
+    <resultMap type="com.icss.pojo.CheckerInfo" id="rmCheckerInfo">
+        <!-- 将实体类中的属性与数据库中的字段对应 -->
+        <result property="checkerId" column="checkerId"/>
+	    <result property="checkerName" column="checkerName"/>
+	    <result property="checkerLevel" column="checkerLevel"/>
+	    <result property="checkCar" column="checkCar"/>  
+	    <result property="checkTime" column="checkTime"/>
+	    	    
+    </resultMap>
+    
+    <select id="findCheckerById" parameterType="int" resultMap="rmCheckerInfo">
+    	select *from sys.CheckerInfo ci where ci.checkerId = #{checkerId}
+    </select>
+</mapper>

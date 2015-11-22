@@ -47,7 +47,7 @@
 				    		$('#showtable').append("<tr><td>商家姓名</td><td>商家手机</td>"+
 				    						"<td>公司名</td><td>经销商类型</td>"+
 				    						"<td>地址</td><td>操作</td></tr>");	
-				    		for (var i = count;i < rows.length;i ++) {
+				    		for (var i = count; i < rows.length;i ++) {
 				   				$('#showtable').append("<tr><td>"+rows[i].businessName+"</td>"+
 				   						"<td>"+rows[i].tel+"</td><td>"+rows[i].companyName+"</td>"+
 				   						"<td>"+rows[i].dealerType+"</td><td>"+rows[i].dealerAddress+"</td>"+

@@ -55,6 +55,7 @@
 	</bean>
 	<bean id="adminToSaleCarService" class="com.icss.service.impl.AdminToSaleCarService">
 		<property name="sellerCarDao" ref="sellerCarDao"></property>
+		<property name="carDao" ref="carDao"></property>
 	</bean>
 
 </beans>

@@ -60,30 +60,48 @@
     			<param name="contentType">text/html</param>
     		</result>
     	</action>
-     
+     	<!-- 搜索器的 -->
     	<action name="searchSaleCarAction" class="com.icss.action.SearchSaleCarAction">
     		<result type="json">
     			<param name="root">map</param>
     			<param name="contentType">text/html</param>
     		</result>	
     	</action>
+    	<!-- 查找商铺 -->
     	<action name="findMerStoreAction" class="com.icss.action.FindMerStoreAction">
     		<result type="json">
     			<param name="root">map</param>
     			<param name="contentType">text/html</param>
     		</result>	
     	</action>
+    	<!-- 查询商铺审核 -->
     	<action name="findMerStore_auditAction" class="com.icss.action.FindMerStore_auditAction">
     		<result type="json">
     			<param name="root">map</param>
     			<param name="contentType">text/html</param>
     		</result>	
     	</action>
+    	<!-- 修改审核 -->
     	<action name="doMer_auditAC" class="com.icss.action.DoMer_auditAction">
             <result type="json">
     			<param name="root">map</param>
     			<param name="contentType">text/html</param>
     		</result>	
         </action>
+        <!-- 查询卖车信息 -->
+    	<action name="findAllsaleCarsAction" class="com.icss.action.FindAllsaleCarsAction">
+            <result type="json">
+    			<param name="root">map</param>
+    			<param name="contentType">text/html</param>
+    		</result>	
+        </action>
+        <!-- 查询卖车的详细信息 --> 
+        <action name="findSalCarDetailAction" class="com.icss.action.FindSalCarDetailAction">
+            <result type="json">
+    			<param name="root">map</param>
+    			<param name="contentType">text/html</param>
+    		</result>	
+        </action>
+        
     </package>
 </struts>

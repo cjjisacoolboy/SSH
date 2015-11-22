@@ -30,7 +30,7 @@
 			<if test="businessName!=null">
 				and ms.businessName = '${businessName}'
 			</if>
-			<if test="tel != 0">
+			<if test="tel != null">
 				and ms.tel = ${tel}
 			</if>
 			<if test="companyName != null">
