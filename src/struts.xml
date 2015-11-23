@@ -31,7 +31,47 @@
     			<param name="contentType">text/html</param>
     		</result>	
     	</action>
+    	
 	</package>
+	
+	<!-- ly -->
+	<package name="testdemo" namespace="/testdemo" extends="struts-default">
+    	 <!-- 前台商家申请action -->	
+		 <action name="merchantsapplyAction" class="com.icss.action.MerchantsapplyAction">
+            <result>/index.jsp</result>
+        </action>
+        <!-- 查询员工全部信息 action-->
+        <action name="empAction" class="com.icss.action.EmpAction">
+        	<result>/Admin/employeeInfo.jsp</result>
+        </action>
+        <!-- 查询员工的某一条元素action -->
+        <action name="empAction1" class="com.icss.action.EmpAction" method="oneEmp">
+        	<result>/Admin/modifyEmployeeinfo.jsp</result>
+        </action>
+        
+        <!-- 修改某一条员工信息 action-->
+        <action name="empAction2" class="com.icss.action.EmpAction" method="updateEmp">
+			<result>/Admin/success.jsp</result>        
+        </action>
+        
+         <action name="CheckerAction" class="com.icss.action.EmpAction" method="oneEmp">
+        	<result>/Admin/checkerDetial.jsp</result>
+        </action>
+      
+	</package>
+	
+	<package name="JsonAction" namespace="/JsonAction" extends="json-default">
+		  <!-- 删除某个员工 -->
+        <action name="empAction3" class="com.icss.action.EmpAction" method="deleteEmp">
+        <result type="json">
+        	<param name="root">map</param>
+        	<param name="contentType">text/html</param>
+        </result> 
+        </action>
+        
+        
+	</package>
+	
     <!-- Add packages here -->
-
+		
 </struts>

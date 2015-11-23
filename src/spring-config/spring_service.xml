@@ -21,7 +21,7 @@
            <tx:method name="edit*" propagation="REQUIRED" />
            <tx:method name="delete*" propagation="REQUIRED" />
            <tx:method name="update*" propagation="REQUIRED" />
-      
+      	   <tx:method name="insert*" propagation="REQUIRED" />
        </tx:attributes>
     </tx:advice>
      <!-- 配置事务切面 -->
@@ -33,13 +33,20 @@
     </aop:config>
     
 	<bean id="testService" class="com.icss.service.impl.TestService">
-		<property name="testDao" ref="testDao"></property>
+		<property name="carDao" ref="carDao"></property>
 	</bean>
 	
 	<bean id="visitorService" class="com.icss.service.impl.VisitorService">
 		<property name="carDao" ref="carDao"></property>
 	</bean>
+	<!-- ly -->
+	<bean id="businessService" class="com.icss.service.impl.BusinessService">
+		<property name="businessDao" ref="businessDao"></property>
+	</bean>
 	
-	
+	<bean id="adminService" class="com.icss.service.impl.AdminService">
+		<property name="empDao" ref="empDao"></property>
+	</bean>
+	 
 
 </beans>

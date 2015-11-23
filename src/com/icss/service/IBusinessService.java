@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.icss.pojo.CarInfo;
 import com.icss.pojo.MerchantsStore;
+import com.icss.pojo.MerchantsStore_audit;
 import com.icss.pojo.SellerCar;
 import com.icss.pojo.UserCollect;
 
@@ -18,7 +19,7 @@ public interface IBusinessService extends IVisitorService{
 	public List<SellerCar> findSellerCar(MerchantsStore merchantsStore);
 	//商家可以修改自己的密码
 	public int updateUser(MerchantsStore merchantsStore);
-	
-	
+	//ly
+	public int insertMerchants(MerchantsStore_audit merchantsStore_audit);
 	
 }

@@ -5,17 +5,34 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.icss.dao.ICarDao;
 import com.icss.dao.ITestDao;
 import com.icss.dao.impl.TestDao;
 import com.icss.pojo.CarInfo;
 import com.icss.pojo.test.Course_info;
 import com.icss.service.ITestService;
+import com.opensymphony.xwork2.ActionContext;
 
 public class TestService implements ITestService {
 	private ITestDao testDao;
 	private Map<String,Object>map = new HashMap<String,Object>();
 	private CarInfo carInfo;
+	private ICarDao carDao;
+	private List<CarInfo> list;
 	
+	
+	public List<CarInfo> getList() {
+		return list;
+	}
+
+	public void setList(List<CarInfo> list) {
+		this.list = list;
+	}
+
+	public void setCarDao(ICarDao carDao) {
+		this.carDao = carDao;
+	}
+
 	public void setMap(Map<String, Object> map) {
 		this.map = map;
 	}
@@ -35,18 +52,24 @@ public class TestService implements ITestService {
 	}
 	@Override
 	public Map<String,Object> findCar(String keyword) {
-		String findword = keyword+"%";
+		String findword = "%"+ keyword+"%";
 		//carInfo.setCarName(findword);
-		List<CarInfo> list = new ArrayList<CarInfo>();
+		//List<CarInfo> list = new ArrayList<CarInfo>();
 		// TODO Auto-generated method stub
-		list = testDao.findCarByCarName(findword);
+		//list = testDao.findCarByCarName(findword);
 		//list = (List<CarInfo>) map.get("list");
-		int listSize = list.size();
-		System.out.println(listSize);
-		if(0 == listSize){
-			list = testDao.findCarByCarType(findword);
-		}
-		map.put("list",list);
+		System.out.println("Ω¯»Î¡Àservive");
+		list = carDao.findId(findword);
+		System.out.println("s:"+list.size());
+		ActionContext ac = ActionContext.getContext();
+		ac.put("list", list);
+		System.out.println("ac:"+ac);
+//		int listSize = list.size();
+//		System.out.println(listSize);
+//		if(0 == listSize){
+//			list = testDao.findCarByCarType(findword);
+//		}
+//		map.put("list",list);
 		return map;
 	}
 

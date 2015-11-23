@@ -21,4 +21,30 @@
 	<bean id="searchSaleCarAction" class="com.icss.action.SearchSaleCarAction">
 		<property name="visitorService" ref="visitorService"></property>
 	</bean>
+	<!-- ly -->
+	<bean id="merchantsapplyAction" class="com.icss.action.MerchantsapplyAction">
+		<property name="businessService" ref="businessService"></property>
+	</bean>
+	<!-- 查询全部员工的bean -->
+	<bean id="empAction" class="com.icss.action.EmpAction">
+		<property name="adminService" ref="adminService"></property>
+	</bean>
+	<!-- 查询某一个员工的bean -->
+	<bean id="empAction1" class="com.icss.action.EmpAction">
+		<property name="adminService" ref="adminService"></property>
+	</bean>
+	<!-- 修改bean  -->
+	<bean id="empAction2" class="com.icss.action.EmpAction">
+		<property name="adminService" ref="adminService"></property>
+	</bean>
+	<!-- 删除bean  -->
+	<bean id="empAction3" class="com.icss.action.EmpAction">
+		<property name="adminService" ref="adminService"></property>
+	</bean>
+	
+	<bean id="CheckerAction" class="com.icss.action.EmpAction">
+		<property name="adminService" ref="adminService"></property>
+	
+	</bean>
+	
 </beans>

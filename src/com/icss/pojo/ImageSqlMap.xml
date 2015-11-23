@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+     <mapper namespace="com.icss.dao.IImageDao">
+    	
+    	<resultMap type="com.icss.pojo.Image" id="rmimageinfo">
+	        <!-- 将实体类中的属性与数据库中的字段对应 -->
+	        <result property="imageId" column="imageId"/>
+		    <result property="imageSrc" column="imageSrc"/>    
+		  
+	    </resultMap>
+    
+    	 <select id="findImageById" parameterType="String" resultType="com.icss.pojo.Image">
+	    	select * from sys.Image where imageId = #{imageId}
+	    </select>
+    
+    
+     </mapper>
