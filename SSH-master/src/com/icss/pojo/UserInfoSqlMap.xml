@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icss.dao.ICarDao">
+    <!-- <resultMap type="com.icss.pojo.Stuinfo" id="rmStuinfo"> -->
+    <resultMap type="com.icss.pojo.UserInfo" id="rmUserinfo">
+        <!-- 将实体类中的属性与数据库中的字段对应 -->
+        <result property="userId" column="userId"/>
+	    <result property="account" column="account"/>
+	    <result property="password" column="password"/>
+	    <result property="role" column="role"/>       	    
+    </resultMap>
+    
+    
+    <!-- 查询
+    <select id="selectAll" resultMap="rmCourse_info">
+        select * from course_info_demo
+    </select>
+     -->
+    
+    <select id="findUser" parameterType="com.icss.pojo.UserInfo" 
+        resultMap="rmUserinfo">
+    	select *from Carinfo ci where ci.carName like #{carName}  
+    </select>
+
+</mapper>

@@ -38,6 +38,7 @@
 	
 	<bean id="visitorService" class="com.icss.service.impl.VisitorService">
 		<property name="carDao" ref="carDao"></property>
+		<property name="userDao" ref="userDao"></property>
 	</bean>
 	
 	

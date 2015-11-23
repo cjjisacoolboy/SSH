@@ -33,6 +33,12 @@
     		</result>	
     	</action>
 	</package>
+	<!-- CJJ -->
+	<package  name="cjj" namespace="/cjj" extends="struts-default">
+		<action name="loginAction" class="com.icss.action.LoginAction">
+			<result>index/index.jsp</result>
+		</action>
+	</package>
     <!-- Add packages here -->
 
 </struts>

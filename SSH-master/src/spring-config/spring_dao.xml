@@ -9,7 +9,7 @@
            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 
            http://www.springframework.org/schema/aop 
            http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
-    <!-- 登录的spring 
+    <!-- 测试的Dao 
     <bean id="testDao" class="com.icss.dao.impl.TestDao">
     	<property name="jt" ref="jt"></property>
     </bean>   
@@ -20,6 +20,12 @@
     </bean>
     <bean id="carDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
         <property name="mapperInterface" value="com.icss.dao.ICarDao"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
+    
+    <!-- 登录的Dao -->
+    <bean id="userDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
+        <property name="mapperInterface" value="com.icss.dao.IUserDao"></property>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
     </bean>
 </beans>

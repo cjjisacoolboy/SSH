@@ -9,7 +9,7 @@
            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 
            http://www.springframework.org/schema/aop 
            http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
-    <!-- 登录的spring -->
+    
  
 	<bean id="testAction" class="com.icss.action.TestAction">
 		<property name="visitorService" ref="visitorService"></property>
@@ -19,6 +19,10 @@
 		<property name="testService" ref="testService"></property>
 	</bean>
 	<bean id="searchSaleCarAction" class="com.icss.action.SearchSaleCarAction">
+		<property name="visitorService" ref="visitorService"></property>
+	</bean>
+	<!-- 登录的spring -->
+	<bean id="loginAction" class="com.icss.action.LoginAction">
 		<property name="visitorService" ref="visitorService"></property>
 	</bean>
 </beans>

@@ -709,15 +709,13 @@ b.star-half{background:url(http://imgs.xin.com/xin/images/shop/shop_icon.png) no
 .scon-wrap .s-btn a.sale{display:inline-block;width:140px;height:46px;font:normal 20px/46px "Microsoft YaHei";color:#fff;text-align:center;background:#ff5837;border-radius:4px;-webkit-border-radius:4px;}
 .scon-wrap .s-btn a.ass{display:inline-block;width:138px;height:44px;margin-left:28px;border:1px solid #b1ada3;font:normal 20px/44px "Microsoft YaHei";color:#68655c;border-radius:4px;-webkit-border-radius:4px;}
 /* 卖车页-新*/
-.scar-head{width:100%;height:360px;min-width:1100px;background:url(http://imgs.xin.com/xin/images/sale/banner.png) no-repeat center;}
+.scar-head{width:100%;height:360px;min-width:1100px;background:url(../images/banner.jpg) no-repeat center;}
 
 /* 卖车页详情*/
 .sale-icon{background:url(http://imgs.xin.com/xin/images/sale/sale_icon.png) no-repeat;}
-.sale-bg{background:url(http://imgs.xin.com/xin/images/sale/sale_bg.jpg) center no-repeat;width:100%;min-width:1100px;height:380px;position:absolute;left:0;}
+.sale-bg{background:url(../images/sell/background.png) center no-repeat;width:100%;min-width:1100px;height:380px;position:absolute;left:0;}
 .sale-title{padding:70px 60px 0 60px;height:310px;}
-.sale-title .video{height:310px;width:535px;background:url(http://imgs.xin.com/xin/images/sale/sale_video_bg.png);position:relative;cursor:pointer;}
-.sale-title .video b{position:absolute;display:block;width:88px;height:88px;top:50%;left:50%;margin-top:-44px;margin-left:-44px;background:url(http://imgs.xin.com/xin/images/sale/button.png) 0 1px;cursor:pointer;z-index:2;}
-.sale-title .video:hover b{background:url(http://imgs.xin.com/xin/images/sale/button.png) 0 -130px;}
+.sale-title .video{height:310px;width:535px;background:url(../images/payhalf/video_bg.png);position:relative;cursor:pointer;}
 .sale-title .video .vjs-default-skin,.sale-title .video img{position:absolute;left:65px;top:20px;}
 .sale-title .tips{height:310px;width:420px;display:inline;}
 .sale-title .tips .tips-msg{height:155px;width:200px;float:left;position:relative;}
@@ -953,7 +951,7 @@ b.star-half{background:url(http://imgs.xin.com/xin/images/shop/shop_icon.png) no
 
 
 /*商家APP下载页*/
-.SjBg{background:url("http://imgs.xin.com/xin/images/download/banner_bg.jpg") repeat;}
+.SjBg{background:url(../images/app/mappbg.jpg) repeat;}
 .SjDown{width:940px;height:100%;position:relative;margin:0 auto;}
 .SjDown .LeftImg{width:348px;position:absolute;left:0;top:0;}
 .SjDown .d1{width:348px;top:50%;margin-top:-260px;}
@@ -1085,7 +1083,7 @@ b.star-half{background:url(http://imgs.xin.com/xin/images/shop/shop_icon.png) no
 .btm-price{height:190px;width:390px;display:block;position:fixed;left:0;top:50%;margin-top:-95px;margin-left:-342px;}
 
 /*帮助中心*/
-.help-center,.mcar-center{margin:20px auto;width:1100px;border:1px solid #e4e4e4;border-radius:6px;}
+.help-center,.mcar-center{margin:20px auto;width:800px;border:1px solid #e4e4e4;border-radius:6px;}
 .help-center .left,.mcar-center .left{float:left;width:200px;border-right:1px solid #e4e4e4;position:relative;background:#f7f7f7;}
 .help-center .left h2,.mcar-center .left h2{position:absolute;left:41px;top:-1px;background:url(http://imgs.xin.com/xin/images/help/centerbg.png) no-repeat 0 0;width:93px;height:41px;font:16px/41px "Microsoft YaHei";color:#fff;text-align:center;}
 .help-center .left ul.list{margin:60px 20px 0;border-top:1px solid #e5e5e5;}
@@ -1138,7 +1136,7 @@ body.subject{background:#f4f4f4;}
 .subject-wrap .nav-wrap{position:relative;margin:0 auto;width:1100px;height:45px;overflow:hidden;}
 .subject-wrap .nav-wrap li{_display:inline;float:left;width:160px;font:normal 18px/45px "Microsoft YaHei";text-align:center;color:#fff;cursor:pointer;}
 .subject-wrap .nav-wrap li.active{background:url(http://imgs.xin.com/xin/images/subject/subject_ico.png) no-repeat 0 -573px;color:#fff;}
-.activity-banner-wrap{background:url(http://imgs.xin.com/xin/images/subject/banner.jpg) no-repeat center center;height:400px;width:100%;}
+.activity-banner-wrap{background:url(../images/hot/banner.png) no-repeat center center;height:400px;width:100%;}
 .activity-banner-wrap02{background:url(http://imgs.xin.com/xin/images/subject/activity_banner02.jpg) no-repeat center center;}
 .activity-banner{position:relative;width:1100px;margin:0 auto;}
 .panic-tip{position:absolute;top:27px;left:5px;background:url(http://imgs.xin.com/xin/images/subject/panic_bg.png) no-repeat 0 0;padding:0 6px;height:350px;width:300px;color:#fff;text-align:center;}
@@ -1240,20 +1238,13 @@ body.subject{background:#f4f4f4;}
 .car-extend-pic .top .title p em{color:#ff5837;}
 
 /*付一半-新banner页*/
-.half-price-wrap .banner{width:100%;height:300px;background:#fad386;}
+.half-price-wrap .banner{ right: ;100px; margin: 50px;width:100%;height:300px;background:#fad386;}
 .half-price-wrap .banner .main{width:1100px;height:300px;margin:0 auto;position:relative;}
-.half-price-wrap .banner .video{width:523px;height:277px;background:url(http://imgs.xin.com/xin/images/half/video_bg.png) no-repeat;position:absolute;bottom:0;left:100px;}
-.half-price-wrap .banner .video img{position:absolute;left:100px;top:18px;}
-.half-price-wrap .banner .video b{display:block;width:88px;height:88px;cursor:pointer;background:url(http://imgs.xin.com/xin/images/sale/button.png) no-repeat 0 1px;position:absolute;left:236px;top:86px;}
-.half-price-wrap .banner .video:hover b{background: url(http://imgs.xin.com/xin/images/sale/button.png) no-repeat 0 -130px;}
-.half-price-wrap .banner .video .video-js{position:absolute;left:100px;top:18px;}
 .half-price-wrap .banner .txt{height:277px;width:380px;position:absolute;bottom:0;right:0;}
 .half-price-wrap .banner .txt h1{font:normal 20px/30px "Microsoft Yahei";color:#ff5837;margin-bottom:20px;}
 .half-price-wrap .banner .txt li{font:normal 14px/30px "Microsoft YaHei";color:#555;text-indent:45px;background:url(http://imgs.xin.com/xin/images/half/list_icon.png) no-repeat 24px center;}
 .half-price-wrap .banner .txt a{display:block;height:40px;width:180px;background:url(http://imgs.xin.com/xin/images/half/hnew_icon.png) no-repeat 0 -782px;font:normal 16px/40px "Microsoft YaHei";margin-top:15px;margin-left:24px;text-indent:48px;color:#fff;}
 
-/*20150128更新 落地推广位*/
-.car-extend-pic{width:1100px;margin:0 auto;}
 
 /*20150429更新 付一半外链*/
 .car-extend-pic img.pic-tit{margin-top:20px;}
@@ -1455,14 +1446,7 @@ body.subject{background:#f4f4f4;}
 .commit-wrap .commit-con .tips p{font:normal 24px/30px "Microsoft Yahei";color:#b9913e;}
 .commit-wrap .commit-con .tips span{font:normal 30px/50px "Microsoft Yahei";color:#b9913e;}
 
-/*.commit-wrap h3{font:normal 24px/40px "Microsoft YaHei";color:#333;border-bottom:1px solid #e5e5e5;margin-top:60px;}
-.commit-wrap h3 img{float:right;margin:0;}
-.commit-wrap p,.commit-wrap .txt{font:normal 14px/18px "Microsoft YaHei";color:#666;margin-top:20px;}
-.commit-wrap p{height:18px;}
-.commit-wrap .txt{height:36px;}
-.commit-wrap em{display:inline-block;height:18px;width:20px;float:left;}
-.commit-wrap span{display:inline-block;float:left;width:760px;}
-.commit-wrap img{margin:20px 0 0 20px;}*/
+
 
 /*新版热门活动二手车百科*/
 .newer-wrap{position:relative;}
