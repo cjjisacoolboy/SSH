@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>详细页面</title>
+		<link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+		<link href="../css/base.css" rel="stylesheet" type="text/css">
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
+		<link href="../css/popup.css" rel="stylesheet" type="text/css">
+		<link href="../css/page.css" rel="stylesheet" type="text/css">
+		<script src="../js/jquery-2.1.4.min.js" type="text/javascript" language="JavaScript"></script>
+	</head>
+	<body>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-16
+        	描述：导航栏
+        -->
+	    <div class="fixed-head-wrap">
+	        <div class="fixed-head rel">
+			    <a href="../index/index.html" class="fixed-logo"></a><!-- logo点击连接 -->          
+					<h1>二手车</h1>
+					<dl class="select-city fixed-city abs" id="citySelect">
+				        <dt id='current_city_id'>长沙</dt>
+				        <dd id="cityWrap">
+					<!--
+                    	添加城市列表
+                    -->
+			            </dd>
+			        </dl>
+		        <ul class="nav-list fixed-list abs">       
+				    <li><a class="active" href="../buy/buycar.html">买车</a></li>
+					<li><a class="" href="../sell/sell.html">卖车</a></li>
+					<li class="rel" class='php_li_half' id="li_halfprice" style="display:block"><a id='php_half_city_link' href="">付一半</a><b class="ico hot-ico abs"></b></li>				
+					<li><a class="" href="">热门活动</a></li>
+					<li><a href="" class="" rel="nofollow">服务保障</a></li>
+					<li><a href="" target="_blank"><b class="ico app-ico fl" rel="nofollow"></b>下载App</a></li>
+					<li><a href="" id="apply_dealer" class="apply" target="_blank">商家申请</a></li>
+					<li id="xin_top_userinfo" sname="" >
+						<div class="person-wrap" style="top:0px;" >
+							<a href="javascript:clear_invalid();show_popup('#popupLogin','#popupLogin .closeJs');" id="loginA">登录</a>/<a href="" id="regA" rel="nofollow">注册</a>
+						</div>
+					</li>
+				</ul>
+	  		</div>
+		 </div>
+		 <!--
+         	作者：455984146@qq.com
+         	时间：2015-11-23
+         	描述：主体
+         -->
+        <div class="car-detail-wrap ">
+        	<!--
+            	作者：455984146@qq.com
+            	时间：2015-11-23
+            	描述：状态栏
+            -->
+			<div class="car-tit">
+				<p>
+					<a href="http://www.iwant.com">首页&gt;</a><a href="http://www.xin.com/changsha/s/">长沙二手车&gt;</a><a href="http://www.xin.com/changsha/s/b145/">二手马自达&gt;</a><a href="http://www.xin.com/changsha/s/s1051/">二手马自达睿翼&gt;</a><em>马自达 睿翼 2010款 2.0 手动</em>
+					<span>发布：170天前</span>
+				</p>
+			</div>
+			<!--
+            	作者：455984146@qq.com
+            	时间：2015-11-23
+            	描述：车辆详细信息
+            -->
+			<div class="main">
+				<div class="car-detail">
+					<div class="d-box clearfix">
+						<div class="d-tit">
+							<div class="tit">
+								<img src="http://imgs.xin.com/xin/images/brand-100/b_145.png">
+								<h1>马自达 睿翼 2010款 2.0 手动</h1>
+							</div>
+							<div class="day-pic">
+								<a target="_blank" href="http://www.xin.com/no_accident/"><img width="138" height="78" src="http://imgs.xin.com/xin/images/car-detail/promise_xico.png"></a>
+							</div>
+						</div>
+						<div data-index="0" class="d-photo img-album">
+							<!--a href="javascript:void(0)"><img width="576px" height="384px" data-original="http://imgc.xin.com/xin/201506/0515/557154b831e88792379_19.jpg" class='lazy'  src="http://imgs.xin.com/xin/images/car-detail/grey.gif"></a-->
+							<a href="javascript:void(0)"><img width="576px" height="384px" src="http://imgc.xin.com/xin/201506/0515/557154b831e88792379_19.jpg"></a>
+							<b class="btn-ads">长沙</b> <a class="btn-photo">图集(16)</a>
+						</div>
+						<div class="d-list">
+							<div class="info">
+								<div class="twotit">
+									<div class="money">
+										<div class="wan_1">
+											<em>￥9.80万</em>
+											<span>(含过户费)</span>
+										</div>
+										<div class="wan_2">
+											<span>¥<del>19.19</del>万</span>
+											<em>当时购入价格(含税)</em>
+										</div>
+									</div>
+									<p>同型新车已停产</p>
+								</div>
+								<ul class="contit">
+									<li class="br"><span>上牌时间</span><em>2010-01</em></li>
+									<li class="br"><span>表显里程</span><em>9.00万公里</em></li>
+									<li class="br"><span>排量</span><em>2.0L</em></li>
+									<li><span>销售城市</span><em>长沙</em></li>
+								</ul>
+								<div class="tel">
+									<span>电话咨询 400-9287-666转18344</span>
+									<a id="btnTel" class="btn-tel" href="">免费电话</a>
+									<div style="display:none;" id="freeTel" class="free_con_div">
+										<b class="d-icon"></b>
+										<div class="tcon">
+											<p>请输入您的手机号，便可与商家免费通话。您将收到010-10106088的来电，请注意接听。</p>
+											<input type="text" id="free_mobile" value="请输入手机号" class="ipt-box">
+											<input type="text" id="piccode_c" value="请输入图片码" class="code">
+											<a class="PageNum"><img id="vcodeimg_c" src="http://www.xin.com/register/get_vcode/"></a>
+											<a class="pop-tel" href="javascript:void(0)" id="free_tel_click">确定</a>
+											<em>服务时间：8:00-22:00</em>
+										</div>
+									</div>
+								</div>
+								<div class="company">
+									<p>看车地点：</p>
+									<p>湖南省长沙市开福区万家丽北路月湖大市场旁</p>
+									<a target="_blank" href="http://api.map.baidu.com/geocoder?address=%E6%B9%96%E5%8D%97%E7%9C%81%E9%95%BF%E6%B2%99%E5%B8%82%E5%BC%80%E7%A6%8F%E5%8C%BA%E4%B8%87%E5%AE%B6%E4%B8%BD%E5%8C%97%E8%B7%AF%E6%9C%88%E6%B9%96%E5%A4%A7%E5%B8%82%E5%9C%BA%E6%97%81&amp;output=html&amp;src=xin"
+									class="shop">[查看地图]</a>
+								</div>
+							</div>
+							<div style="position:relative" class="five-button">
+								<!--a href="javascript:;" name="carFavorite" data-css='click' data-carid='10322514' class="btn1 d-icon" onclick="hmt_add('follow',10322514)">收藏</a-->
+								<a onclick="hmt_add('follow',10322514)" class="btn1 d-icon" data-carid="10322514" data-css="click" name="carFavorite" href="javascript:;">收藏</a>
+								<div class="btn2">
+									<input type="checkbox" class="hidden-access" value="10322514" name="carCheck" id="carCheck_1">
+									<label class="state-default collect-ico" for="carCheck">
+										<span onclick="hmt_add('compare',10322514)" class="button-text">对比</span>
+									</label>
+								</div>
+								<div onmouseout="$('#ckepop').hide()" onmouseover="$('#ckepop').show();" class="s-friend">
+									<a onclick="hmt_add('share',10322514)" class="btn3 d-icon" href="javascript:;">让好友参谋</a>
+								</div>
+								<a id="telP" class="btn4 d-icon" href="javascript:void(0)">发送到手机</a>
+								<a id="warP" class="btn5 d-icon" href="javascript:void(0)">举报该车</a>
+							</div>
+							<!---->
+							<div id="weixin_share" style="position: fixed; z-index: 2147483647;display:none">
+								<div id="jiathis_weixin_modal" style="background-clip: padding-box;background-color: #FFFFFF;border: 1px solid rgba(0, 0, 0, 0.3);  border-radius: 6px 6px 6px 6px;  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); left: 50%; margin: -200px 0 0 -200px;overflow: hidden; position: fixed; top: 50%; width:360px;height:360px; overflow:hidden;"
+								class="jiathis_weixin_modal">
+									<div class="jiathis_modal_header" id="jiathis_modal_header" style="border-bottom: 1px solid #EEEEEE; padding: 9px 15px;">
+										<a style="text-decoration:none;  margin-top: 2px; color: #000000; float: right;  font-size: 20px;  font-weight: bold; cursor:pointer;line-height: 20px; opacity: 0.2; text-shadow: 0 1px 0 #FFFFFF;" class="" id="jiathis_weixin_close" onclick="$('#weixin_share').hide()"
+										target="_self">×</a>
+										<h3 id="title_word" style=" line-height: 30px; margin: 0; font-weight:normal; font-family:微软雅黑">分享到微信朋友圈</h3>
+									</div>
+									<div class="jiathis_modal_body" id="" style="text-align:center;height:251px;">
+										<p id="">
+											<img width="220" height="220" alt="二维码加载失败..." style="margin-top: 15px;" src="http://www.xin.com/car/qr/10322514/"></p>
+									</div>
+									<div class="" id="" style="border-radius: 0 0 6px 6px; border-top: 1px solid #DDDDDD; box-shadow: 0 1px 0 #FFFFFF inset; height:100%;padding:0 10px;padding-top:11px;text-align: right; font-size:12px;">
+										<div id="des_word" style="text-align:left;margin:0; padding:0;font-size:12px;">打开微信，点击底部的“发现”，使用“扫一扫”即可将网页分享到我的朋友圈。</div>
+									</div>
+								</div>
+							</div>
+			
+							<div onmouseout="$('#ckepop').hide()" onmouseover="$('#ckepop').show();" id="ckepop" style="display: none;" class="share-car">
+								<b class="d-icon"></b>
+								<p>分享到：</p>
+								<ul>
+									<li><a class="d-icon xl-ico " target="_blank" href="http://service.weibo.com/share/share.php?title=亲，帮我参谋下吧~二手马自达 睿翼 2010款 2.0 手动二手车 - 优信二手车&amp;url=http://www.xin.com/car/qr/10322514/&amp;source=bookmark&amp;appkey=&amp;pic=http%3A%2F%2Fimgc.xin.com%2Fxin%2F201506%2F0515%2F557154b831e88792379_19.jpg&amp;ralateUid=">新浪微博</a></li>
+									<li><a target="_blank" class="d-icon qq-ico " href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.xin.com/car/qr/10322514/&amp;title=亲，帮我参谋下吧~二手马自达 睿翼 2010款 2.0 手动二手车 - 优信二手车&amp;pics=http%3A%2F%2Fimgc.xin.com%2Fxin%2F201506%2F0515%2F557154b831e88792379_19.jpg&amp;summary=">QQ空间</a></li>
+									<li><a onclick="$('#title_word').html('分享到微信');$('#des_word').html('打开微信，点击底部的“发现”，使用 “扫一扫” 即可将网页分享到我的微信。');$('#weixin_share').show()" class="d-icon wx-ico ">微信好友</a></li>
+									<li><a onclick="$('#title_word').html('分享到朋友圈');$('#des_word').html('打开微信，点击底部的“发现”，使用 “扫一扫” 即可将网页分享到我的朋友圈。');$('#weixin_share').show()" class="d-icon pyq-ico " href="javascript:void(0)">朋友圈</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="d-file clearfix">
+						<h2 id="car-dang">配置亮点</h2>
+						<div class="configur">
+							<ul class="bt-dash">
+								<li class="mr60">
+									<img height="50" src="http://imgs.xin.com/xin/images/car-config-120/xin/cp_219.png" with="74">
+									<span>温度分区控制</span>
+								</li>
+								<li class="mr60">
+									<img height="50" src="http://imgs.xin.com/xin/images/car-config-120/xin/cp_97.png" with="74">
+									<span>腰部支撑调节</span>
+								</li>
+								<li class="mr60">
+									<img height="50" src="http://imgs.xin.com/xin/images/car-config-120/xin/cp_128.png" with="74">
+									<span>后视镜电动折叠</span>
+								</li>
+								<li class="mr60">
+									<img height="50" src="http://imgs.xin.com/xin/images/car-config-120/xin/cp_88.png" with="74">
+									<span>多功能方向盘</span>
+								</li>
+								<li class="mr60">
+									<img height="50" src="http://imgs.xin.com/xin/images/car-config-120/xin/cp_68.png" with="74">
+									<span>发动机电子防盗</span>
+								</li>
+								<li class="mr60">
+									<img height="50" src="http://imgs.xin.com/xin/images/car-config-120/xin/cp_72.png" with="74">
+									<span>ABS防抱死</span>
+								</li>
+								<li class="mr60">
+									<img height="50" src="http://imgs.xin.com/xin/images/car-config-120/xin/cp_73.png" with="74">
+									<span>制动力分配(EBD/CBC等)</span>
+								</li>
+								<li class="mr60">
+									<img height="50" src="http://imgs.xin.com/xin/images/car-config-120/xin/cp_74.png" with="74">
+									<span>刹车辅助(EBA/BAS/BA等)</span>
+								</li>
+			
+							</ul>
+							<!--<ul>
+										<li class="mr20">
+											<img src="http://imgs.xin.com/xin/images/car-detail/motor_pic0906.png">
+											<span>十佳发动机</span>
+											<a href="javascript:void(0)" id='topten_motor'>详情</a>
+										</li>
+																														</ul>-->
+						</div>
+					</div>
+					<div class="d-file clearfix">
+						<h2 class="d-report" id="car-dang">检测报告</h2>
+						<div class="test-report">
+							<div class="r-detail">
+								<div class="day">
+									<b class="cn-icon"></b>
+									<div class="test-txt">
+										<p>无重大事故<em>15天包退</em></p>
+										<ul>
+											<li>该车辆手续合法，无法律纠纷<span>（<a id="hfx" href="javascript:void(0)">查看具体检测项</a>）</span></li>
+											<li>车辆关键部件检测正常<span>（<a id="key" href="javascript:void(0)">查看具体检测项</a>）</span></li>
+											<li>发动机检测正常<span>（<a id="fdj" href="javascript:void(0)">查看具体检测项</a>）</span></li>
+											<li>无火烧事故<span>（<a id="test" href="javascript:void(0)">查看具体检测项</a>）</span></li>
+											<li>无水浸事故<span>（<a id="shui_jin" href="javascript:void(0)">查看具体检测项</a>）</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="test-people">
+								<ul>
+									<li><span>检测师：</span>李柯</li>
+									<li><span>级别：</span>资深车辆检测师</li>
+									<li><span>已检车辆：</span>3652辆</li>
+									<li><span>检测时间：</span>2015-07-30</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="d-file clearfix">
+						<h2 class="mov-60" id="car-dang">车辆信息<img src="http://imgs.xin.com/xin/images/car-detail/beiz_ico2.png?v=2015102813"></h2>
+						<div class="param clearfix">
+							<div class="msg fl">
+								<h3>手续状况</h3>
+								<table>
+									<tbody>
+										<tr>
+											<td>过户次数</td>
+											<td>一手车</td>
+										</tr>
+										<tr>
+											<td>使用性质</td>
+											<td>非营运</td>
+										</tr>
+										<tr>
+											<td>过户手续</td>
+											<td>代办</td>
+										</tr>
+										<tr>
+											<td>保险到期时间</td>
+											<td>2016-01-05</td>
+										</tr>
+										<tr>
+											<td>年检有效期</td>
+											<td>2016-01-01</td>
+										</tr>
+										<tr>
+											<td>保养情况</td>
+											<td>4S店定期</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="msg fr">
+								<h3>参数配置</h3>
+								<table>
+									<tbody>
+										<tr>
+											<td>变速箱</td>
+											<td>6挡手动</td>
+										</tr>
+										<tr>
+											<td>车辆颜色</td>
+											<td>其它</td>
+										</tr>
+										<tr>
+											<td>环保标准</td>
+											<td>欧IV+OBD</td>
+										</tr>
+										<tr>
+											<td>工信部综合油耗(L/100km)</td>
+											<td>7.8</td>
+										</tr>
+										<tr>
+											<td>驱动方式</td>
+											<td>前置前驱</td>
+										</tr>
+										<tr>
+											<td>生产厂商</td>
+											<td>一汽马自达</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div style="display:none" id="ulover">
+							<div class="param-unfold clearfix">
+								<h3>基本参数</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>官方0-100km/h加速(s)</td>
+												<td>10</td>
+											</tr>
+											<tr>
+												<td>最高车速(km/h)</td>
+												<td>205</td>
+											</tr>
+											<tr>
+												<td>长*宽*高(mm)</td>
+												<td>4755*1795*1440</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>发动机</td>
+												<td>2.0L 147马力 L4</td>
+											</tr>
+											<tr>
+												<td>级别</td>
+												<td>中型车</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>车身</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>行李厢容积(L)</td>
+												<td>519</td>
+											</tr>
+											<tr>
+												<td>油箱容积(L)</td>
+												<td>64</td>
+											</tr>
+											<tr>
+												<td>整备质量(kg)</td>
+												<td>1389</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>最小离地间隙(mm)</td>
+												<td>122</td>
+											</tr>
+											<tr>
+												<td>轴距(mm)</td>
+												<td>2725</td>
+											</tr>
+											<tr>
+												<td>车身结构</td>
+												<td>三厢车</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>发动机</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>供油方式</td>
+												<td>多点电喷</td>
+											</tr>
+											<tr>
+												<td>燃油标号</td>
+												<td>93号(京92号)</td>
+											</tr>
+											<tr>
+												<td>燃料形式</td>
+												<td>汽油</td>
+											</tr>
+											<tr>
+												<td>最大扭矩转速(rpm)</td>
+												<td>4000</td>
+											</tr>
+											<tr>
+												<td>最大扭矩(N·m)</td>
+												<td>184</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>最大功率转速(rpm)</td>
+												<td>6500</td>
+											</tr>
+											<tr>
+												<td>最大功率(kW)</td>
+												<td>108</td>
+											</tr>
+											<tr>
+												<td>进气形式</td>
+												<td>自然吸气</td>
+											</tr>
+											<tr>
+												<td>排量(mL)</td>
+												<td>1999</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>底盘转向</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>中央差速器结构</td>
+												<td>未知</td>
+											</tr>
+											<tr>
+												<td>四驱形式</td>
+												<td>未知</td>
+											</tr>
+											<tr>
+												<td>车体结构</td>
+												<td>承载式</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>助力类型</td>
+												<td>电动助力</td>
+											</tr>
+											<tr>
+												<td>后悬架类型</td>
+												<td>多连杆式独立悬架+横向稳定杆</td>
+											</tr>
+											<tr>
+												<td>前悬架类型</td>
+												<td>双横臂式独立悬架带横向稳定杆</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>车轮制动</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>后轮胎规格</td>
+												<td>205/60 R16</td>
+											</tr>
+											<tr>
+												<td>前轮胎规格</td>
+												<td>205/60 R16</td>
+											</tr>
+											<tr>
+												<td>驻车制动类型</td>
+												<td>手刹</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>后制动器类型</td>
+												<td>盘式</td>
+											</tr>
+											<tr>
+												<td>前制动器类型</td>
+												<td>通风盘式</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>安全装备</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>ISOFIX儿童座椅接口</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>前/后排头部气囊(气帘)</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>前/后排侧气囊</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>主/副驾驶座安全气囊</td>
+												<td>主●&nbsp;/&nbsp;副●</td>
+											</tr>
+											<tr>
+												<td>无钥匙进入系统</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>无钥匙启动系统</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>发动机电子防盗</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>胎压监测装置</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>膝部气囊</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>操控配置</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>上坡辅助</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>自动驻车</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>车身稳定控制(ESC/ESP等)</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>中央差速器锁止功能</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>可变转向比</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>空气悬架</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>可变悬架</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>陡坡缓降</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>牵引力控制(ASR/TCS等)</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>刹车辅助(EBA/BAS/BA等)</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>制动力分配(EBD/CBC等)</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>ABS防抱死</td>
+												<td>●</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>外部配置</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>电动后备厢</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>电动吸合门</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>铝合金轮圈</td>
+												<td>●</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>运动外观套件</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>全景天窗</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>电动天窗</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>内部配置</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>前/后驻车雷达</td>
+												<td>前●&nbsp;/&nbsp;后-</td>
+											</tr>
+											<tr>
+												<td>方向盘调节</td>
+												<td>上下+前后调节</td>
+											</tr>
+											<tr>
+												<td>方向盘加热</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>HUD抬头数字显示</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>行车电脑显示屏</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>倒车视频影像</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>定速巡航</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>方向盘换挡</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>多功能方向盘</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>方向盘电动调节</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>真皮方向盘</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>座椅配置</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>前/后中央扶手</td>
+												<td>前●&nbsp;/&nbsp;后●</td>
+											</tr>
+											<tr>
+												<td>前/后排座椅按摩</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>前/后排座椅通风</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>前/后排座椅加热</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>主/副驾驶座电动调节</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>第三排座椅</td>
+												<td>未知</td>
+											</tr>
+											<tr>
+												<td>电动座椅记忆</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>后排座椅电动调节</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>第二排座椅移动</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>第二排靠背角度调节</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>肩部支撑调节</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>腰部支撑调节</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>座椅高低调节</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>运动风格座椅</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>真皮/仿皮座椅</td>
+												<td>未知</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>多媒体配置</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>扬声器品牌</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>多媒体系统</td>
+												<td>单碟CD</td>
+											</tr>
+											<tr>
+												<td>扬声器数量</td>
+												<td>6-7喇叭</td>
+											</tr>
+											<tr>
+												<td>CD支持MP3/WMA</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>外接音源接口(AUX/USB等)</td>
+												<td>未知</td>
+											</tr>
+											<tr>
+												<td>后排液晶屏</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>蓝牙/车载电话</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>内置硬盘</td>
+												<td>未知</td>
+											</tr>
+											<tr>
+												<td>中控台彩色大屏</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>定位互动服务</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>GPS导航系统</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>灯光配置</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>转向头灯</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>转向辅助灯</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>LED大灯</td>
+												<td>未知</td>
+											</tr>
+											<tr>
+												<td>车内氛围灯</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>大灯清洗装置</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>大灯高度可调</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>前雾灯</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>自动头灯</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>日间行车灯</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>氙气大灯</td>
+												<td>未知</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>玻璃/后视镜</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>内/外后视镜自动防眩目</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>前/后电动车窗</td>
+												<td>前●&nbsp;/&nbsp;后●</td>
+											</tr>
+											<tr>
+												<td>后排侧隐私玻璃</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>感应雨刷</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>后雨刷</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>后排侧遮阳帘</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>后风挡遮阳帘</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>后视镜记忆</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>后视镜电动折叠</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>后视镜加热</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>后视镜电动调节</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>防紫外线/隔热玻璃</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>车窗防夹手功能</td>
+												<td>●</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>空调/冰箱</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>温度分区控制</td>
+												<td>●</td>
+											</tr>
+											<tr>
+												<td>后排独立空调</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>空调控制方式</td>
+												<td>自动●</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>车载冰箱</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>后座出风口</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>高科技配置</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>车道偏离预警系统</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>发动机启停技术</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>全景摄像头</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>自适应巡航</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>夜视系统</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>整体主动转向系统</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>主动刹车/主动安全系统</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>并线辅助</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>自动泊车入位</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="param-unfold clearfix">
+								<h3>电动机</h3>
+								<div class="msg fl">
+									<table>
+										<tbody>
+											<tr>
+												<td>电池容量(kWh)</td>
+												<td>未知</td>
+											</tr>
+											<tr>
+												<td>电池最高续航里程(km)</td>
+												<td>未知</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="msg fr">
+									<table>
+										<tbody>
+											<tr>
+												<td>电动机最大扭矩(N·m)</td>
+												<td>未知</td>
+											</tr>
+											<tr>
+												<td>电动机最大功率(kW)</td>
+												<td>未知</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="fileW">
+							<a id="putaway" class="filebtn" href="javascript:;">更多参数配置<b id="more_param" class="searched-ico"></b></a>
+						</div>
+					</div>
+					<div class="d-file clearfix">
+						<h2>车辆实拍</h2>
+						<div class="carimg">
+							<div id="images" data-index="0" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557154b831e88792379_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557154b831e88792379_20.jpg" class="lazy" alt="马自达睿翼左前45度" style="display: inline;">
+							</div>
+							<div id="images" data-index="1" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557154b634c9b803043_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557154b634c9b803043_20.jpg" class="lazy" alt="马自达睿翼正前" style="display: inline;">
+							</div>
+							<div id="images" data-index="2" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557154ba61234646457_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557154ba61234646457_20.jpg" class="lazy" alt="马自达睿翼左前灯" style="display: inline;">
+							</div>
+							<div id="images" data-index="3" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/55715608b081a524780_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/55715608b081a524780_20.jpg" class="lazy" alt="马自达睿翼发动机" style="display: inline;">
+							</div>
+							<div id="images" data-index="4" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557154b826b2b535400_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557154b826b2b535400_20.jpg" class="lazy" alt="马自达睿翼车身侧面" style="display: inline;">
+							</div>
+							<div id="images" data-index="5" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557154bdf116e569958_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557154bdf116e569958_20.jpg" class="lazy" alt="马自达睿翼车门操控" style="display: inline;">
+							</div>
+							<div id="images" data-index="6" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557155eec6b1c411505_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557155eec6b1c411505_20.jpg" class="lazy" alt="马自达睿翼前排内" style="display: inline;">
+							</div>
+							<div id="images" data-index="7" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557155f20f93c170499_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557155f20f93c170499_20.jpg" class="lazy" alt="马自达睿翼仪表盘" style="display: inline;">
+							</div>
+							<div id="images" data-index="8" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557155f1dd38a644400_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557155f1dd38a644400_20.jpg" class="lazy" alt="马自达睿翼内饰" style="display: inline;">
+							</div>
+							<div id="images" data-index="9" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557155f466c20246317_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557155f466c20246317_20.jpg" class="lazy" alt="马自达睿翼后排内" style="display: inline;">
+							</div>
+							<div id="images" data-index="10" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557155f87d839872916_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557155f87d839872916_20.jpg" class="lazy" alt="马自达睿翼前排中控" style="display: inline;">
+							</div>
+							<div id="images" data-index="11" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557155f40dc52417761_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557155f40dc52417761_20.jpg" class="lazy" alt="马自达睿翼后尾灯" style="display: inline;">
+							</div>
+							<div id="images" data-index="12" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557155f9b9ee0111499_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557155f9b9ee0111499_20.jpg" class="lazy" alt="马自达睿翼正后" style="display: inline;">
+							</div>
+							<div id="images" data-index="13" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557155fd44334438998_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557155fd44334438998_20.jpg" class="lazy" alt="马自达睿翼后备箱" style="display: inline;">
+							</div>
+							<div id="images" data-index="14" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/55715627b9160831310_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/55715627b9160831310_20.jpg" class="lazy" alt="马自达睿翼钥匙" style="display: inline;">
+							</div>
+							<div id="images" data-index="15" class="car-pic carone ">
+								<img width="900px" height="600px" src="http://imgc.xin.com/xin/201506/0515/557154b5e6cbb567375_20.jpg" data-original="http://imgc.xin.com/xin/201506/0515/557154b5e6cbb567375_20.jpg" class="lazy" alt="马自达睿翼轮毂" style="display: inline;">
+							</div>
+						</div>
+					</div>
+					<div class="newcompany">
+						<img src="http://imgs.xin.com/xin/images/car-detail/shopicon.png?v=2015102813">
+						<p>捷和二手名车</p>
+						<div class="seller-score">
+							<p>
+								<span>商家评分：</span>
+								<b class="star-light"></b>
+								<b class="star-light"></b>
+								<b class="star-light"></b>
+								<b class="star-gray"></b>
+								<b class="star-gray"></b>
+								<em>3.0分</em>
+							</p>
+							<a href="http://www.xin.com/d/6097.html">1条评价&gt;</a>
+						</div>
+						<ul class="cpname">
+							<li class="br"><span>84辆</span><em>在售车辆</em></li>
+							<li><span>市场外独立展厅</span><em>店铺类型</em></li>
+						</ul>
+						<a target="_blank" class="cpbtn" href="http://www.xin.com/d/6097.html">进入店铺</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-23
+        	描述：相似车辆
+        -->
+        <div class="car-recommend clearfix">
+			<div class="main">
+				<h3>相似推荐</h3>
+				<div class="rec-tit">
+					<a class="active" href="javascript:void(0);">同价位推荐</a>
+					<a href="javascript:void(0);">同车型推荐</a>
+				</div>
+				<div id="rOneWrap" class="slideRec">
+					<div id="rOne" class="rec-con clearfix" style="margin-left: -2200px;">
+						<div class="wrap">
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11105932.html"><img src="http://imgc.xin.com/xin/201510/1910/56245951ea498442998_18.jpg" class="lazyload" alt="马自达 3星骋两厢 2013款 1.6 自动 精英型" data-original="http://imgc.xin.com/xin/201510/1910/56245951ea498442998_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11105932.html">马自达 3星骋两厢 2013款 1.6 自动 精英型</a></h4>
+									<em>¥9.98万</em>
+									<p class="new">新车价格：<del>12.03万</del><i>(含税)</i></p>
+									<span>上牌2014/06<b>｜</b>里程1.08万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11224013.html"><img src="http://imgc.xin.com/xin/201511/0517/563b1d5763d98417636_18.jpg" class="lazyload" alt="马自达 睿翼 2011款 2.0 自动 精英版" data-original="http://imgc.xin.com/xin/201511/0517/563b1d5763d98417636_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11224013.html">马自达 睿翼 2011款 2.0 自动 精英版</a></h4>
+									<em>¥10.98万</em>
+									<p class="new">新车价格：<del>19.52万</del><i>(含税)</i></p>
+									<span>上牌2011/06<b>｜</b>里程5.47万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11217817.html"><img src="http://imgc.xin.com/xin/201511/0514/563af8e523027444600_18.jpg" class="lazyload" alt="马自达 睿翼 2009款 2.5 自动 尊贵版" data-original="http://imgc.xin.com/xin/201511/0514/563af8e523027444600_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11217817.html">马自达 睿翼 2009款 2.5 自动 尊贵版</a></h4>
+									<em>¥11.80万</em>
+									<p class="new">新车价格：<del>23.53万</del><i>(含税)</i></p>
+									<span>上牌2011/03<b>｜</b>里程8.23万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11329812.html"><img src="http://imgc.xin.com/xin/201511/2111/564fe7e4af439640972_18.jpg" class="lazyload" alt="马自达 马自达6 2006款 2.3 自动 旗舰型" data-original="http://imgc.xin.com/xin/201511/2111/564fe7e4af439640972_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11329812.html">马自达 马自达6 2006款 2.3 自动 旗舰型</a></h4>
+									<em>¥6.28万</em>
+									<p class="new">新车价格：<del>26.03万</del><i>(含税)</i></p>
+									<span>上牌2007/07<b>｜</b>里程8.06万公里</span>
+								</div>
+							</div>
+						</div>
+						<div class="wrap">
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11190017.html"><img src="http://imgc.xin.com/xin/201510/3114/56345e09bc5b1348070_18.jpg" class="lazyload" alt="马自达 3 2007款 1.6 自动 标准型" data-original="http://imgc.xin.com/xin/201510/3114/56345e09bc5b1348070_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11190017.html">马自达 3 2007款 1.6 自动 标准型</a></h4>
+									<em>¥5.58万</em>
+									<p class="new">新车价格：<del>13.89万</del><i>(含税)</i></p>
+									<span>上牌2010/04<b>｜</b>里程7.08万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11326493.html"><img src="http://imgc.xin.com/xin/201511/1915/564d7a1312df0939169_18.jpg" class="lazyload" alt="马自达 马自达6 2011款 2.0 自动 时尚型" data-original="http://imgc.xin.com/xin/201511/1915/564d7a1312df0939169_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11326493.html">马自达 马自达6 2011款 2.0 自动 时尚型</a></h4>
+									<em>¥9.18万</em>
+									<p class="new">新车价格：<del>19.52万</del><i>(含税)</i></p>
+									<span>上牌2012/08<b>｜</b>里程4.20万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11325847.html"><img src="http://imgc.xin.com/xin/201511/2016/564ed411e2aac588809_18.jpg" class="lazyload" alt="马自达 睿翼 2011款 2.0 自动 精英版" data-original="http://imgc.xin.com/xin/201511/2016/564ed411e2aac588809_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11325847.html">马自达 睿翼 2011款 2.0 自动 精英版</a></h4>
+									<em>¥11.50万</em>
+									<p class="new">新车价格：<del>19.52万</del><i>(含税)</i></p>
+									<span>上牌2011/12<b>｜</b>里程7.40万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/10834309.html"><img src="http://imgc.xin.com/xin/201509/0217/55e6bb553698d821661_18.jpg" class="lazyload" alt="马自达 6 2011款 2.0 自动 时尚型" data-original="http://imgc.xin.com/xin/201509/0217/55e6bb553698d821661_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/10834309.html">马自达 6 2011款 2.0 自动 时尚型</a></h4>
+									<em>¥9.38万</em>
+									<p class="new">新车价格：<del>14.53万</del><i>(含税)</i></p>
+									<span>上牌2011/05<b>｜</b>里程5.63万公里</span>
+								</div>
+							</div>
+						</div>
+						<div class="wrap">
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11201461.html"><img src="http://imgc.xin.com/xin/201511/0310/56381bfae0038428940_18.jpg" class="lazyload" alt="马自达 3两厢 2007款 1.6 自动 标准型" data-original="http://imgc.xin.com/xin/201511/0310/56381bfae0038428940_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11201461.html">马自达 3两厢 2007款 1.6 自动 标准型</a></h4>
+									<em>¥5.88万</em>
+									<p class="new">新车价格：<del>15.17万</del><i>(含税)</i></p>
+									<span>上牌2008/09<b>｜</b>里程8.60万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11201038.html"><img src="http://imgc.xin.com/xin/201511/0309/56381424e4f8a115809_18.jpg" class="lazyload" alt="马自达 睿翼 2009款 2.5 自动 尊贵版" data-original="http://imgc.xin.com/xin/201511/0309/56381424e4f8a115809_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11201038.html">马自达 睿翼 2009款 2.5 自动 尊贵版</a></h4>
+									<em>¥10.80万</em>
+									<p class="new">新车价格：<del>23.53万</del><i>(含税)</i></p>
+									<span>上牌2010/01<b>｜</b>里程9.70万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11146218.html"><img src="http://imgc.xin.com/xin/201510/2415/562b39fd04cb5672953_18.jpg" class="lazyload" alt="马自达 睿翼 2012款 2.0 自动 精英版" data-original="http://imgc.xin.com/xin/201510/2415/562b39fd04cb5672953_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11146218.html">马自达 睿翼 2012款 2.0 自动 精英版</a></h4>
+									<em>¥12.28万</em>
+									<p class="new">新车价格：<del>15.82万</del><i>(含税)</i></p>
+									<span>上牌2013/04<b>｜</b>里程3.36万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11308221.html"><img src="http://imgc.xin.com/xin/201511/1815/564c27ac7da5b168450_18.jpg" class="lazyload" alt="马自达 马自达6 2006款 2.3 自动 旗舰型" data-original="http://imgc.xin.com/xin/201511/1815/564c27ac7da5b168450_18.jpg" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11308221.html">马自达 马自达6 2006款 2.3 自动 旗舰型</a></h4>
+									<em>¥7.38万</em>
+									<p class="new">新车价格：<del>26.03万</del><i>(含税)</i></p>
+									<span>上牌2007/03<b>｜</b>里程8.88万公里</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="poCon">
+						<div class="pageBtn" style="width: 88px;">
+							<span class="ico_pop prev"></span>
+							<ol>
+								<li class=""></li>
+								<li class=""></li>
+								<li class="active"></li>
+							</ol>
+							<span class="ico_pop next"></span>
+						</div>
+					</div>
+				</div>
+				<div style="display:none" id="rTwoWrap" class="slideRec">
+					<div id="rTwo" class="rec-con clearfix">
+						<div class="wrap">
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11105932.html"><img alt="马自达 3星骋两厢 2013款 1.6 自动 精英型" data-original="http://imgc.xin.com/xin/201510/1910/56245951ea498442998_18.jpg" src="http://imgc.xin.com/xin/201510/1910/56245951ea498442998_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11105932.html">马自达 3星骋两厢 2013款 1.6 自动 精英型</a></h4>
+									<em>¥9.98万</em>
+									<p class="new">新车价格：<del>12.03万</del><i>(含税)</i></p>
+									<span>上牌2014/06<b>｜</b>里程1.08万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11224013.html"><img alt="马自达 睿翼 2011款 2.0 自动 精英版" data-original="http://imgc.xin.com/xin/201511/0517/563b1d5763d98417636_18.jpg" src="http://imgc.xin.com/xin/201511/0517/563b1d5763d98417636_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11224013.html">马自达 睿翼 2011款 2.0 自动 精英版</a></h4>
+									<em>¥10.98万</em>
+									<p class="new">新车价格：<del>19.52万</del><i>(含税)</i></p>
+									<span>上牌2011/06<b>｜</b>里程5.47万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11217817.html"><img alt="马自达 睿翼 2009款 2.5 自动 尊贵版" data-original="http://imgc.xin.com/xin/201511/0514/563af8e523027444600_18.jpg" src="http://imgc.xin.com/xin/201511/0514/563af8e523027444600_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11217817.html">马自达 睿翼 2009款 2.5 自动 尊贵版</a></h4>
+									<em>¥11.80万</em>
+									<p class="new">新车价格：<del>23.53万</del><i>(含税)</i></p>
+									<span>上牌2011/03<b>｜</b>里程8.23万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11329812.html"><img alt="马自达 马自达6 2006款 2.3 自动 旗舰型" data-original="http://imgc.xin.com/xin/201511/2111/564fe7e4af439640972_18.jpg" src="http://imgc.xin.com/xin/201511/2111/564fe7e4af439640972_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11329812.html">马自达 马自达6 2006款 2.3 自动 旗舰型</a></h4>
+									<em>¥6.28万</em>
+									<p class="new">新车价格：<del>26.03万</del><i>(含税)</i></p>
+									<span>上牌2007/07<b>｜</b>里程8.06万公里</span>
+								</div>
+							</div>
+						</div>
+						<div class="wrap">
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11190017.html"><img alt="马自达 3 2007款 1.6 自动 标准型" data-original="http://imgc.xin.com/xin/201510/3114/56345e09bc5b1348070_18.jpg" src="http://imgc.xin.com/xin/201510/3114/56345e09bc5b1348070_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11190017.html">马自达 3 2007款 1.6 自动 标准型</a></h4>
+									<em>¥5.58万</em>
+									<p class="new">新车价格：<del>13.89万</del><i>(含税)</i></p>
+									<span>上牌2010/04<b>｜</b>里程7.08万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11326493.html"><img alt="马自达 马自达6 2011款 2.0 自动 时尚型" data-original="http://imgc.xin.com/xin/201511/1915/564d7a1312df0939169_18.jpg" src="http://imgc.xin.com/xin/201511/1915/564d7a1312df0939169_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11326493.html">马自达 马自达6 2011款 2.0 自动 时尚型</a></h4>
+									<em>¥9.18万</em>
+									<p class="new">新车价格：<del>19.52万</del><i>(含税)</i></p>
+									<span>上牌2012/08<b>｜</b>里程4.20万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11325847.html"><img alt="马自达 睿翼 2011款 2.0 自动 精英版" data-original="http://imgc.xin.com/xin/201511/2016/564ed411e2aac588809_18.jpg" src="http://imgc.xin.com/xin/201511/2016/564ed411e2aac588809_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11325847.html">马自达 睿翼 2011款 2.0 自动 精英版</a></h4>
+									<em>¥11.50万</em>
+									<p class="new">新车价格：<del>19.52万</del><i>(含税)</i></p>
+									<span>上牌2011/12<b>｜</b>里程7.40万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11094649.html"><img alt="马自达 6 2004款 2.0 自动 豪华型" data-original="http://imgc.xin.com/xin/201510/1711/5621c23b6202d967935_18.jpg" src="http://imgc.xin.com/xin/201510/1711/5621c23b6202d967935_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11094649.html">马自达 6 2004款 2.0 自动 豪华型</a></h4>
+									<em>¥4.58万</em>
+									<p class="new">新车价格：<del>23.75万</del><i>(含税)</i></p>
+									<span>上牌2005/01<b>｜</b>里程11.00万公里</span>
+								</div>
+							</div>
+						</div>
+						<div class="wrap">
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/10999705.html"><img alt="马自达 6 2006款 2.3 自动 豪华型" data-original="http://imgc.xin.com/xin/201509/2810/5608a21c45173898386_18.jpg" src="http://imgc.xin.com/xin/201509/2810/5608a21c45173898386_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/10999705.html">马自达 6 2006款 2.3 自动 豪华型</a></h4>
+									<em>¥4.58万</em>
+									<p class="new">新车价格：<del>24.51万</del><i>(含税)</i></p>
+									<span>上牌2006/08<b>｜</b>里程16.15万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/10834309.html"><img alt="马自达 6 2011款 2.0 自动 时尚型" data-original="http://imgc.xin.com/xin/201509/0217/55e6bb553698d821661_18.jpg" src="http://imgc.xin.com/xin/201509/0217/55e6bb553698d821661_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/10834309.html">马自达 6 2011款 2.0 自动 时尚型</a></h4>
+									<em>¥9.38万</em>
+									<p class="new">新车价格：<del>14.53万</del><i>(含税)</i></p>
+									<span>上牌2011/05<b>｜</b>里程5.63万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11201461.html"><img alt="马自达 3两厢 2007款 1.6 自动 标准型" data-original="http://imgc.xin.com/xin/201511/0310/56381bfae0038428940_18.jpg" src="http://imgc.xin.com/xin/201511/0310/56381bfae0038428940_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11201461.html">马自达 3两厢 2007款 1.6 自动 标准型</a></h4>
+									<em>¥5.88万</em>
+									<p class="new">新车价格：<del>15.17万</del><i>(含税)</i></p>
+									<span>上牌2008/09<b>｜</b>里程8.60万公里</span>
+								</div>
+							</div>
+							<div class="con list">
+								<a class="aimg" target="_blank" href="http://che.xin.com/11201038.html"><img alt="马自达 睿翼 2009款 2.5 自动 尊贵版" data-original="http://imgc.xin.com/xin/201511/0309/56381424e4f8a115809_18.jpg" src="http://imgc.xin.com/xin/201511/0309/56381424e4f8a115809_18.jpg" class="lazyload" style="display: block;"></a>
+								<div class="pad">
+									<h4><a target="_blank" href="http://che.xin.com/11201038.html">马自达 睿翼 2009款 2.5 自动 尊贵版</a></h4>
+									<em>¥10.80万</em>
+									<p class="new">新车价格：<del>23.53万</del><i>(含税)</i></p>
+									<span>上牌2010/01<b>｜</b>里程9.70万公里</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="poCon">
+						<div class="pageBtn" style="width: 88px;">
+							<span class="ico_pop prev"></span>
+							<ol>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+							</ol>
+							<span class="ico_pop next"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-23
+        	描述：页尾
+        -->
+        <!--
+	    	作者：455984146@qq.com
+	    	时间：2015-11-17
+	    	描述：页尾
+	    -->
+	    <div class="footer-wrap">
+			<div class="footer">
+				<div class="contact_new">
+					<a href="aboutus/"  rel="nofollow">关于我们</a>
+					<a href="contactus/"  rel="nofollow">联系我们</a>
+					<a href="joinus/" rel="nofollow">加入我们</a>
+					<a href="help/"  rel="nofollow">帮助中心</a>
+					<a href="feedback/"  rel="nofollow">用户反馈</a>
+					<a href="finance/"  rel="nofollow">我要金融</a>
+				</div>
+				<span>业务合作单位：我估(上海) 信息科技有限公司/我要拍（北京）二手车鉴定评估有限公司</span>
+	            <div class="footer3">
+					<p>copyright@2015 <strong><a href="">我要互联</a></strong> all rights reserved 版权所有 我要互联（北京）信息技术有限公司
+					<em>经营许可证编号：京ICP证120819号</em>
+	                </p>
+					<!--可信网站开始-->
+					<script src="http://kxlogo.knet.cn/seallogo.dll?sn=e15102111010561082vc83000000&size=0"></script>
+					<!--可信网站结束-->
+					<!--诚信网站开始-->
+					<a id='___szfw_logo___' class="bot-logo" href='https://credit.szfw.org/CX20151104012121580123.html' target='_blank'><img src='http://imgs.xin.com/xin/images/home/bot_logo2.png' border='0' /></a>
+	               <script type='text/javascript'>(function(){ document.getElementById('___szfw_logo___').oncontextmenu = function(){ return false; } })();</script>
+	               <!--诚信网站结束-->
+	            </div>            
+				<div class="index-code fr clearfix"> 
+					<img src="../images/code.jpg" height="100" width="100">
+					<p class="scan-txt fl rel">
+						关注我要二手车<br />微信公众号
+					</p>
+				</div>
+				<div class="index-code2 fl clearfix">
+					<img src="http://imgs.xin.com/xin/images/common/code_1.jpg" height="100" width="100">
+					<p class="scan-txt fr rel">
+						扫描我，即可下载<br />我要二手车手机版
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

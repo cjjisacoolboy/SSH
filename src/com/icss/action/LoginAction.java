@@ -28,7 +28,7 @@ public class LoginAction {
 //		userInfo.setUserId(1);
 //		userInfo.setRole("”√ªß");
 		List<UserInfo> list = visitorService.loginInUser(userInfo);
-
+		
 
 		return "success";
 	}

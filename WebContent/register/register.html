@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+		<link rel="stylesheet" href="css/reg.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/page.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/base.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/index.css" type="text/css">
+		<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+	</head>
+	<body background="bg.png">
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：导航栏
+        -->
+		<div class="register-nav">
+			 <div class="nav">
+			 	<script type="text/javascript">
+			 		$(function() {
+						$('#loginB').click(function() {
+							$('#popupLogin').css('display', 'block');
+							$('#blackground').css('display', 'block');
+						});
+					});
+			 	</script>
+			 	  <a href="../index/index.html"><img class="fixed-logo" alt="我要二手车IWant.com" src="../images/logo.png"></a>
+			 	  <span>已有账号？<a href="javascript:void(0);" id="loginB">马上登录</a></span>
+			 	  <span class="title">注册账号</span>
+			 </div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：表单
+        -->
+		<form method="post">
+			<table border="0px">
+				<tr>
+					<td>
+						<label>账号</label>&nbsp;
+						<input type="text" name="account" id="account" placeholder="请输入账号" class="input_txt" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>验 证 码</label>&nbsp;
+						<input type="text" name="code" id="code" placeholder="请输入验证码" class="input_txt" />
+						<a><img src="../img/4s.jp" id="my_code"/></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>短 信 验 证 码</label>&nbsp;
+						<input type="text" name="code" id="code" placeholder="请输入验证码" class="input_txt" />
+						<input type="button" value="" style="background: url();" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>设置密码</label>&nbsp;
+						<input type="password" name="pwd1" id="pwd1" placeholder="请输入密码" class="input_txt" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>确认密码</label>&nbsp;
+						<input type="password" name="pwd2" id="pwd2" placeholder="请再次输入密码" class="input_txt" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="立即注册" class="input_txt" style="margin: 15px 0 0 73px;background-color: #FF7200;"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：页尾
+        -->
+		<div id="footer">
+				<p>24小时服务 0868-8558888&nbsp;&nbsp;<a href="#">常见问题解答</a>email:233333@666.com</p>
+				<p class="copyright">经营许可证号：粤ICP证123456号</div>
+		</div>
+		
+	</body>
+</html>

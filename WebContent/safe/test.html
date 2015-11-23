@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../CSS/jquery-ui.min.css" rel="stylesheet" type="text/css">
+		<link href="../CSS/base.css" rel="stylesheet" type="text/css">
+		<link href="../CSS/common.css" rel="stylesheet" type="text/css">
+		<link href="../CSS/popup.css" rel="stylesheet" type="text/css">
+		<link href="../CSS/page.css" rel="stylesheet" type="text/css">
+		<script src="../JS/jquery-2.1.4.min.js" type="text/javascript" language="JavaScript"></script>
+        <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+	</head>
+	<body>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-16
+        	描述：导航栏
+        -->
+	    <div class="fixed-head-wrap fix">
+	        <div class="fixed-head rel">
+			    <a href="index.html" class="fixed-logo"></a><!-- logo点击连接 -->          
+					<h1>二手车</h1>
+					<dl class="select-city fixed-city abs" id="citySelect">
+				        <dt id='current_city_id'>长沙</dt>
+				        <dd id="cityWrap">
+					<!--
+                    	添加城市列表
+                    -->
+			            </dd>
+			        </dl>
+		        <ul class="nav-list fixed-list abs">       
+				    <li><a class="a_buypage " href="../buy/buycar.html">买车</a></li>
+					<li><a class="" href="../sell/sell.html">卖车</a></li>
+					<li class="rel" class='php_li_half' id="li_halfprice" style="display:block"><a id='php_half_city_link' class="" href="../payhalf/payhalf.html" sname="">付一半</a><b class="ico hot-ico abs"></b></li>				
+					<li><a class="" href="../activity/activity.html">热门活动</a></li>
+					<li><a href="../safe/safe.html" class="" rel="nofollow">服务保障</a></li>
+					<li><a href="../downloadAPP/downloadAPP.html" target="_blank"><b class="ico app-ico fl" rel="nofollow"></b>下载App</a></li>
+					<li><a href="../apply/apply.html" id="apply_dealer" class="apply" target="_blank">商家申请</a></li>
+					<li id="xin_top_userinfo">
+						<script type="text/javascript">
+							$(function(){
+								$('#loginA').click(function(){
+									$('#popupLogin').css('display','block');
+									$('#blackground').css('display','block');
+								});
+							});
+						</script>
+						<div class="person-wrap" style="top:0px;" >
+							<a href="javascript:clear_invalid();show_popup('#popupLogin','#popupLogin .closeJs');" id="loginA">登录</a>/<a href="../register/register.html" id="regA" rel="nofollow">注册</a>
+						</div>
+					</li>
+				</ul>
+	  		</div>
+		</div>
+		<!--
+			作者：455984146@qq.com
+			时间：2015-11-16
+			描述：弹出页面
+		-->
+		<!-- 弹窗页面 -->
+		<div class="help-center clearfix popup-wrap" id="popupLogin" style="display: none; left: 50%; top: 50%; margin-left: -505px; margin-top: -244px;">
+	<script type="text/javascript">
+		$(function(){
+				    		//关闭
+				    		$('#closelogin').click(function(){
+				    			$('#popupLogin').css('display','none');
+				    			$('#blackground').css('display','none');
+				    		});
+				    		//点击输入
+				    		$('input').bind('focus',function(){
+				    			$(this).css('color','rgb(51,51,51)');
+				    			
+				    		});
+				    		$('input').bind('blur',function(){
+				    			$(this).css('color','rgb(191,191,191)');
+				    			
+				    		});
+						});
+	</script>
+	<a id="closelogin" href="javascript:void(0)" class="ico_pop xBtn2 closeJs">关闭</a>
+	<div class="right" id="paybackDiv">
+		<h2>退款流程</h2>
+		<div class="text">
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;color:#ff6600;"><strong></strong></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"><span style="color:#333333;">如果您对购买的车，自您通过我要二手车POS系统支付车款次日零时开始15日内，发现有任何"重大事故"的痕迹，可以通过以下步骤开启退车赔付流程：</span></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"><span style="color:#333333;">1、您需要通过合同所指定的检测机构（国家认可的具有专业鉴定资质的第三方鉴定评估机构或所购车辆品牌4S店或保险公司）对所购车辆进行检测，出具检测报告（保险公司仅指定损报告）确定您所购买的车辆为重大事故车，方可以提出退车申诉。</span></span>
+			</p>
+			<p>
+				<span style="font-family:'Microsoft YaHei';"><span style="font-size:16px;color:#333333;">2、您需要通过拨打我要二手车客服电话提出申诉。客服电话：10106088 ，周一至周日 09:00-19:00。</span></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"><span style="color:#333333;">3、在退车过程中，您需要提供您的个人信息资料，包括购车合同、无重大事故协议书及身份证原件。</span></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"><span style="color:#333333;">4、我要二手车在接到您的申诉及收到检测报告后，予以受理。</span></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"><span style="color:#333333;">5、自我要二手车受理48小时内，您需将车辆送至指定地点。</span></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"><span style="color:#333333;">6、在您送达车辆后的48小时内，我要二手车会对您的退车进行鉴定，并作出最终判定（以我要二手车作出的鉴定报告为最终判断标准）。</span></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"><span style="color:#333333;">7、鉴定您所购车辆为重大事故车后，我要二手车将与您签订退车协议。</span></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"><span style="color:#333333;">8、签订退车协议后的7个工作日内，您需要配合我要二手车把车辆再次过户。</span></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"><span style="color:#333333;">9、在您过户成功3个工作日后，我要二手车将车款全数退还给您，退车流程结束。</span></span>
+			</p>
+			<p>
+				<span style="font-family:Microsoft YaHei;font-size:16px;"></span>
+			</p>
+			<p>
+				<span class="tx"></span>
+			</p>
+		</div>
+	</div>
+	</body>
+</html>

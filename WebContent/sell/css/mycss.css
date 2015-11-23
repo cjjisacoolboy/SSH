@@ -1,0 +1,11 @@
+
+.sale-title .video {
+    background: rgba(0, 0, 0, 0) url("http://imgs.xin.com/xin/images/sale/sale_video_bg.png") repeat scroll 0 0;
+    cursor: pointer;
+    height: 310px;
+    position: relative;
+    width: 535px;
+}
+.fl {
+    float: left;
+}

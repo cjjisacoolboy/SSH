@@ -1,0 +1,32 @@
+.reback_top{position: fixed;right: 80px;bottom: 20px;}
+
+.input_txt{
+	width:198px;
+	border:solid 1px #ccc;
+	rgba(0,0,0,0.1) inset;
+	height:38px;
+	text-indent:10px;
+	}
+	
+table{
+	margin: 100px 0 100px 320px;
+	height: 350px;
+	width: 380px;
+	
+}
+
+label{
+	font-family: "微软雅黑";
+	height: 30px;
+	width: 65px;
+	text-align: center;
+}
+
+.td{
+	font-family: "微软雅黑";
+	text-align: center;
+}
+
+#footer{ clear:both;height: 120px; text-align:center;}
+	#footer p{ font:14px/24px Arial; color:#999;}
+	#footer p.copyright{ color:#999; margin-top:10px;}

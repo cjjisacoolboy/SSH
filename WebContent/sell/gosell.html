@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>炫酷卖车</title>
+		<link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+		<link href="../css/base.css" rel="stylesheet" type="text/css">
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
+		<link href="../css/popup.css" rel="stylesheet" type="text/css">
+		<link href="../css/page.css" rel="stylesheet" type="text/css">
+		<script src="../js/jquery-2.1.4.min.js" type="text/javascript" language="JavaScript"></script>
+        <link rel="stylesheet" href="../css/index.css" type="text/css">
+        <link rel="stylesheet" href="css/mycss.css" type="text/css">
+	</head>
+	<body>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-16
+        	描述：导航栏
+        -->
+	    <div class="fixed-head-wrap fix">
+	        <div class="fixed-head rel">
+			    <a href="index.html" class="fixed-logo"></a><!-- logo点击连接 -->          
+					<h1>二手车</h1>
+					<dl class="select-city fixed-city abs" id="citySelect">
+				        <dt id='current_city_id'>长沙</dt>
+				        <dd id="cityWrap">
+					<!--
+                    	添加城市列表
+                    -->
+			            </dd>
+			        </dl>
+		        <ul class="nav-list fixed-list abs">       
+				    <li><a class="a_buypage " href="../buy/buycar.html">买车</a></li>
+					<li><a class="" href="../sell/sell.html">卖车</a></li>
+					<li class="rel" class='php_li_half' id="li_halfprice" style="display:block"><a id='php_half_city_link' class="" href="../payhalf/payhalf.html" sname="">付一半</a><b class="ico hot-ico abs"></b></li>				
+					<li><a class="" href="../activity/activity.html">热门活动</a></li>
+					<li><a href="../safe/safe.html" class="" rel="nofollow">服务保障</a></li>
+					<li><a href="../downloadAPP/downloadAPP.html" target="_blank"><b class="ico app-ico fl" rel="nofollow"></b>下载App</a></li>
+					<li><a href="../apply/apply.html" id="apply_dealer" class="apply" target="_blank">商家申请</a></li>
+					<li id="xin_top_userinfo">
+						<script type="text/javascript">
+							$(function(){
+								$('#loginA').click(function(){
+									$('#popupLogin').css('display','block');
+									$('#blackground').css('display','block');
+								});
+							});
+						</script>
+						<div class="person-wrap" style="top:0px;" >
+							<a href="javascript:void(0)" id="loginA">登录</a>/<a href="../register/register.html">注册</a>
+						</div>
+					</li>
+				</ul>
+	  		</div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：图片
+        -->
+        <div class="sale-bg">
+		</div>
+		<div class="main">
+		    <div class="sale-title rel">
+		    	<div class="video fl">
+		      	</div>
+		    	<div class="tips">
+		    		     <div class="tips-msg">
+		    			     <b class="sale-icon ico-1 abs"></b>
+		    			     <div class="msg">
+		    			           <p>专业摄影棚</p>
+		    			 	       <p>帮您给爱车拍照</p>
+		    			 	 </div>
+		    		     </div>
+		    		     <div class="tips-msg">
+		    			     <b class="sale-icon ico-2 abs"></b>
+		    			     <div class="msg">
+		    			           <p>最大二手车网站</p>
+		    			           <p>为您展示汽车信息</p>
+		    			 	 </div>
+		    		     </div>
+		    		     <div class="tips-msg">
+		    			     <b class="sale-icon ico-3 abs"></b>
+		    			     <div class="msg">
+		    			           <p>意向买家</p>
+		    			           <p>与您电话直接无障碍沟通</p>
+		    			 	 </div>
+		    		     </div>
+		    		     <div class="tips-msg">
+		    			     <b class="sale-icon ico-4 abs"></b>
+		    			     <div class="msg">
+		    			           <p>专业客服</p>
+		    			           <p>为您答疑解惑</p>
+		    			 	 </div>
+		    		     </div>
+		    	</div>
+		    </div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：预约项目
+        -->
+        <div class="order-wrap">
+		  <h2><span data-address="北京丰台草桥东路汽配城C区51，52，53号（京桥热电公司对面）" data-wid="1" id="php_near">离您最近的体验店：北京丰台草桥东路汽配城C区51，52，53号（京桥热电公司对面）</span><a id="store-ads" href="javascript:void(0)"><i></i>更改</a></h2>  
+		  <div class="order-item">
+		    <h3>预约项目</h3>
+		    <p>
+		      <img src="http://imgs.xin.com/xin/images/order/free.png" class="free-icon">
+		      <span>360°棚拍预约</span>
+		      <em>帮您爱车快速提升吸引力</em>
+		      <img src="http://imgs.xin.com/xin/images/order/pic_act2.png" class="car-pic">
+		      <em>收费标准：300元/台，首台限免</em>
+		    </p>
+		  </div>
+		  <div class="order-msg">
+		    <h3>预约信息</h3>
+		    <ul class="idtity">
+		      <li>
+		          <label>姓<em></em>名</label>
+		          <input type="text" id="studio_name" placeholder="您的中文全名" class="ipt-box">
+		      </li>
+		      <li>
+		          <label>联系方式</label>
+		          <input type="text" id="studio_mobile" placeholder="请输入手机号" class="ipt-box">
+		      </li>
+		      <li>
+		           <label>图片码</label>
+		           <input type="text" id="piccode_o" placeholder="请输入图片码" class="ipt-box">
+		           <a class="cd-pic"><img id="vcodeimg_o" src="/register/get_vcode/"></a>
+		      </li>
+		      <li>
+		            <label>验证码</label>
+		            <input type="text" style="color: rgb(191, 191, 191);" id="validate_code_studio" placeholder="六位数字验证码" class="ipt-box">
+		            <input type="button" value="获取验证码" id="need_code_studio" class="getNum vm">
+		      </li>
+		      <li class="cx">
+		          <label>选择车型</label>
+		          <div class="msg">
+		              <div class="clearfix">
+		                  <select id="php_brand" data-enabled="false" class="bcar" name="province">
+		                      <option value="0">品牌</option>
+		                            <option value="5">安驰</option>
+		                            <option value="62">奥迪</option>
+		                            <option value="68">阿斯顿马丁</option>
+		                  </select>
+		              </div>
+		              <div class="clearfix">
+		                  <select id="php_series" data-enabled="false" class="bcar" name="province">
+		                      <option value="请选择">车系</option>
+		                  </select>
+		              </div>
+		              <div class="clearfix">
+		                  <select id="php_modeid" data-enabled="false" class="bcar" name="province">
+		                      <option value="请选择">车型</option>                     
+		                  </select>
+		              </div>
+		          </div>
+		      </li>
+		      <li>
+		          <label>选择时间</label>
+		          <div class="date">
+		                          <a data-time="1448121600" href="javascript:;"><span>11-22</span><span>今天</span><b></b></a>
+		                          <a data-time="1448208000" href="javascript:;"><span>11-23</span><span>周一</span><b></b></a>
+		                          <a data-time="1448294400" href="javascript:;"><span>11-24</span><span>周二</span><b></b></a>
+		                          <a data-time="1448380800" href="javascript:;"><span>11-25</span><span>周三</span><b></b></a>
+		                          <a data-time="1448467200" href="javascript:;"><span>11-26</span><span>周四</span><b></b></a>
+		                          <a data-time="1448553600" href="javascript:;"><span>11-27</span><span>周五</span><b></b></a>
+		                          <a data-time="1448640000" href="javascript:;"><span>11-28</span><span>周六</span><b></b></a>
+		                       </div> 
+		          <div id="php_choose_time" style="display:none;" class="time">
+		             <a data-time="9" href="javascript:;"><span>09:00-10:00</span></a>
+		             <a data-time="10" href="javascript:;"><span>10:00-11:00</span></a>
+		             <a data-time="11" href="javascript:;"><span>11:00-12:00</span></a>
+		             <a data-time="12" href="javascript:;"><span>12:00-13:00</span></a>
+		             <a data-time="13" href="javascript:;"><span>13:00-14:00</span></a>
+		             <a data-time="14" href="javascript:;"><span>14:00-15:00</span></a>
+		             <a data-time="15" href="javascript:;"><span>15:00-16:00</span></a>
+		          </div>
+		      </li>
+		    </ul>
+		    <a id="order_now" class="order-btn" href="javascript:void(0)">立即预约</a>
+		    <p>也可拨打<a id="php_call_order" href="javascript:void(0)">10106088</a>进行电话预约</p>
+		  </div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：页尾
+        -->
+        <div class="footer-wrap">
+			<div class="footer">
+				<div class="contact_new">
+					<a href="aboutus/"  rel="nofollow">关于我们</a>
+					<a href="contactus/"  rel="nofollow">联系我们</a>
+					<a href="joinus/" rel="nofollow">加入我们</a>
+					<a href="help/"  rel="nofollow">帮助中心</a>
+					<a href="feedback/"  rel="nofollow">用户反馈</a>
+					<a href="finance/"  rel="nofollow">我要金融</a>
+				</div>
+				<span>业务合作单位：我估(上海) 信息科技有限公司/我要拍（北京）二手车鉴定评估有限公司</span>
+	            <div class="footer3">
+					<p>copyright@2015 <strong><a href="">我要互联</a></strong> all rights reserved 版权所有 我要互联（北京）信息技术有限公司
+					<em>经营许可证编号：京ICP证120819号</em>
+	                </p>
+					<!--可信网站开始-->
+					<script src="http://kxlogo.knet.cn/seallogo.dll?sn=e15102111010561082vc83000000&size=0"></script>
+					<!--可信网站结束-->
+					<!--诚信网站开始-->
+					<a id='___szfw_logo___' class="bot-logo" href='https://credit.szfw.org/CX20151104012121580123.html' target='_blank'><img src='http://imgs.xin.com/xin/images/home/bot_logo2.png' border='0' /></a>
+	               <script type='text/javascript'>(function(){ document.getElementById('___szfw_logo___').oncontextmenu = function(){ return false; } })();</script>
+	               <!--诚信网站结束-->
+	            </div>            
+				<div class="index-code fr clearfix"> 
+					<img src="../images/code.jpg" height="100" width="100">
+					<p class="scan-txt fl rel">
+						关注我要二手车<br />微信公众号
+					</p>
+				</div>
+				<div class="index-code2 fl clearfix">
+					<img src="http://imgs.xin.com/xin/images/common/code_1.jpg" height="100" width="100">
+					<p class="scan-txt fr rel">
+						扫描我，即可下载<br />我要二手车手机版
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

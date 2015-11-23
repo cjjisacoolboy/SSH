@@ -1,0 +1,826 @@
+/*商家申请*/
+.border_radius{border-radius:5px;color:#B00000;}
+.span{position:absolute;float:left;line-height:50px;left:55px;color:#BCBCBC;font-size: 18px;}
+--form{border: 1px solid;}
+
+.ApyForm{
+	width: 1200px;
+	overflow: hidden;
+	margin: 60px auto 0;
+}
+.ApyForm table{
+	width: 100%;
+	text-align: center;
+}
+.ApyForm table tr td{
+	height: 34px;
+	vertical-align: middle;
+	padding: 10px 0;
+	font: normal 14px/34px 'Microsoft YaHei';
+	color: #888;
+}
+.ApyForm table .title{
+	width: 16%;
+	text-align: right;
+}
+.ApyForm table input{
+	font: normal 14px/16px 'Microsoft YaHei';
+	padding: 8px;
+	border: 1px solid #e5e5e5;
+	color: #333;
+}
+.ApyForm table .msg{
+	width: 35%;
+	text-align: left;
+	padding-left: 25px;
+	position: relative;
+}
+.ApyForm table .msg .xm{
+	width: 342px;
+	height: 16px;
+}
+.ApyForm table .msg .x-name{
+	width: 120px;
+	height: 16px;
+}
+.ApyForm table .msg .m-name{
+	width: 200px;
+	height: 16px;
+}
+.ApyForm table .msg p{
+	display: inline-block;
+	font: normal 12px/normal 'Microsoft YaHei';
+	color: #ee394b;
+	margin-left: 8px;
+}
+.ApyForm table .msg .dx{
+	width: 192px;
+	height: 16px;
+	float: left;
+}
+.ApyForm table .msg .btn{
+	width: 138px;
+	height: 33px;
+	float: left;
+	border: 1px solid #ff5837;
+	background: #fff6f5;
+	font: normal 14px/17px 'Microsoft YaHei';
+	color: #ff5837;
+	text-align: center;
+	margin-left: 11px;
+	cursor: pointer;
+	border-radius: 2px;
+	-o-border-radius:2px;
+	-ms-border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+}
+.ApyForm table .msg .pas{
+	width: 342px;
+	height: 16px;
+}
+.ApyForm table .msg .clearfix{
+	width: 360px;
+	height: 34px;
+	display: inline-block;
+}
+.ApyForm table .msg .clearfix .hide{
+	width: 360px;
+	height: 34px;
+	border: 1px solid #e5e5e5;
+	font: normal 14px/34px 'Microsoft YaHei';
+	color: #333;
+	background: #fcfcfc;
+}
+.ApyForm table .msg .pro{
+	width: 174px;
+	height: 34px;
+	display: inline-block;
+	float: left;
+	margin-left: 12px;
+}
+.ApyForm table .msg .nopro{
+	margin-left: 0;
+}
+.ApyForm table .msg .pro .hide{
+	width: 174px;
+	height: 34px;
+}
+.ApyForm table .msg .abtn{
+	width: 360px;
+	height: 34px;
+	display: inline-block;
+	background: #ff5837;
+	color: #fff;
+	font: normal 14px/34px 'Microsoft YaHei';
+	text-align: center;
+	border-radius: 2px;
+	-o-border-radius:2px;
+	-ms-border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+}
+.ApyForm table .msg .rem{
+	width: 340px;
+	height: 54px;
+	display: inline-block;
+	font: normal 12px/19px 'Microsoft YaHei';
+	color: #888;
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0 -563px;
+	padding: 15px 10px;
+}
+.ApyForm table .msg .fot{
+	font: normal 12px/normal 'Microsoft YaHei';
+	color: #888;
+}
+/*待审核状态*/
+.ApyWait_1{
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.ApyWait_1 .CotDown{
+	width: 70px;
+	height: 98px;
+	margin: 50px auto;
+}
+.ApyWait_1 .CotDown2,
+.ApyWait_1 .CotDown4{
+	width: 93px;
+	height: 89px;
+	margin: 50px auto;
+}
+.ApyWait_1 .CotDown3{
+	width: 302px;
+	height: 134px;
+	margin: 50px auto;
+}
+.ApyWait_1 .CotDown3 .page1{
+	float: left;
+}
+.ApyWait_1 .CotDown3 .page2{
+	float: right;
+}
+.ApyWait_1 .Word{
+	width: 600px;
+	margin: 0 auto 40px;
+}
+.ApyWait_1 .Word .word{
+	font: normal 18px/30px 'Microsoft YaHei';
+	color: #666;
+	width: 600px;
+	height: 30px;
+	display: inline-block;
+	text-align: center;
+}
+.ApyWait_1 .Btn{
+	width: 140px;
+	height: 38px;
+	margin: 0 auto;
+}
+.ApyWait_1 .Wbtn{
+	width: 140px;
+	height: 38px;
+	display: inline-block;
+	background: #ff5837;
+	font: normal 14px/38px 'Microsoft YaHei';
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	-o-border-radius:2px;
+	-ms-border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+}
+.footer{
+	width: 100%;
+	min-width: 1200px;
+	height: 120px;
+	background: url('http://imgs.xin.com/apply/images/fot.png') no-repeat center;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+.footer .fotp{
+	width: 1200px;
+	height: 120px;
+	margin: 0 auto;
+	font: normal 20px/120px 'Microsoft YaHei';
+	color: #fff;
+	text-align: center;
+}
+.footer .fotp a{
+	color: #fff;
+	font-weight: bold;
+}
+/*待审核状态02*/
+.Foot{
+	width: 1200px;
+	text-align: center;
+	margin: 22px auto 0;
+}
+.Foot span{
+	font: normal 12px/normal 'Microsoft YaHei';
+	color: #666;
+}
+/*完善公司信息*/
+.ApyForm table .title em{ 
+	display: inline-block;
+	color: #ff5837;
+	margin-right: 6px;
+}
+.ApyForm table .msg .per{
+	line-height: 14px;
+	display: inline-block;
+	position: relative;
+	width: 130px;
+	vertical-align: middle;
+}
+.ApyForm table .msg .ms{
+	margin-left: 6px;
+	margin-bottom: 5px;
+	width: 54px;
+}
+.ApyForm table .msg .per>input{
+	padding-right: 5px;
+	margin: 0;
+	height: 18px;
+	width: 18px;
+	float: left;
+	position: absolute;
+	left: 0;
+	opacity: 0;	
+}
+.ApyForm table .msg .per>label{
+	float: left;
+	line-height: 16px;
+	color: #666666;
+	padding: 0 0 0 20px;	
+}
+.ApyForm table .msg span:not(#foo) > input + label{
+	background: url('http://imgs.xin.com/seller/images/common/seller_ico.png') no-repeat;
+	height: 16px;
+}
+.ApyForm table .msg span:not(#foo) > input[type=radio] + label{
+	background-position: 0 -788px;
+}
+.ApyForm table .msg span:not(#foo) > input[type=radio]:checked + label {
+    background-position: 0 -815px;
+}
+.ApyForm table .msg .pho{
+	width: 102px;
+	height: 16px;
+}
+.ApyForm table .msg .phone{
+	width: 212px;
+	height: 16px;
+}
+.ApyForm table .msg .x-peo{
+	width: 50px;
+	height: 16px;
+}
+.ApyForm table .msg .m-peo{
+	width: 80px;
+	height: 16px;
+}
+.ApyForm table .msg .pos,
+.ApyForm table .msg .pos .hide{
+	width: 140px;
+	height: 34px;
+}
+.ApyForm table .msg .spa{
+	margin: 0 6px;
+}
+.ApyForm table .msg .ID{
+	display: inline-block;
+	width: 358px;
+	height: 32px;
+	background: #fcfcfc url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 108px -666px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	color: #333;
+	font: normal 13px/34px 'Microsoft YaHei';
+}
+.ApyForm table .msg .Upload{
+	display: inline-block;
+	width: 358px;
+	height: 32px;
+	background: #fcfcfc url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 132px -666px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	color: #333;
+	font: normal 13px/34px 'Microsoft YaHei';
+}
+.ApyForm table .msg .Legend{
+	width: 108px;
+	height: 32px;
+	border: 1px solid #ff5837;
+	display: inline-block;
+	background: #fff6f5;
+	color: #ff5837;
+	text-align: center;
+	margin-left: 1px;
+}
+.ApyForm table .msg .check{
+	vertical-align: middle;
+}
+.ApyForm table .msg .agreen{
+	vertical-align: middle;
+}
+.ApyForm table .msg .agreen a{
+	color: #ff5837;
+}
+
+/*申请入口*/
+.SentTit{
+	width: 100%;
+	min-width:1200px; 
+	height: 600px;
+	background: url(../../images/apply/car_bg1.jpg) no-repeat center 0;
+	position: relative;
+}
+.SentTit .jump{
+	position: absolute;
+	bottom: 0px;
+	left: 45%;
+	opacity: 0;
+	display: inline-block;
+	width: 140px;
+	height: 60px;
+}
+.STcenter{
+	width: 1200px;
+	height: 364px;
+	margin: 0 auto;
+	padding-top: 118px;
+}
+.clearfix{
+	width: 552px;
+	height: 364px;
+	float: left;
+}
+.stleft h3{
+	font: normal 40px/normal 'Microsoft YaHei';
+	color: #fff;
+	margin-bottom: 8px;
+}
+.stleft p{
+	font: normal 18px/26px 'Microsoft YaHei';
+	color: #fff;
+}
+.stleft ul{
+	width: 702px;
+	height: 128px;
+	margin-top: 17px;
+	color: #fff;
+}
+.stleft ul li{
+	width: 206px;
+	height: 128px;
+	float: left;
+	position: relative;
+}
+.stleft ul .dy i{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 2px -717px;
+	display: inline-block;
+	width: 30px;
+	height: 35px;
+}
+.stleft ul .sj i{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat -1px -779px;
+	display: inline-block;
+	width: 30px;
+	height: 35px;
+}
+.stleft ul .rq i{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 1px -839px;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+}
+.stleft ul .sj,.stleft ul .rq{
+	margin-left: 42px;
+}
+.stleft ul li em{
+	font: normal 18px/normal 'Microsoft YaHei';
+	position: absolute;
+	top: 5px;
+	left: 40px;
+}
+.stleft ul li span{
+	font: normal 14px/22px 'Microsoft YaHei';
+	display: block;
+}
+.stleft .nowbtn{
+	margin-top: 30px;
+	margin-left: 200px;
+	display: inline-block;
+	width: 200px;
+	height: 55px;
+	background: #FF5837;
+	text-align: center;
+	font: normal 23px/55px 'Microsoft YaHei';
+	color: #fff;
+	border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.stright{
+	width: 424px;
+	height: 364px;
+	float: right;
+	text-align: center;
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0px -894px;
+}
+.stright .D_top{
+	font: normal 28px/normal 'Microsoft YaHei';
+	color: #666;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.stright dd{
+	position: relative;
+}
+.stright input{
+	width: 324px;
+	height: 16px;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+	padding: 16px 12px;
+	font: normal 16px/normal 'Microsoft YaHei';
+	color: #aaa;
+}
+.stright .hides{
+	display: none;
+}
+.stright .go{
+	width: 32px;
+	height: 32px;
+	background: url(../../img/go.jpg);
+	position: absolute;
+	right: 0px;
+	top: 100px;
+	border: none;
+	cursor: pointer;
+}
+.stright .wpas{
+	font: normal 14px/normal 'Microsoft YaHei';
+	color: #888;
+	display: inline-block;
+	float: left;
+	margin-left: 40px;
+}
+.stright .wpas a{
+	color: #888;
+}
+.stright .wpas a u{
+	color: #ff5837;
+}
+.stright .kf{
+	font: normal 14px/normal 'Microsoft YaHei';
+	color: #888;
+	display: inline-block;
+	float: right;
+	margin-right: 38px;
+}
+
+
+.SentBody{
+	width: 100%;
+	overflow: hidden;
+}
+.STb01{
+	width: 100%;
+	min-width: 1200px;
+	height: 520px;
+	background: #f8f8f8;
+}
+.STb01 .stp{
+	display: block;
+	font: normal 40px/normal 'Microsoft YaHei';
+	color: #333;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 96px;
+}
+.STb01 .stp em{
+	color: #ff5837;
+}
+.STb01 .st01{
+	width: 1200px;
+	height: 307px;
+	margin: 0 auto;
+	position: relative;
+}
+.STb01 .st01 img{
+	margin-left: 297px;
+}
+.STb01 .st01 .yzs{
+	display: inline-block;
+	text-align: right;
+	width: 306px;
+	margin-left: 180px;
+	position: absolute;
+	top: 80px;
+}
+.STb01 .st01 .yzs .p1,
+.STb02 .st02 .ggk .p1,
+.STb03 .st03 .gsx .p1{
+	font: normal 34px/normal 'Microsoft YaHei';
+	color: #333;
+	position: relative;
+	margin-bottom: 19px;
+}
+.STb01 .st01 .yzs .p1 i{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0px -1383px;
+	width: 12px;
+	height: 14px;
+	display: inline-block;
+	position: absolute;
+	top: 16px;
+	left: 4px;
+}
+.STb01 .st01 .yzs .p2,
+.STb02 .st02 .ggk .p2,
+.STb03 .st03 .gsx .p2{
+	font: normal 18px/26px 'Microsoft YaHei';
+	color: #666;
+}
+.STb02{
+	width: 100%;
+	min-width: 1200px;
+	height: 340px;
+}
+.STb02 .st02,.STb03 .st03{
+	width: 1200px;
+	height: 340px;
+	margin: 0 auto;
+	position: relative;
+}
+.STb02 .st02 .ggk{
+	display: inline-block;
+	text-align: left;
+	width: 306px;
+	margin-left: 140px;
+	position: absolute;
+	top: 110px;
+}
+.STb02 .st02 .ggk .p1 i{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat -102px -1383px;
+	width: 12px;
+	height: 14px;
+	display: inline-block;
+	position: absolute;
+	top: 16px;
+	right: 4px;
+}
+.STb02 .st02 img{
+	margin-left: 613px;
+	margin-top: 18px;
+}
+.STb03{
+	width: 100%;
+	min-width: 1200px;
+	height: 340px;
+	background: #f8f8f8;
+}
+.STb03 .st03 .gsx{
+	display: inline-block;
+	text-align: right;
+	width: 306px;
+	margin-left: 140px;
+	position: absolute;
+	top: 122px;
+}
+.STb03 .st03 img{
+	margin-left: 160px;
+	margin-top: 54px;
+}
+.STb03 .st03 .gsx .p1 i{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0px -1383px;
+	width: 12px;
+	height: 14px;
+	display: inline-block;
+	position: absolute;
+	top: 16px;
+	left: 4px;
+}
+.STb04{
+	width: 100%;
+	min-width: 1200px;
+	height: 500px;
+}
+.STb04 .stp{
+	display: block;
+	font: normal 40px/normal 'Microsoft YaHei';
+	color: #333;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 65px;
+}
+.STb04 .stp em{
+	color: #ff5837;
+}
+.STb04 .st04{
+	width: 900px;
+	height: 320px;
+	margin: 0 auto;
+	padding: 0 150px;
+}
+.STb04 .st04 li{
+	float: left;
+	width: 182px;
+	height: 236px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.STb04 .st04 .spac{
+	margin-left: 176px;
+}
+.STb04 .st04 li a{
+	display: inline-block;
+	width: 182px;
+	height: 182px;
+}
+.STb04 .st04 li .dask{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-mz-border-radius: 50%;
+	-mos-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background:#000;
+	opacity: 0.3;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.STb04 .st04 li .dg{
+	background: url('http://imgs.xin.com/apply/images/s_hover.png') no-repeat;
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.STb04 .st04 li span{
+	font: normal 24px/normal 'Microsoft YaHei';
+	color: #333;
+	margin-top: 24px;
+	display: inline-block;
+}
+.STb05{
+	width: 100%;
+	min-width: 1200px;
+	height: 440px;
+	background: #f8f8f8;
+	padding-top: 80px;
+}
+.STb05 .process{
+	font: normal 40px/normal 'Microsoft YaHei';
+	color: #333;
+	text-align: center;
+	margin: 0 auto 24px;
+}
+.STb05 .step{
+	font: normal 24px/normal 'Microsoft YaHei';
+	color: #666;
+	text-align: center;
+	display: block;
+	margin-bottom: 64px;
+}
+.STb05 ul{
+	width: 930px;
+	height: 270px;
+	margin: 0 auto;
+	text-align: center;
+}
+.STb05 ul li{
+	float: left;
+	text-align: center;
+	width: 280px;
+}
+.STb05 ul .li02{
+	margin: 0 45px;
+}
+.STb05 ul li span{
+	display: block;
+}
+.STb05 ul li .redword{
+	font: normal 24px/normal 'Microsoft YaHei';
+	color: #ff5837;
+	margin-bottom: 20px;
+}
+.STb05 ul li .gryword{
+	font: normal 18px/24px 'Microsoft YaHei';
+	color: #787878;
+}
+.STb05 ul .pic{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0 -1495px;
+	display: inline-block;
+	width: 702px;
+	height: 73px;
+}
+.logn_check {
+	/*border: 1px;*/
+    margin: 0;
+    margin-top: -10px;
+    height: 35px;
+    text-align: center;
+}
+.logn_check .error {
+    text-align: left;
+    display: inline-block;
+    height: 35px;
+    margin-left: 10px;
+    padding-left: 20px;
+    background: url('http://imgs.xin.com/seller/images/common/seller_icon2.png')  0 -708px no-repeat;
+    font: normal 12px/33px "Microsoft YaHei";
+    color: #ee394b;
+}
+/*用户协议*/
+.agree-wrap{
+	width:1100px;
+	margin:20px auto 20px;
+	border-radius:8px;
+	padding-top:70px;
+	background:#ffffff;
+	border:1px solid #e4e4e4;
+}
+.agree-wrap .about{
+	width:1100px;
+	height:470px;
+	margin:0 auto;
+}
+.agree-wrap .about .nav{
+	width:240px;
+	text-align:center;
+}
+.agree-wrap .about h1{
+	color:#333333;
+	font:normal 30px "Microsoft YaHei";
+}
+.agree-wrap .about h2{
+	color:#333333;
+	font:normal 25px "Microsoft YaHei";
+}
+.agree-wrap .about .con-txt{
+	width:790px;
+	height:390px;
+	overflow-y:scroll;
+	padding-right:20px;
+}
+.agree-wrap .about .con-txt h3,
+.agree-wrap .con-txt u{
+	color:#333333;
+	font:bold 14px/30px "Microsoft YaHei";
+	display:block;
+}
+.agree-wrap .about .con-txt h2{
+	color:#333333;
+	font:bold 16px/30px "Microsoft YaHei";
+}
+.agree-wrap .about .con-txt h2{
+	margin-top:25px;
+}
+.agree-wrap .con-txt .phone span,
+.agree-wrap .con-txt p,
+.agree-wrap .con-txt span{
+	color:#666666;
+	font:normal 14px/25px "Microsoft YaHei";
+	display:block;
+}
+.agree-wrap .con-txt p{
+	margin-top:20px;
+}
+.agree-wrap .con-txt .f-red{
+	color:red;
+}
+
+.stright .go {
+	background: rgba(0, 0, 0, 0) url(../../img/go.jpg) no-repeat scroll 0 -1297px;
+	border: medium none;
+	cursor: pointer;
+	height: 32px;
+	position: absolute;
+	right: 50px;
+	top: -5px;
+	width: 32px;
+	visibility: visible;
+}
+.stright input {
+    border: 1px solid #e5e5e5;
+    color: #aaa;
+    font: 16px "Microsoft YaHei";
+    height: 16px;
+    margin-bottom: 20px;
+    padding: 16px 12px;
+    width: 324px;
+}
+input, button, select, textarea {
+    outline: medium none;
+}

@@ -4,9 +4,21 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Insert title here</title>
+		<title>登录</title>
 	</head>
 	<body>
-		
+	   <table>
+	   	 <tr>
+	   	   <td>手机号：<input type="text" id="tel" name="tel" /></td>
+	   	   <span id="msgSpan1"></span>
+	   	 </tr>
+	   	 <tr>
+	   	   <td>密码：<input type="text" id="tel" name="tel" /></td>
+	   	   <span id="msgSpan2"></span>
+	   	 </tr>
+	   	 <tr>
+	   	   <td><a type="submit" id="tel">登录</a></td>
+	   	 </tr>
+	   </table>
 	</body>
 </html>

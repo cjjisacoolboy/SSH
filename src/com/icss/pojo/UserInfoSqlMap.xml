@@ -15,10 +15,14 @@
     
     
     <!-- 查询-->
+    <!--  
     <select id="findUser" resultMap="rmUserInfo" parameterType="com.icss.pojo.UserInfo">
         select * from sys.UserInfo ui where ui.tel like ${tel}
     </select>
-     
-
+    -->
+    <!-- mysql查询 -->
+	<select id="findUser" resultMap="rmUserInfo" parameterType="string">
+        select * from users where tel like ${tel}
+    </select>
 
 </mapper>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>付一半</title>
+		<link href="../css/base.css" rel="stylesheet" type="text/css">
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
+		<link href="../css/index.css" rel="stylesheet" type="text/css" />
+		<link href="../css/page.css" rel="stylesheet" type="text/css" />
+		<link href="css/mycss.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+	</head>
+	<body>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-16
+        	描述：导航栏
+        -->
+	    <div class="fixed-head-wrap fix">
+	        <div class="fixed-head rel">
+			    <a href="index.html" class="fixed-logo"></a><!-- logo点击连接 -->          
+					<h1>二手车</h1>
+					<dl class="select-city fixed-city abs" id="citySelect">
+				        <dt id='current_city_id'>长沙</dt>
+				        <dd id="cityWrap">
+					<!--
+                    	添加城市列表
+                    -->
+			            </dd>
+			        </dl>
+		        <ul class="nav-list fixed-list abs">       
+				    <li><a class="a_buypage " href="../buy/buycar.html">买车</a></li>
+					<li><a class="" href="../sell/sell.html">卖车</a></li>
+					<li class="rel" class='php_li_half' id="li_halfprice" style="display:block"><a id='php_half_city_link' class="active" href="../payhalf/payhalf.html" sname="">付一半</a><b class="ico hot-ico abs"></b></li>				
+					<li><a class="" href="../activity/activity.html">热门活动</a></li>
+					<li><a href="../safe/safe.html" class="" rel="nofollow">服务保障</a></li>
+					<li><a href="../downloadAPP/downloadAPP.html" target="_blank"><b class="ico app-ico fl" rel="nofollow"></b>下载App</a></li>
+					<li><a href="../apply/apply.html" id="apply_dealer" class="apply" target="_blank">商家申请</a></li>
+					<li id="xin_top_userinfo">
+						<script type="text/javascript">
+							$(function(){
+								$('#loginA').click(function(){
+									$('#popupLogin').css('display','block');
+									$('#blackground').css('display','block');
+								});
+							});
+						</script>
+						<div class="person-wrap" style="top:0px;" >
+							<a href="javascript:void(0)" id="loginA">登录</a>/<a href="../register/register.html">注册</a>
+						</div>
+					</li>
+				</ul>
+	  		</div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：图片
+        -->
+        <div class="half-price-wrap">
+			<div class="banner">
+				<div class="main">
+					<div>
+						<img src="../images/payhalf/video_bg1.png" />
+					</div>
+					<div class="txt">
+						<h1>付一半&mdash;&mdash;全新的购车方案</h1>
+							<ul>
+							 	<li>只需首付一半，即把爱车开走</li>
+							 	<li>两年无月供，生活0压力</li>
+							 	<li>尾款灵活</li>
+							 	<li>申请无门槛</li>
+							 	<li>严格检测，质量保证</li>
+							 </ul>
+							 <script type="text/javascript">
+							 	$(function(){
+							 		$('.half-price').click(function(){
+							 			$('#dhPrice').css('display','block');
+							 			$('#blackground').css('display','block');
+							 		});
+							 	});
+							 </script>
+							<a class="half-price" href="javascript:void(0);">了解付一半详情</a>
+					</div>
+				</div>
+			</div>           
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：车的类型
+        -->
+        <div class="car-sale-wrap">
+			<div class="sub-seatch-bar">
+				<form id="searchForm" method="post" action="">
+					<input type="hidden" value="" name="b" id="hidden_b">
+					<input type="hidden" value="" name="s" id="hidden_s">
+					<input type="hidden" value="" name="j" id="hidden_j">
+					<input type="hidden" value="" name="p" id="hidden_p">
+					<input type="hidden" value="2" name="o" id="hidden_o">
+					<input type="hidden" value="10" name="a" id="hidden_a">
+					<input type="hidden" value="1" name="i" id="hidden_i">
+					<input type="hidden" value="" name="y" id="hidden_y">
+					<div class="sub-brand  clearfix">
+						<ul>
+							<li>
+								<b class="searched-ico sarw-ico curr"></b>
+								<a class="searched-ico brand-ico TipBtn TipBtn_hidden_b"> 全部品牌<i class="searched-ico opt"></i></a>
+								<div class="frame-bg-one PopBox PopBox_hidden_b" style="display: none;">
+									<div class="toptip"></div>
+									<ul class="brand-letter clearfix search-brand-letter">
+										<li><a data-valueid="0" data-for="hidden_b">全部品牌</a></li>
+										<li class="spell spell_A ">A</li>
+										<li class="spell spell_B ">B</li>
+										<li class="spell spell_C ">C</li>
+										<li class="spell spell_D ">D</li>
+										<li class="spell spell_F ">F</li>
+										<li class="spell spell_G ">G</li>
+										<li class="spell spell_H ">H</li>
+										<li class="spell spell_J ">J</li>
+										<li class="spell spell_K ">K</li>
+										<li class="spell spell_L ">L</li>
+										<li class="spell spell_M ">M</li>
+										<li class="spell spell_N ">N</li>
+										<li class="spell spell_O ">O</li>
+										<li class="spell spell_P ">P</li>
+										<li class="spell spell_Q ">Q</li>
+										<li class="spell spell_R ">R</li>
+										<li class="spell spell_S ">S</li>
+										<li class="spell spell_T ">T</li>
+										<li class="spell spell_W ">W</li>
+										<li class="spell spell_X ">X</li>
+										<li class="spell spell_Y ">Y</li>
+										<li class="spell spell_Z ">Z</li>
+									</ul>
+									<ul class="brand-cars">
+										<li style="display: list-item" class="li_spell li_spell_A">
+											<a class=" " data-valueid="62" data-spell="A" data-for="hidden_b">奥迪</a>
+											<a class=" " data-valueid="68" data-spell="A" data-for="hidden_b">阿斯顿马丁</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_B">
+											<a class=" " data-valueid="59" data-spell="B" data-for="hidden_b">本田</a>
+											<a class=" " data-valueid="34" data-spell="B" data-for="hidden_b">别克</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_C">
+											<a class=" " data-valueid="115" data-spell="C" data-for="hidden_b">长城</a>
+											<a class=" " data-valueid="42" data-spell="C" data-for="hidden_b">长安</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_D">
+											<a class=" " data-valueid="84" data-spell="D" data-for="hidden_b">大众</a>
+											<a class=" " data-valueid="150" data-spell="D" data-for="hidden_b">东风</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_F">
+											<a class=" " data-valueid="89" data-spell="F" data-for="hidden_b">丰田</a>
+											<a class=" " data-valueid="98" data-spell="F" data-for="hidden_b">福特</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_G">
+											<a class=" " data-valueid="143" data-spell="G" data-for="hidden_b">广汽</a>
+											<a class=" " data-valueid="50" data-spell="G" data-for="hidden_b">GMC</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_H">
+											<a class=" " data-valueid="132" data-spell="H" data-for="hidden_b">海马</a>
+											<a class=" " data-valueid="54" data-spell="H" data-for="hidden_b">哈飞</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_J">
+											<a class=" " data-valueid="83" data-spell="J" data-for="hidden_b">吉利</a>
+											<a class=" " data-valueid="97" data-spell="J" data-for="hidden_b">江淮</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_K">
+											<a class=" " data-valueid="120" data-spell="K" data-for="hidden_b">凯迪拉克</a>
+											<a class=" " data-valueid="61" data-spell="K" data-for="hidden_b">克莱斯勒</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_L">
+											<a class=" " data-valueid="94" data-spell="L" data-for="hidden_b">铃木</a>
+											<a class=" " data-valueid="112" data-spell="L" data-for="hidden_b">路虎</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_M">
+											<a class=" " data-valueid="145" data-spell="M" data-for="hidden_b">马自达</a>
+											<a class=" " data-valueid="104" data-spell="M" data-for="hidden_b">名爵</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_N">
+											<a class=" " data-valueid="35" data-spell="N" data-for="hidden_b">纳智捷</a>
+											<a class=" " data-valueid="170" data-spell="N" data-for="hidden_b">南汽</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_O">
+											<a class=" " data-valueid="128" data-spell="O" data-for="hidden_b">欧宝</a>
+											<a class=" " data-valueid="118" data-spell="O" data-for="hidden_b">讴歌</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_P">
+											<a class=" " data-valueid="148" data-spell="P" data-for="hidden_b">帕加尼</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_Q">
+											<a class=" " data-valueid="129" data-spell="Q" data-for="hidden_b">起亚</a>
+											<a class=" " data-valueid="155" data-spell="Q" data-for="hidden_b">奇瑞</a>
+											<a class=" " data-valueid="21" data-spell="Q" data-for="hidden_b">庆铃</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_R">
+											<a class=" " data-valueid="15" data-spell="R" data-for="hidden_b">日产</a>
+											<a class=" " data-valueid="23" data-spell="R" data-for="hidden_b">荣威</a>
+											<a class=" " data-valueid="56" data-spell="R" data-for="hidden_b">瑞麒</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_S">
+											<a class=" " data-valueid="92" data-spell="S" data-for="hidden_b">斯柯达</a>
+											<a class=" " data-valueid="147" data-spell="S" data-for="hidden_b">三菱</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_T">
+											<a class=" " data-valueid="44" data-spell="T" data-for="hidden_b">天津一汽</a>
+											<a class=" " data-valueid="184" data-spell="T" data-for="hidden_b">特斯拉</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_W">
+											<a class=" " data-valueid="51" data-spell="W" data-for="hidden_b">五菱</a>
+											<a class=" " data-valueid="135" data-spell="W" data-for="hidden_b">沃尔沃</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_X">
+											<a class=" " data-valueid="55" data-spell="X" data-for="hidden_b">现代</a>
+											<a class=" " data-valueid="73" data-spell="X" data-for="hidden_b">雪佛兰</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_Y">
+											<a class=" " data-valueid="119" data-spell="Y" data-for="hidden_b">一汽</a>
+											<a class=" " data-valueid="160" data-spell="Y" data-for="hidden_b">英菲尼迪</a>
+										</li>
+										<li style="display: none" class="li_spell li_spell_Z">
+											<a class=" " data-valueid="77" data-spell="Z" data-for="hidden_b">中华</a>
+											<a class=" " data-valueid="100" data-spell="Z" data-for="hidden_b">众泰</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="carm TipBtn light TipBtn_hidden_s">
+									<span>全部车系</span><i class="searched-ico n-opt"></i>
+								</a>
+								<div class="frame-bg-two PopBox PopBox_hidden_s" id="search_serial" style="display: none;">
+									<div class="toptip"></div>
+									<a data-valueid="0" data-for="hidden_s" class="h1" href="javascript:;">全部车系</a>
+								</div>
+							</li>
+							<li>
+								<a class="searched-ico price-ico carr TipBtn TipBtn_hidden_p" id="price_tipbtn">全部价格<i class="searched-ico opt"></i></a>
+								<div class="frame-bg-four PopBox PopBox_hidden_p" style="display: none;">
+									<div class="toptip"></div>
+									<h1><a data-valueid="0" data-for="hidden_p">全部价格</a></h1>
+									<ul>
+										<li>
+											<a data-valueid="0-5" data-for="hidden_p" class="">5万以下</a>
+											<a data-valueid="5-10" data-for="hidden_p" class="">5-10万</a>
+											<a data-valueid="10-15" data-for="hidden_p" class="">10-15万</a>
+											<a data-valueid="15-20" data-for="hidden_p" class="">15-20万</a>
+											<a data-valueid="20-30" data-for="hidden_p" class="">20-30万</a>
+											<a data-valueid="30-50" data-for="hidden_p" class="">30-50万</a>
+											<a data-valueid="50-" data-for="hidden_p" class="">50万以上</a>
+										</li>
+									</ul>
+									<div class="other-price clearfix">
+										<span>自定义价格</span>
+										<input type="text" maxlength="12" class="txt" value="" id="price_s" name="price_s"> 万<span>-</span>
+										<input type="text" value="" id="price_e" name="price_e" class="txt"> 万
+										<input type="button" maxlength="12" class="confirm-btn" id="customer_price" value="确定">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</form>
+			</div>
+			<div id="search_container" class="w1100">    
+				<div class="car-upper mb20">
+			        <span class="nber s-icon">小要为您找到<em>2193</em>辆车</span>
+			        <span class="opt ">
+			            <a class="view_a active down" data-up="10" data-down="10" name="view_a">默认排序</a>
+			            <a class="view_a s-icon up" data-up="6" data-down="5" name="view_a">车龄</a>
+			            <a class="view_a s-icon up" data-up="3" data-down="4" name="view_a">价格</a>
+			            <a class="view_a s-icon up" data-up="7" data-down="8" name="view_a">里程</a>
+			        </span>
+			        <span class="cut">
+			            <a class="view_o s-icon vtc active" data-o="2" name="view_o"></a>
+			            <a class="view_o s-icon crs " data-o="1" name="view_o"></a>
+			        </span>
+		    	</div>
+			    <!--
+	            	作者：455984146@qq.com
+	            	时间：2015-11-22
+	            	描述：车辆信息
+	            -->
+		        <div class="car-box clearfix">
+		            <!-- 竖立车辆信息开始 -->
+		                <div style="" class="car-vtc vtc-border ">
+		            <div class="vtc-img"><a target="_blank" data-position="1" data-seriesid="1541" data-brandid="34" data-cityid="1301" href="http://che.xin.com/11335543.html"><img width="264" height="176" class="lazy" alt="别克 昂科雷 2010款 3.6 自动 旗舰版" data-original="http://img2.xin.com/xin/201509/2616/5606512790969239872_18.jpg" src="http://img2.xin.com/xin/201509/2616/5606512790969239872_18.jpg" style="display: inline;"><b></b></a></div>
+		            <div class="vtc-info">
+		                <p><a target="_blank" data-position="1" data-seriesid="1541" data-brandid="34" data-cityid="1301" title="别克 昂科雷 2010款 3.6 自动 旗舰版" href="http://che.xin.com/11335543.html">别克 昂科雷 2010款 3.6 自动 旗舰版</a></p>
+		                <div class="box">
+		                    <ol>
+		                        <li>上牌</li>
+		                        <li>表显里程</li>
+		                        <li>变速箱</li>
+		                        <li>销售城市</li>
+		                    </ol>
+		                    <ul>
+		                        <li>2010/10</li>
+		                        <li>12.00万公里</li>
+		                        <li>自动</li>
+		                        <li>长沙</li>
+		                    </ul>
+		                </div>
+		                                <div class="back">
+		                    <img src="http://imgs.xin.com/xin/images/car-sale/promise_ico09.png">
+		                    <img src="http://imgs.xin.com/xin/images/car-sale/quality_ico09.png?v=2015111810">
+		                    </div>
+		                            </div>
+		            <div class="vtc-money">
+		                <em>¥10.40万</em><b></b>                <div class="msg-price">
+		                    <p class="price-car">
+		                    新车价格：<del>61.07万</del>(含税4.81万)</p>
+		                </div>
+		                                    <span>便宜：50.67万</span>
+		                            </div>
+		            <div class="vtc-house">
+		                <span class="s-icon house">
+		                <a class="s-icon star" data-carid="11335543" data-css="active" name="carFavorite">加入收藏</a>
+		                </span>
+		                <input type="checkbox" class="hidden-access" value="11335543" name="carCheck">
+		                <label class="carCheck state-default collect-ico" for="carCheck">
+		                <span class="button-text">加入对比</span>
+		                </label>
+		            </div>
+		        </div>
+		                <div style="" class="car-vtc vtc-border ">
+		            <div class="vtc-img"><a target="_blank" data-position="2" data-seriesid="1163" data-brandid="47" data-cityid="1301" href="http://che.xin.com/11335542.html"><img width="264" height="176" class="lazy" alt="奔驰 A级两厢 2011款 1.5 自动 A160" data-original="http://img2.xin.com/xin/201509/2215/560108fb04a89839513_18.jpg" src="http://img2.xin.com/xin/201509/2215/560108fb04a89839513_18.jpg" style="display: inline;"><b></b></a></div>
+		            <div class="vtc-info">
+		                <p><a target="_blank" data-position="2" data-seriesid="1163" data-brandid="47" data-cityid="1301" title="奔驰 A级两厢 2011款 1.5 自动 A160" href="http://che.xin.com/11335542.html">奔驰 A级两厢 2011款 1.5 自动 A160</a></p>
+		                <div class="box">
+		                    <ol>
+		                        <li>上牌</li>
+		                        <li>表显里程</li>
+		                        <li>变速箱</li>
+		                        <li>销售城市</li>
+		                    </ol>
+		                    <ul>
+		                        <li>2012/03</li>
+		                        <li>3.20万公里</li>
+		                        <li>自动</li>
+		                        <li>长沙</li>
+		                    </ul>
+		                </div>
+		                                <div class="back">
+		                    <img src="http://imgs.xin.com/xin/images/car-sale/promise_ico09.png">
+		                    <img src="http://imgs.xin.com/xin/images/car-sale/quality_ico09.png?v=2015111810">
+		                    </div>
+		                            </div>
+		            <div class="vtc-money">
+		                <em>¥6.06万</em><b></b>                <div class="msg-price">
+		                    <p class="price-car">
+		                    新车价格：<del>25.83万</del>(含税2.03万)</p>
+		                </div>
+		                                    <span>便宜：19.77万</span>
+		                            </div>
+		            <div class="vtc-house">
+		                <span class="s-icon house">
+		                <a class="s-icon star" data-carid="11335542" data-css="active" name="carFavorite">加入收藏</a>
+		                </span>
+		                <input type="checkbox" class="hidden-access" value="11335542" name="carCheck">
+		                <label class="carCheck state-default collect-ico" for="carCheck">
+		                <span class="button-text">加入对比</span>
+		                </label>
+		            </div>
+		        </div>
+		                
+		        </div>
+		        <!--
+                	作者：455984146@qq.com
+                	时间：2015-11-22
+                	描述：分页
+                -->
+		        <div class="con-page search_page_link">
+		            <span class="page-current">1</span>
+					<a data-page="2" name="view_i">2</a>
+					<a data-page="3" name="view_i">3</a>
+					<a data-page="4" name="view_i">4</a>
+					<a data-page="5" name="view_i">5</a>
+					<span>...</span>
+					<a data-page="110" name="view_i">110</a>
+					<a data-page="2" name="view_i">下一页</a>
+				</div>
+				<!--
+		        	作者：455984146@qq.com
+		        	时间：2015-11-22
+		        	描述：弹框
+		        -->
+				<div id="dhPrice" class="popup-wrap" style="display: none; left: 50%; top: 50%; margin-left: -422.5px; margin-top: -285px;">
+				    <div class="inner">
+				        <div class="hpop-new">
+				             <div class="hpop-pic">
+				                 <img src="http://imgs.xin.com/xin/images/half/hpop_pic1.png">
+				                 <div class="hpop-con">
+				                    <h1>付一半 全新的购车方案</h1>
+				                    <p>首付一半，即可把心爱的好车开走。</p>
+				                    <p>“付一半”产品帮助您使用更少的现金，购买到更好的车辆，升级您的汽车生活。</p>
+				                 </div>
+				                 <ul>
+				                    <li>
+				                        <img src="http://imgs.xin.com/xin/images/half/pic_1.png">
+				                        <div class="txt">
+				                            <p>首付一半</p> 
+				                            <span>这是一款为期两年的分期购车计划，今天您只需要首付一半，即可把爱车开走</span>
+				                        </div>
+				                    </li>
+				                    <li>
+				                        <img src="http://imgs.xin.com/xin/images/half/pic_2.png">
+				                        <div class="txt">
+				                            <p>0月供</p>  
+				                            <span>两年无月供，生活0压力</span>
+				                        </div>
+				                    </li>
+				                     <li>
+				                        <img src="http://imgs.xin.com/xinwap/images/sale/PIC6.png?v=2015111810">
+				                        <div class="txt">
+				                            <p>审批快</p>  
+				                            <span>最快60分钟出具审批结果</span>
+				                        </div>
+				                    </li>
+				                    <li>
+				                        <img src="http://imgs.xin.com/xin/images/half/pic_3.png">
+				                        <div class="txt">
+				                            <p>尾款灵活</p> 
+				                            <span>两年后合约到期时，您可以选择补齐尾款完成购买；或者，您也可以选择不支付车辆尾款，将车辆退还给优信二手车</span>
+				                        </div>
+				                    </li>
+				                    <li>
+				                        <img src="http://imgs.xin.com/xin/images/half/PIC_4.png">
+				                        <div class="txt">
+				                            <p>无门槛</p>  
+				                            <span>无户籍、房产、收入、职业等限制，只需提供本人身份证、借记卡、驾照（限购城市需要本人有购车指标）</span>
+				                        </div>
+				                    </li>
+				                    <li>
+				                        <img src="http://imgs.xin.com/xin/images/half/pic_5.png">
+				                        <div class="txt">
+				                            <p>质量保证</p> 
+				                            <span>所有“付一半”车辆均经过387项严格检测，享受“无重大事故承诺”及“15天包退承诺”，可选一年或两年不限里程质保</span>
+				                        </div>
+				                    </li>
+				                 </ul>
+				                 <div class="hpop-con">
+				                    <img src="http://imgs.xin.com/xin/images/half/hpop_003.png?v=2015111810">
+				                 </div>
+				                 <a id="php_lookup_now" class="h-btn" href="javascript:void(0)">马上看看</a>
+				             </div>
+				             
+				         </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：页尾
+        -->
+		<div class="footer-wrap">
+			<div class="footer">
+				<div class="contact_new">
+					<a href="aboutus/"  rel="nofollow">关于我们</a>
+					<a href="contactus/"  rel="nofollow">联系我们</a>
+					<a href="joinus/" rel="nofollow">加入我们</a>
+					<a href="help/"  rel="nofollow">帮助中心</a>
+					<a href="feedback/"  rel="nofollow">用户反馈</a>
+					<a href="finance/"  rel="nofollow">我要金融</a>
+				</div>
+				<span>业务合作单位：我估(上海) 信息科技有限公司/我要拍（北京）二手车鉴定评估有限公司</span>
+	            <div class="footer3">
+					<p>copyright@2015 <strong><a href="">我要互联</a></strong> all rights reserved 版权所有 我要互联（北京）信息技术有限公司
+					<em>经营许可证编号：京ICP证120819号</em>
+	                </p>
+					<!--可信网站开始-->
+					<script src="http://kxlogo.knet.cn/seallogo.dll?sn=e15102111010561082vc83000000&size=0"></script>
+					<!--可信网站结束-->
+					<!--诚信网站开始-->
+					<a id='___szfw_logo___' class="bot-logo" href='https://credit.szfw.org/CX20151104012121580123.html' target='_blank'><img src='http://imgs.xin.com/xin/images/home/bot_logo2.png' border='0' /></a>
+	               <script type='text/javascript'>(function(){ document.getElementById('___szfw_logo___').oncontextmenu = function(){ return false; } })();</script>
+	               <!--诚信网站结束-->
+	            </div>            
+				<div class="index-code fr clearfix"> 
+					<img src="../images/code.jpg" height="100" width="100">
+					<p class="scan-txt fl rel">
+						关注我要二手车<br />微信公众号
+					</p>
+				</div>
+				<div class="index-code2 fl clearfix">
+					<img src="http://imgs.xin.com/xin/images/common/code_1.jpg" height="100" width="100">
+					<p class="scan-txt fr rel">
+						扫描我，即可下载<br />我要二手车手机版
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--
+	    	作者：455984146@qq.com
+	    	时间：2015-11-19
+	    	描述：登录后面大背景
+	    -->
+	    <script type="text/javascript">
+	    	$(function(){
+	    		$('#blackground').click(function(){
+	    			$('#dhPrice').css('display','none');
+	    			$('#blackground').css('display','none');
+	    		});
+	    	});
+	    </script>
+		<div id="blackground" class="shade" style="height: 1445px; z-index: 100; opacity: 0.6; display:none;"></div>
+	</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>热门活动</title>
+		<link rel="stylesheet" href="../css/index.css" type="text/css">
+		<link href="../css/base.css" rel="stylesheet" type="text/css">
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
+		<link href="../css/page.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+	</head>
+	<body>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-16
+        	描述：导航栏
+        -->
+	    <div class="fixed-head-wrap fix">
+	        <div class="fixed-head rel">
+			    <a href="index.html" class="fixed-logo"></a><!-- logo点击连接 -->          
+					<h1>二手车</h1>
+					<dl class="select-city fixed-city abs" id="citySelect">
+				        <dt id='current_city_id'>长沙</dt>
+				        <dd id="cityWrap">
+					<!--
+                    	添加城市列表
+                    -->
+			            </dd>
+			        </dl>
+		        <ul class="nav-list fixed-list abs">       
+				    <li><a class="a_buypage " href="../buy/buycar.html">买车</a></li>
+					<li><a class="" href="../sell/sell.html">卖车</a></li>
+					<li class="rel" class='php_li_half' id="li_halfprice" style="display:block"><a id='php_half_city_link' class="" href="../payhalf/payhalf.html" sname="">付一半</a><b class="ico hot-ico abs"></b></li>				
+					<li><a class="active" href="../activity/activity.html">热门活动</a></li>
+					<li><a href="../safe/safe.html" class="" rel="nofollow">服务保障</a></li>
+					<li><a href="../downloadAPP/downloadAPP.html" target="_blank"><b class="ico app-ico fl" rel="nofollow"></b>下载App</a></li>
+					<li><a href="../apply/apply.html" id="apply_dealer" class="apply" target="_blank">商家申请</a></li>
+					<li id="xin_top_userinfo">
+						<script type="text/javascript">
+							$(function(){
+								$('#loginA').click(function(){
+									$('#popupLogin').css('display','block');
+									$('#blackground').css('display','block');
+								});
+							});
+						</script>
+						<div class="person-wrap" style="top:0px;" >
+							<a href="javascript:void(0)" id="loginA">登录</a>/<a href="../register/register.html">注册</a>
+						</div>
+					</li>
+				</ul>
+	  		</div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：主体
+        -->
+        <div class="main-wrap subject-wrap">
+        	<!--
+            	作者：455984146@qq.com
+            	时间：2015-11-22
+            	描述：大图
+            -->
+			<a target="_blank" data-url="/s/v2/" id="php_a_banner" href="../buy/buycar.html">
+				<div class="activity-banner-wrap">
+					<div class="activity-banner">
+					</div>
+				</div>
+			</a>
+			<!--
+            	作者：455984146@qq.com
+            	时间：2015-11-22
+            	描述：购车精明眼
+            -->
+			<div class="item-wrap clearfix">
+				<h2 class="subject-ico buy-ico">购车精明眼</h2>
+				<div class="item">
+					<a target="_blank" data-url="/s/o2a2i1l12v1u1x1/" class="php_redirect_url" href="/changsha/s/o2a2i1l12v1u1x1/"><img width="263" height="223" src="http://imgs.xin.com/xin/images/subject/s_pic01.png"></a>
+					<ul> 
+										<li style="z-index: 1;"><a target="_blank" data-url="/s/s2270u1/?q=大众尚酷(进口)" class="php_reload_url" href="/changsha/s/s2270u1/?q=大众尚酷(进口)">尚酷：碰撞灵感 为闪念出发</a></li>
+										<li style="z-index: 1;"><a target="_blank" data-url="/s/s266u1/?q=大众高尔夫" class="php_reload_url" href="/changsha/s/s266u1/?q=大众高尔夫">高尔夫：时代座驾 引领潮流</a></li>
+										<li style="z-index: 1;"><a target="_blank" data-url="/s/s422u1/?q=宝马3系" class="php_reload_url" href="/changsha/s/s422u1/?q=宝马3系">宝马3系：运动先锋 各擅所长</a></li>
+									</ul>
+				</div>
+				<div class="item">
+					<a target="_blank" data-url="/s/o2a2i1l6-7v1u1x2/" class="php_redirect_url" href="/changsha/s/o2a2i1l6-7v1u1x2/"><img width="263" height="223" src="http://imgs.xin.com/xin/images/subject/s_pic02.png"></a>
+					<ul>
+										<li style="z-index: 1;"><a target="_blank" data-url="/s/s1496u2/?q=丰田普拉多(进口)" class="php_reload_url" href="/changsha/s/s1496u2/?q=丰田普拉多(进口)">普拉多：非凡征程 激昂人生</a></li>
+										<li style="z-index: 1;"><a target="_blank" data-url="/s/s1501u2/?q" class="php_reload_url" href="/changsha/s/s1501u2/?q">指南者：突破自我 玩转你的城</a></li>
+										<li style="z-index: 1;"><a target="_blank" data-url="/s/s2284u2/?q=长城哈弗h6" class="php_reload_url" href="/changsha/s/s2284u2/?q=长城哈弗h6">哈弗H6：安心驾驶 乐享生活</a></li>
+									</ul>
+				</div>
+				<div class="item">
+					<a target="_blank" data-url="/s/j1.1-1.6o2a2i1l1v1u1x3/" class="php_redirect_url" href="/changsha/s/j1.1-1.6o2a2i1l1v1u1x3/"><img width="263" height="223" src="http://imgs.xin.com/xin/images/subject/s_pic03.png"></a>
+					<ul>
+										<li><a target="_blank" data-url="/s/s340u3/?q=大众朗逸" class="php_reload_url" href="/changsha/s/s340u3/?q=大众朗逸">朗逸：强自内心 锋芒亦是</a></li>
+										<li><a target="_blank" data-url="/s/s1985u3/?q=铃木天语sx4" class="php_reload_url" href="/changsha/s/s1985u3/?q=铃木天语sx4">天语：卓越科技 质雅非凡</a></li>
+										<li><a target="_blank" data-url="/s/s612u3/?q=本田锋范" class="php_reload_url" href="/changsha/s/s612u3/?q=本田锋范">锋范：锋芒开路 型我本色</a></li>
+									</ul>
+				</div>
+				<div class="item last-item">
+					<a target="_blank" data-url="/s/o2a2i1l5_12v1u1x4/" class="php_redirect_url" href="/changsha/s/o2a2i1l5_12v1u1x4/"><img width="263" height="223" src="http://imgs.xin.com/xin/images/subject/s_pic04.png"></a>
+					<ul>
+										<li style="z-index: 1;"><a target="_blank" data-url="/s/s2119u4/" href="/changsha/s/s2119u4/" class="php_reload_url">奥迪A8L：感受未来 进化完美</a></li>
+										<li style="z-index: 1;"><a target="_blank" data-url="/s/s1155u4/?q=奔驰s级(进口)" href="/changsha/s/s1155u4/?q=奔驰s级(进口)" class="php_reload_url">奔驰S级：心之所向 驰之以恒</a></li>
+										<li><a target="_blank" data-url="/s/s705u4/?q=宝马7系(进口)" href="/changsha/s/s705u4/?q=宝马7系(进口)" class="php_reload_url">宝马7系：尊崇旗舰 驾驭未来</a></li>
+									</ul>
+				</div>
+			</div>
+			<!--
+            	作者：455984146@qq.com
+            	时间：2015-11-22
+            	描述：二手车百科
+            -->
+			<div id="1f" name="1f" class="item-wrap">
+				<div class="newer-wrap">
+					<h2 class="subject-ico second-ico">二手车百科</h2>
+					<span class="index-ico prev"></span>
+					<span class="index-ico next"></span>
+					<div id="botton-scroll" class="exper" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 1101px;">
+						<ul class="clearfix" style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 4404px; left: -3303px;"><li style="overflow: hidden; float: left; width: 366px; height: 438px;"> 
+								<a target="_blank" href="/article/view/2/284/"><img src="http://img2.xin.com/xin/201511/1615/564987384da65392688_22.jpg"></a>
+								<a target="_blank" class="rel name" href="/article/view/2/284/">不开车门鉴别事故车的实战技巧</a>
+								<p class="txt">来到龙蛇混杂的二手车市场，面对林林总总的二手车。如何能够鉴别出事故车避免看走眼，成了很多网友车迷最为头疼和最为关注的问题。小编混迹二手车行业多年，看到很多朋友刚看上一辆二手车，还没有聊几句，就着急问价格然后开车门进入车内，一屁股坐在司机座关上车门，其实也没有看懂什么、看清什么就推开车门下来走了！其实真心不用开车门就能大概了解车况，鉴别出是否存在事故隐患！车况确定无误了再商讨价格才是正确的路线。</p>
+							</li><li style="overflow: hidden; float: left; width: 366px; height: 438px;">
+								<a target="_blank" class="rel name" href="/article/view/2/283/">单身也精彩 选款车为自己代言</a>
+								<p class="txt">在二手车车型日渐丰富的今天，若选择一款能为自己代言的车型，单身生活将会更精彩，因为二手车实惠的价格既不会让你感觉压力过大也能扩大你的生活半径。</p>
+								<div class="rel">
+								<a target="_blank" href="/article/view/2/283/"><img src="http://img2.xin.com/xin/201511/1213/564429c2530f4481252_22.jpg"></a>
+								</div>
+							</li><li class="last" style="overflow: hidden; float: left; width: 366px; height: 438px;">
+								<a target="_blank" href="/article/view/2/282/"><img src="http://img2.xin.com/xin/201511/0219/5637425c9743d171853_22.jpg"></a>
+								<a target="_blank" class="rel name" href="/article/view/2/282/">奶爸辣妈首选 靠谱二胎车型推荐</a>
+								<p class="txt">近日， “二胎”成为热词，孩子的抚养成本对于一般家庭来说不算低，选购一辆二手车能减轻压力，今天就向大家推荐五款车源相对丰富并且靠谱的7座二手车型。</p>
+							</li>
+																	<li style="overflow: hidden; float: left; width: 366px; height: 438px;"> 
+								<a target="_blank" href="/article/view/2/290/"><img src="http://img2.xin.com/xin/201511/2017/564ee61dcd21e620965_22.jpg"></a>
+								<a target="_blank" class="rel name" href="/article/view/2/290/">车主故事:奥迪Q5,一个军人的选择</a>
+								<p class="txt">陈哥（化名）一个普通的河南汉子，二十几年前入伍参军，被分配到北京当兵。北京这些年的发展想必有目共睹，所以便理所当然的留在了北京。</p>
+							</li>
+																						<li style="overflow: hidden; float: left; width: 366px; height: 438px;">
+								<a target="_blank" class="rel name" href="/article/view/2/285/">明星都买二手车 你还犹豫什么</a>
+								<p class="txt">近日，一篇关于贾乃亮花1888万买二手法拉利的新闻报道引发关注，你没看错，是“1888万”的“二手车”。什么二手车这么贵，既然这么有钱为啥不去买一辆新车?</p>
+								<div class="rel">
+								<a target="_blank" href="/article/view/2/285/"><img src="http://img2.xin.com/xin/201511/1718/564b0831c608c287483_22.jpg"></a>
+								</div>
+							</li>
+																						<li class="last" style="overflow: hidden; float: left; width: 366px; height: 438px;">
+								<a target="_blank" href="/article/view/3/286/"><img src="http://img2.xin.com/xin/201511/1818/564c50941c0ed169705_22.jpg"></a>
+								<a target="_blank" class="rel name" href="/article/view/3/286/">二手车保险暗藏玄机 怎么破解？</a>
+								<p class="txt">很多网友车迷挑选到了合适的二手车后，往往总是忽略掉二手车的保险，经常因为不续险而给自己带来些许隐患！今天就来说说二手车保险里面的道道！</p>
+							</li>
+																						<li style="overflow: hidden; float: left; width: 366px; height: 438px;"> 
+								<a target="_blank" href="/article/view/2/284/"><img src="http://img2.xin.com/xin/201511/1615/564987384da65392688_22.jpg"></a>
+								<a target="_blank" class="rel name" href="/article/view/2/284/">不开车门鉴别事故车的实战技巧</a>
+								<p class="txt">来到龙蛇混杂的二手车市场，面对林林总总的二手车。如何能够鉴别出事故车避免看走眼，成了很多网友车迷最为头疼和最为关注的问题。小编混迹二手车行业多年，看到很多朋友刚看上一辆二手车，还没有聊几句，就着急问价格然后开车门进入车内，一屁股坐在司机座关上车门，其实也没有看懂什么、看清什么就推开车门下来走了！其实真心不用开车门就能大概了解车况，鉴别出是否存在事故隐患！车况确定无误了再商讨价格才是正确的路线。</p>
+							</li>
+																						<li style="overflow: hidden; float: left; width: 366px; height: 438px;">
+								<a target="_blank" class="rel name" href="/article/view/2/283/">单身也精彩 选款车为自己代言</a>
+								<p class="txt">在二手车车型日渐丰富的今天，若选择一款能为自己代言的车型，单身生活将会更精彩，因为二手车实惠的价格既不会让你感觉压力过大也能扩大你的生活半径。</p>
+								<div class="rel">
+								<a target="_blank" href="/article/view/2/283/"><img src="http://img2.xin.com/xin/201511/1213/564429c2530f4481252_22.jpg"></a>
+								</div>
+							</li>
+																						<li class="last" style="overflow: hidden; float: left; width: 366px; height: 438px;">
+								<a target="_blank" href="/article/view/2/282/"><img src="http://img2.xin.com/xin/201511/0219/5637425c9743d171853_22.jpg"></a>
+								<a target="_blank" class="rel name" href="/article/view/2/282/">奶爸辣妈首选 靠谱二胎车型推荐</a>
+								<p class="txt">近日， “二胎”成为热词，孩子的抚养成本对于一般家庭来说不算低，选购一辆二手车能减轻压力，今天就向大家推荐五款车源相对丰富并且靠谱的7座二手车型。</p>
+							</li>
+																<li style="overflow: hidden; float: left; width: 366px; height: 438px;"> 
+								<a target="_blank" href="/article/view/2/290/"><img src="http://img2.xin.com/xin/201511/2017/564ee61dcd21e620965_22.jpg"></a>
+								<a target="_blank" class="rel name" href="/article/view/2/290/">车主故事:奥迪Q5,一个军人的选择</a>
+								<p class="txt">陈哥（化名）一个普通的河南汉子，二十几年前入伍参军，被分配到北京当兵。北京这些年的发展想必有目共睹，所以便理所当然的留在了北京。</p>
+							</li><li style="overflow: hidden; float: left; width: 366px; height: 438px;">
+								<a target="_blank" class="rel name" href="/article/view/2/285/">明星都买二手车 你还犹豫什么</a>
+								<p class="txt">近日，一篇关于贾乃亮花1888万买二手法拉利的新闻报道引发关注，你没看错，是“1888万”的“二手车”。什么二手车这么贵，既然这么有钱为啥不去买一辆新车?</p>
+								<div class="rel">
+								<a target="_blank" href="/article/view/2/285/"><img src="http://img2.xin.com/xin/201511/1718/564b0831c608c287483_22.jpg"></a>
+								</div>
+							</li><li class="last" style="overflow: hidden; float: left; width: 366px; height: 438px;">
+								<a target="_blank" href="/article/view/3/286/"><img src="http://img2.xin.com/xin/201511/1818/564c50941c0ed169705_22.jpg"></a>
+								<a target="_blank" class="rel name" href="/article/view/3/286/">二手车保险暗藏玄机 怎么破解？</a>
+								<p class="txt">很多网友车迷挑选到了合适的二手车后，往往总是忽略掉二手车的保险，经常因为不续险而给自己带来些许隐患！今天就来说说二手车保险里面的道道！</p>
+							</li></ul>
+					</div>
+					<a target="_blank" class="more" href="/article/listing/2/">查看更多</a>
+				</div>
+			</div>
+			<!--
+            	作者：455984146@qq.com
+            	时间：2015-11-22
+            	描述：排行榜
+            -->
+			<div class="item-wrap">
+				<h2 class="subject-ico rank-ico">车型销量排行榜</h2>
+				<div class="rank-list clearfix">
+					<div class="rank">
+						<table>
+							<caption>汽车销量排行TOP10</caption>
+							<tbody>
+								<tr>
+									<td>车型</td>
+									<td>2015年6月销量</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico top">1</b><a target="_blank" href="/quanguo/s/s340/">大众朗逸</a></td>
+									<td>36063</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico top">2</b><a target="_blank" href="/quanguo/s/s332/">大众桑塔纳</a></td>
+									<td>26477</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico top">3</b><a target="_blank" href="/quanguo/s/s2581/">现代朗动	</a></td>
+									<td>20457</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">4</b><a target="_blank" href="/quanguo/s/s566/">大众速腾	</a></td>
+									<td>19673</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico">5</b><a target="_blank" href="/quanguo/s/s449/">大众捷达</a></td>
+									<td>18640</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">6</b><a target="_blank" href="/quanguo/s/s2823/">雪佛兰科鲁兹</a></td>
+									<td>18520</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico">7</b><a target="_blank" href="/quanguo/s/s2652/">大众帕萨特</a></td>
+									<td>18387</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">8</b><a target="_blank" href="/quanguo/s/s369/">别克凯越</a></td>
+									<td>18247</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico">9</b><a target="_blank" href="/quanguo/s/s3079/">雪佛兰赛欧三厢</a></td>
+									<td>17172</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">10</b><a target="_blank" href="/quanguo/s/s3083/">福特福睿斯</a></td>
+									<td>16827</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="rank">
+						<table>
+							<caption>SUV销量排行TOP10</caption>
+							<tbody>
+								<tr>
+									<td>车型</td>
+									<td>2015年6月销量</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico top">1</b><a target="_blank" href="/quanguo/s/s2284/">哈弗H6	</a></td>
+									<td>20186</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico top">2</b><a target="_blank" href="/quanguo/s/s1932/">大众途观	</a></td>
+									<td>18796</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico top">3</b><a target="_blank" href="/quanguo/s/s3017/">江淮瑞风S3</a></td>
+									<td>16193</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">4</b><a target="_blank" href="/quanguo/s/s2661/">长安CS35</a></td>
+									<td>13313</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico">5</b><a target="_blank" href="/quanguo/s/s3037/">比亚迪S7</a></td>
+									<td>10649</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">6</b><a target="_blank" href="/quanguo/s/s2968/">哈弗H2</a></td>
+									<td>10561</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico">7</b><a target="_blank" href="/quanguo/s/s2956/">长安CS75</a></td>
+									<td>10111</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">8</b><a target="_blank" href="/quanguo/s/s2936/">幻速S3</a></td>
+									<td>9883</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico">9</b><a target="_blank" href="/quanguo/s/s2695/">福特翼虎</a></td>
+									<td>8327</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">10</b><a target="_blank" href="/quanguo/s/s2980/">瑞虎3</a></td>
+									<td>8082</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="rank last">
+						<table>
+							<caption>MPV销量排行TOP10</caption>
+							<tbody>
+								<tr>
+									<td>车型</td>
+									<td>2015年6月销量</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico top">1</b><a target="_blank" href="/quanguo/s/s2025/">五菱宏光</a></td>
+									<td>51502</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico top">2</b><a target="_blank" href="/quanguo/s/s3007/?q=宝骏730">宝骏730</a></td>
+									<td>24502</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico top">3</b><a target="_blank" href="/quanguo/s/s2485/">长安欧诺</a></td>
+									<td>16262</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">4</b><a target="_blank" href="/quanguo/s/s2821/">风光330</a></td>
+									<td>9583</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico">5</b><a target="_blank" href="/quanguo/s/s2727/">长安欧力威</a></td>
+									<td>8961</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">6</b><a target="_blank" href="/quanguo/s/s187/">东风风行景逸</a></td>
+									<td>8936</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico">7</b><a target="_blank" href="/quanguo/s/s2706/">北汽威旺M20	</a></td>
+									<td>6134</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">8</b><a target="_blank" href="/quanguo/s/s641/">东风风行菱智</a></td>
+									<td>5162</td>
+								</tr>
+								<tr class="odd">
+									<td class="first"><b class="subject-ico">9</b><a target="_blank" href="/quanguo/s/s2635/">大众途安</a></td>
+									<td>4795</td>
+								</tr>
+								<tr>
+									<td class="first"><b class="subject-ico">10</b><a target="_blank" href="/quanguo/s/s220/">别克GL8</a></td>
+									<td>3942</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="msg"><b class="subject-ico"></b><span>本排行榜来源于汽车销量网数据，仅供参考</span></div>
+			</div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-22
+        	描述：页尾
+        -->
+        <div class="footer-wrap">
+			<div class="footer">
+				<div class="contact_new">
+					<a href="aboutus/"  rel="nofollow">关于我们</a>
+					<a href="contactus/"  rel="nofollow">联系我们</a>
+					<a href="joinus/" rel="nofollow">加入我们</a>
+					<a href="help/"  rel="nofollow">帮助中心</a>
+					<a href="feedback/"  rel="nofollow">用户反馈</a>
+					<a href="finance/"  rel="nofollow">我要金融</a>
+				</div>
+				<span>业务合作单位：我估(上海) 信息科技有限公司/我要拍（北京）二手车鉴定评估有限公司</span>
+	            <div class="footer3">
+					<p>copyright@2015 <strong><a href="">我要互联</a></strong> all rights reserved 版权所有 我要互联（北京）信息技术有限公司
+					<em>经营许可证编号：京ICP证120819号</em>
+	                </p>
+					<!--可信网站开始-->
+					<script src="http://kxlogo.knet.cn/seallogo.dll?sn=e15102111010561082vc83000000&size=0"></script>
+					<!--可信网站结束-->
+					<!--诚信网站开始-->
+					<a id='___szfw_logo___' class="bot-logo" href='https://credit.szfw.org/CX20151104012121580123.html' target='_blank'><img src='http://imgs.xin.com/xin/images/home/bot_logo2.png' border='0' /></a>
+	               <script type='text/javascript'>(function(){ document.getElementById('___szfw_logo___').oncontextmenu = function(){ return false; } })();</script>
+	               <!--诚信网站结束-->
+	            </div>            
+				<div class="index-code fr clearfix"> 
+					<img src="../images/code.jpg" height="100" width="100">
+					<p class="scan-txt fl rel">
+						关注我要二手车<br />微信公众号
+					</p>
+				</div>
+				<div class="index-code2 fl clearfix">
+					<img src="http://imgs.xin.com/xin/images/common/code_1.jpg" height="100" width="100">
+					<p class="scan-txt fr rel">
+						扫描我，即可下载<br />我要二手车手机版
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

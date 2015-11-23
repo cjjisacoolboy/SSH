@@ -1,0 +1,108 @@
+/*自主申请商家头部*/
+.ApplyNav{
+	width: 100%;
+	min-width: 1200px;
+	height: 50px;
+	background: #363636;
+}
+.nav{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+.nav a{
+	display: inline-block;
+	height: 50px;
+	font: normal 20px/50px 'Microsoft YaHei';
+	color: #e5e5e5;
+}
+.nav a img{
+	float: left;
+	width: 34px;
+	height: 34px;
+	margin-top: 8px;
+	margin-right: 7px;
+}
+
+/*自主申请商家导航*/
+.ApplyTit{
+	width: 100%;
+	min-width: 1200px;
+	height: 60px;
+	border-bottom: 1px solid #e5e5e5;
+	background: #f7f7f7;
+}
+.ATnav{
+	width: 1200px;
+	height: 60px;
+	margin: 0 auto;
+}
+.bg_wait{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0 0;
+}
+.bg_wait2{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0 -97px;
+}
+.bg_tg{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0 -186px;
+}
+.ATnav li{
+	float: left;
+	width: 399px;
+	height: 60px;
+	font: normal 16px/60px 'Microsoft YaHei';
+	color: #aaa;
+	text-align: center;
+	position: relative;
+}
+.ATnav li i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+.ATnav .bg_icon1 i{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0 -262px;
+	top: 20px;
+	left: 102px;
+}
+.ATnav .bg_icon1 .Tg{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat -425px -261px;
+	top: 20px;
+	left: 102px;
+}
+.ATnav .bg_icon2 .Nor{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat -1px -333px;
+	top: 20px;
+	left: 124px;
+}
+.ATnav .bg_icon2 .Wait{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat -425px -328px;
+	top: 20px;
+	left: 124px;
+}
+.ATnav .bg_icon2 .Dopen{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat 0px -484px;
+	top: 20px;
+	left: 124px;
+}
+.ATnav .bg_icon2 .Tg{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat -425px -261px;
+	top: 20px;
+	left: 124px;
+}
+.ATnav .bg_icon3 .Nor{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat -1px -397px;
+	top: 20px;
+	left: 120px;
+}
+.ATnav .bg_icon3 .Tg{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat -425px -261px;
+	top: 20px;
+	left: 120px;
+}
+.ATnav .bg_icon3 .Fail{
+	background: url('http://imgs.xin.com/apply/images/a_icon.png') no-repeat -544px -397px;
+	top: 20px;
+	left: 120px;
+}

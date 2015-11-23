@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我要二手车商家版-忘记密码</title>
+	</head>
+	<body>
+		<form id="forgot_form" action="">
+		<div>
+		    <div>
+		        <h2>找回密码</h2>
+		        <div>
+		            <ul>
+		                <li>
+		                    <label>手机号：</label>
+		                    <input type="text" placeholder="请输入手机号码" />
+		                </li>
+		                <li>
+		                    <label>图片码：</label>
+		                    <input type="text" data-errormessage-range-underflow="图片码输入错误" data-errormessage-range-overflow="图片码输入错误" data-errormessage-custom-error="图片码输入错误" data-errormessage-value-missing="请输入图片码" id="piccode" placeholder="请输入图片码" class="code">
+		                    <a><img style="margin-bottom:-10px" id="vcodeimg" src="/login/get_vcode/"></a>
+		                </li>
+		                <li>
+		                    <label>验证码：</label>
+		                    <input type="text" data-errormessage-range-underflow="验证码输入错误" data-errormessage-range-overflow="验证码输入错误" data-errormessage-custom-error="验证码输入错误" data-errormessage-value-missing="请输入验证码" placeholder="请输入短信验证码" class="validate[required,custom[number],minSize[6],maxSize[6]]" id="code" name="code">
+		                    <input type="button" value="获取验证码" id="getcode" class="yanzheng">
+		                </li>
+		                <li>
+		                    <label>新密码：</label>
+		                    <input type="password" data-errormessage-value-missing="请输入新密码" data-errormessage="新密码应为6-16位字母、数字、“.”、“_”的组合" placeholder="请输入新密码" class="validate[required,funcCall[pass_check],minSize[6],maxSize[16]]" id="password" name="password">
+		                </li>
+		            </ul>
+		            <div class="btns">
+		                <input type="button" class="sure" value="完成" id="modify">
+		            </div>	
+		        </div>
+		    </div>
+		</div>
+		</form>
+	</body>
+</html>

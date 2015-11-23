@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我要二手车app下载</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
+		<link href="../css/base.css" rel="stylesheet" type="text/css">
+		<link href="../css/page.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../js/pageswitch.js"></script>
+		<style type="text/css">
+		body,html{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			font-family: Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+		}
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+		h1{
+			margin: 80px;
+			font-size: 3em;
+			font-weight: normal;
+		}
+		p{
+			font-size: 3em;
+			margin:1.5em 0 2em 0;
+		}
+		#container,.section{
+			height: 100%;
+			position: relative;
+		}
+		#section0,
+		#section1,
+		#section2,
+		#section3{
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+		#section0{
+			background:#00ff99;
+			color: #fff;
+			text-shadow:1px 1px 1px #333;
+		}
+		#section1{
+			color: #fff;
+			text-shadow:1px 1px 1px #333;
+			background:#FFCC00;
+		}
+		#section2{
+			background:#2fe2bf;
+			color: #fff;
+			text-shadow:1px 1px 1px #666;
+		}
+		#section3{
+			color: #008283;
+			background:#c9302c;
+			text-shadow:1px 1px 1px #fff;
+		}
+		#section0 p{
+			color: #F1FF00;
+		}
+		#section3 p{
+			color: #00A3AF;
+		}
+		.left{
+			float: left;
+		}
+		.intro{
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			text-align: center;
+		}
+		#pages{
+			position:fixed;
+			right: 10px;
+			top: 50%;
+			list-style: none;
+		}
+		#pages li{
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: #fff;
+			margin: 0 0 10px 5px;
+		}
+		#pages li.active{
+			width: 14px;
+			height: 14px;
+			border: 2px solid #FFFE00;
+			background: none;
+			margin-left: 0;
+		}
+		#section0 .title{
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+			-webkit-animation: sectitle0 1s ease-in-out 100ms forwards;
+			animation: sectitle0 1s ease-in-out 100ms forwards;
+		}
+		#section0 p{
+			-webkit-transform: translateX(100%);
+			transform: translateX(100%);
+			-webkit-animation: sec0 1s ease-in-out 100ms forwards;
+			animation: sec0 1s ease-in-out 100ms forwards;
+		}
+		@-webkit-keyframes sectitle0{
+			0%{
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+		@keyframes sectitle0{
+			0%{
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+		@-webkit-keyframes sec0{
+			0%{
+				-webkit-transform: translateX(100%);
+				transform: translateX(100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+		@keyframes sec0{
+			0%{
+				-webkit-transform: translateX(100%);
+				transform: translateX(100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+	</style>
+	</head>
+	<body>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-21
+        	描述：导航栏
+        -->
+        <div class="fixed-head-wrap">
+			<div class="fixed-head rel">
+				<a href="../index/index.html"><img class="fixed-logo" alt="我要二手车IWant.com" src="../images/logo.png"></a>
+				<ul class="nav-list downLoad-list abs">
+					<li><a href="../index/index.html">首页</a></li>
+					<li><a class="active" href="#">商城客户端</a></li>
+					<li><a href="mapp.html">商家客户端</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-21
+        	描述：二维码
+        -->
+        <div class="i-code">
+  	  	    <img src="../images/code.jpg">
+  	  	    <p>手机扫描二维码下载</p>
+  	  	    <div class="code-btn">
+  	  	    	  <a href="#">立即下载</a>
+  	  	    </div>
+  		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-21
+        	描述：页面切换
+        -->
+        <div id="container">
+		<div class="section active" id="section0" style="background: url(../images/app/1.png);">
+			<div class="intro">
+				<!--
+				<h1 class="title">&nbsp;&nbsp;&nbsp;&nbsp;全国领先的</h1>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二手车电商平台</p>
+				-->
+			</div>
+		</div>
+		<div class="section" id="section1" style="background: url(../images/app/2.png);">
+			<div class="intro">
+				<!--
+				<h1 class="title">Example</h1>
+				<p>HTML markup example to define 4 sections</p>
+				-->
+			</div>
+			
+		</div>
+		<div class="section" id="section2" style="background: url(../images/app/3.png);">
+			<div class="intro">
+				<!--
+				<h1 class="title">Example</h1>
+				<p>The plug-in configuration parameters</p>
+				-->
+				<!--img src="2.png"/-->
+			</div>
+		</div>
+		<div class="section" id="section3" style="background: url(../images/app/4.png);">
+			<div class="intro">
+				<!--
+				<h1 class="title">Example</h1>
+				<p>HTML markup example to define 4 sections</p>
+				-->
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(function(){
+			$("#container").switchPage({
+				'loop' : true,
+				'keyboard' : true,
+				'direction' : 'horizontal'
+			});
+		});
+	</script>
+	</body>
+</html>
