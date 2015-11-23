@@ -2,7 +2,7 @@ var searchSuggest = new oSearchSuggest();
 
 function doSearch() {
 	var keyword = $('#gover_search_key').val();	
-	//var keyword = $('#1').html();//去列表的第一个元素
+	//var keyword = $('#gover_search_key').html();//取列表的第一个元素
 	
 	alert(keyword);
 	$.ajax({

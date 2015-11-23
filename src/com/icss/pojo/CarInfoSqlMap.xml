@@ -115,5 +115,22 @@
         from carinfo c1,carinfo c2,carinfo c3 
         where c1.carid = c2.pid and c2.carid = c3.pid and c3.carid = #{CarId}
     </select>
+    
+    <select id="findCarByCarNameOfLimit" parameterType="String" 
+        resultMap="rmCarinfo">
+    	select *from Carinfo ci where ci.carName like #{carName}  and ci.carid between 1 and 177
+    </select>
+    <select id="findSeriesByCarName" parameterType="String" 
+        resultMap="rmCarinfo">
+    	select *from Carinfo ci where ci.carName like #{carName}  and ci.carid between 178 and 1659
+    </select>
+	
+	<select id="findCarNameByPId" parameterType="int" 
+        resultMap="rmCarinfo">
+    	select *from Carinfo ci where ci.PId like #{PId}  and ci.carid between 1660 and 25887
+    </select>
+	
+   
+    
 
 </mapper>

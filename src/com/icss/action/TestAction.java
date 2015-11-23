@@ -17,10 +17,10 @@ public class TestAction extends ActionSupport{
 	public String execute(){
 		
 		testService.add();
-		List<Course_info>list = testService.selectAll();
-		for(Course_info ci : list) {
-			System.out.println(ci.getCourse_name());
-		}
+		//List<Course_info>list = testService.selectAll();
+//		for(Course_info ci : list) {
+//			System.out.println(ci.getCourse_name());
+//		}
 		return "success";
 	}
 }
