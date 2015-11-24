@@ -55,10 +55,13 @@ public class VisitorService implements IVisitorService {
 //		Integer tel = userInfo.getAccount();
 		try{
 			List<UserInfo> list = userDao.findUser(userInfo);
-			System.out.println(list.get(0).getTel());
+			//System.out.println(list.get(0).getTel());
+			//System.out.println(list.get(0).getPassword());
+			return list;
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		
 		
 //		userInfo.getPassword()
 //		//拿出的是List 遍历list

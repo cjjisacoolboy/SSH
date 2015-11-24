@@ -1045,7 +1045,7 @@
 		            </script>
 					<a id="closelogin" href="javascript:void(0)" class="ico_pop xBtn2 closeJs">关闭</a>
 					<div class="logintab">
-						<a href="javascript:void(0)" hidefocus="true" class="active">网站密码登录</a>
+						<a hidefocus="true" class="active">网站密码登录</a>
 					</div>
 					<ul class="register logincon">
 						<li>
@@ -1075,6 +1075,23 @@
 					</ul>
 					<div class="btn-div">
 						<a href="javascript:void(0)" class="resBtn" id="login_btn">登录</a>
+						<script type="text/javascript">
+						$(function(){
+					    	  $('#login_btn').click(function(){
+					    		  $.ajax({
+						    			type:"POST",
+						    			url:"visitor/loginAC.action",
+						    			data:{
+						    				"account":$('#account').val(),
+					    		  			"password":$('#password').val()
+						    				},
+						    			success:function(data){
+						    				window.location.href = "index/index.jsp";
+						    			}
+						    		});
+					    	  });
+					    	});
+						</script>
 					</div>
 					<div class="popBot abs">
 						<div class="loginWith fl">
