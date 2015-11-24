@@ -28,7 +28,7 @@ public class FindSalCarDetailAction {
 
 	public String execute(){
 		map = adminToSaleCarService.findCarDetail(sellerCarId);
-		//System.out.println(map+"sdsdsdsdsdsdssdsdsdsd");
+		System.out.println(map+"sdsdsdsdsdsdssdsdsdsd");
 		return "success";
 	}
 }

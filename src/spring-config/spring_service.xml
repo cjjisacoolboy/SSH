@@ -33,7 +33,7 @@
     </aop:config>
     
 	<bean id="testService" class="com.icss.service.impl.TestService">
-		<property name="testDao" ref="testDao"></property>
+		<property name="carDao" ref="carDao"></property>
 	</bean>
 	<!-- 吴志浩游客 -->
 	<bean id="visitorService" class="com.icss.service.impl.VisitorService">

@@ -48,12 +48,22 @@
             <result>/Admin/findSecondCar.jsp</result>
         </action>
         
+        <action name="updateSellerCarAC" class="com.icss.action.UpdateSellerCarAction">
+            <result>/Admin/updateSellerCar.jsp</result>
+        </action>
+        
 
          
 	</package>
 	
 	<!-- 这里使用ajax -->
 	<package name="demo" namespace="/demo" extends="json-default">
+    	<action name="searchCarInAdminAction" class="com.icss.action.SearchCarInAdminAction">
+    		<result type="json">
+    			<param name="root">map</param>
+    			<param name="contentType">text/html</param>
+    		</result>
+    	</action>
     	<action name="searchTest" class="com.icss.action.SearchTest">
     		<result type="json">
     			<param name="root">map</param>

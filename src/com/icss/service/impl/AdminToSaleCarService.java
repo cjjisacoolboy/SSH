@@ -52,7 +52,7 @@ public class AdminToSaleCarService implements IAdminService {
 
 	@Override
 	public Map<String, Object> findAllSaleCar(String keyword, Integer page, Integer size) {
-		System.out.println("进入了salesservice");
+		//System.out.println("进入了salesservice");
 		//查出所有二手车
 		int allRecord = 0;//总页数
 		int pageSize = 1;
@@ -68,7 +68,7 @@ public class AdminToSaleCarService implements IAdminService {
 			seller.setSellerName("非个人");
 			merchantsStore.setCompanyName("个人"); 
 			CarInfo carInfo = new CarInfo();
-			System.out.println("进入循环");
+			//System.out.println("进入循环");
 			//将车型找出来
 //			try{
 			List<CarInfo> carList = carDao.findCarAllNameById(list.get(i).getCarInfo().getCarId());
@@ -90,7 +90,7 @@ public class AdminToSaleCarService implements IAdminService {
 				list.get(i).setSeller(seller);;
 			}
 	
-			System.out.println(list.get(i).getMerchantsStore().getCompanyName());
+			//System.out.println(list.get(i).getMerchantsStore().getCompanyName());
 
 
 		//把车的全名取出来
@@ -103,7 +103,7 @@ public class AdminToSaleCarService implements IAdminService {
 		map.put("list", list);
 		map.put("count", count);
 		map.put("pageSize", pageSize);
-		System.out.println("离开了salesservice");
+		//System.out.println("离开了salesservice");
 		return map;
 	}
 	

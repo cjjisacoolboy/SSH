@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.icss.service.ITestService;
-import com.icss.service.impl.TestService;
 
-public class SearchTest {
+public class SearchCarInAdminAction {
 	private String keyword;
+	private String type;
 	private ITestService testService;
 	private Map<String,Object> map = new HashMap<String,Object>();
 	
@@ -18,6 +18,14 @@ public class SearchTest {
 
 	public void setKeyword(String keyword) {
 		this.keyword = keyword;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public Map<String, Object> getMap() {
@@ -36,7 +44,8 @@ public class SearchTest {
 	
 	public String execute(){
 		System.out.println("sdsdsd");
-		map = testService.findCar(keyword);
+		System.out.println(type);
+		map = testService.findCarByLimit(keyword,type);
 		
 		return "success";
 	}
