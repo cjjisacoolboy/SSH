@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="../css/base.css" rel="stylesheet" type="text/css">
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
+		<link href="../css/page.css" rel="stylesheet" type="text/css">
+		<script src="../js/jquery-2.1.4.min.js" type="text/javascript" language="JavaScript"></script>
+		<title>我要估价</title>
+	</head>
+	<body>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-20
+        	描述：导航栏
+        -->
+        <div class="fixed-head-wrap fix">
+	        <div class="fixed-head rel">
+			    <a href="../index/index.html" class="fixed-logo"></a><!-- logo点击连接 -->          
+					<h1>二手车</h1>
+					<dl class="select-city fixed-city abs" id="citySelect">
+				        <dt id='current_city_id'>长沙</dt>
+				        <dd id="cityWrap">
+					<!--
+                    	添加城市列表
+                    -->
+			            </dd>
+			        </dl>
+		        <ul class="nav-list fixed-list abs">       
+				    <li><a class="a_buypage " href="../buy/buycar.html">买车</a></li>
+					<li><a class="active" href="../sell/sell.html">卖车</a></li>
+					<li class="rel" class='php_li_half' id="li_halfprice" style="display:block"><a id='php_half_city_link' class="" href="../payhalf/payhalf.html" sname="">付一半</a><b class="ico hot-ico abs"></b></li>				
+					<li><a class="" href="../activity/activity.html">热门活动</a></li>
+					<li><a href="../safe/safe.html" class="" rel="nofollow">服务保障</a></li>
+					<li><a href="../downloadAPP/downloadAPP.html" target="_blank"><b class="ico app-ico fl" rel="nofollow"></b>下载App</a></li>
+					<li><a href="../apply/apply.html" id="apply_dealer" class="apply" target="_blank">商家申请</a></li>
+					<li id="xin_top_userinfo">
+						<script type="text/javascript">
+							$(function(){
+								$('#loginA').click(function(){
+									$('#popupLogin').css('display','block');
+									$('#blackground').css('display','block');
+								});
+							});
+						</script>
+						<div class="person-wrap" style="top:0px;" >
+							<a href="javascript:clear_invalid();show_popup('#popupLogin','#popupLogin .closeJs');" id="loginA">登录</a>/<a href="../register/register.html" id="regA" rel="nofollow">注册</a>
+						</div>
+					</li>
+				</ul>
+	  		</div>
+		</div>
+		<!--
+        	作者：455984146@qq.com
+        	时间：2015-11-20
+        	描述：估价框
+        -->
+		<div class="assess-wrap clearfix">
+			<div class="ass-tit">
+				<h3>车辆估价</h3>
+			</div>
+			<div class="ass-car">
+				<table>
+					<tbody>
+						<tr>
+							<td class="title">
+								<label for="title">选择车型</label>
+							</td>
+							<td class="msg">
+								<div class="clearfix">
+									<select id="php_brand" data-enabled="false" class="bcar" name="brand">
+										<option value="0">品牌</option>
+										<option value="5">安驰</option>
+										<option value="62">奥迪</option>
+										<option value="68">阿斯顿马丁</option>
+									</select>
+								</div>
+								<div class="clearfix">
+									<select id="php_series" data-enabled="false" class="bcar" name="series">
+										<option value="0">车系</option>
+									</select>
+								</div>
+								<div class="clearfix">
+									<select id="php_modeid" data-enabled="false" class="bcar" name="modeid">
+										<option value="0">车型</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="title">
+								<label for="title">查询城市</label>
+							</td>
+							<td class="msg">
+								<div class="clearfix">
+									<select id="php_province" data-enabled="false" class="bcar" name="province">
+										<option value="0">省份</option>
+										<option value="1">安徽</option>
+										<option value="2">北京</option>
+										<option value="31">重庆</option>
+										<option value="3">福建</option>
+										<option value="4">甘肃</option>
+										<option value="7">贵州</option>
+										<option value="6">广西</option>
+										<option value="5">广东</option>
+									</select>
+								</div>
+								<div class="clearfix">
+									<select id="php_city" data-enabled="false" class="bcar" name="city">
+										<option value="0">市</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="title">
+								<label for="title">上牌时间</label>
+							</td>
+							<td class="msg">
+								<input type="text" id="regist_date" name="number" class="i-text2 datepicker hasDatepicker">
+								<a class="ico-time"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="title">
+								<label for="title">表显里程</label>
+							</td>
+							<td class="msg">
+								<input type="text" id="mileage" name="number" class="i-text2 mileage">
+								<em>万公里</em></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<a id="lookup_now" class="car-query" href="javascript:void(0)">立即查询</a>
+			<div class="ass-bot">
+				<img src="../images/logo.png">
+				<p>您将获得全国最大二手车平台价格指导</p>
+			</div>
+		</div>
+        <!--
+        	作者：455984146@qq.com
+        	时间：2015-11-20
+        	描述：页尾
+        -->	
+        <div class="footer-wrap">
+			<div class="footer">
+				<div class="contact_new">
+					<a href="aboutus/"  rel="nofollow">关于我们</a>
+					<a href="contactus/"  rel="nofollow">联系我们</a>
+					<a href="joinus/" rel="nofollow">加入我们</a>
+					<a href="help/"  rel="nofollow">帮助中心</a>
+					<a href="feedback/"  rel="nofollow">用户反馈</a>
+					<a href="finance/"  rel="nofollow">我要金融</a>
+				</div>
+				<span>业务合作单位：我估(上海) 信息科技有限公司/我要拍（北京）二手车鉴定评估有限公司</span>
+	            <div class="footer3">
+					<p>copyright@2015 <strong><a href="">我要互联</a></strong> all rights reserved 版权所有 我要互联（北京）信息技术有限公司
+					<em>经营许可证编号：京ICP证120819号</em>
+	                </p>
+					<a id='___szfw_logo___' class="bot-logo" href='https://credit.szfw.org/CX20151104012121580123.html' target='_blank'><img src='../images/bot_logo2.png' border='0' /></a>
+	               <script type='text/javascript'>(function(){ document.getElementById('___szfw_logo___').oncontextmenu = function(){ return false; } })();</script>
+	               <!--诚信网站结束-->
+	            </div>            
+				<div class="index-code fr clearfix"> 
+					<img src="../images/code.jpg" height="100" width="100">
+					<p class="scan-txt fl rel">
+						关注我要二手车<br />微信公众号
+					</p>
+				</div>
+				<div class="index-code2 fl clearfix">
+					<img src="../images/code_1.jpg" height="100" width="100">
+					<p class="scan-txt fr rel">
+						扫描我，即可下载<br />我要二手车手机版
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../CSS/jquery-ui.min.css" rel="stylesheet" type="text/css">
+		<link href="../CSS/base.css" rel="stylesheet" type="text/css">
+		<link href="../CSS/common.css" rel="stylesheet" type="text/css">
+		<link href="../CSS/popup.css" rel="stylesheet" type="text/css">
+		<link href="../CSS/page.css" rel="stylesheet" type="text/css">
+		<script src="../JS/jquery-2.1.4.min.js" type="text/javascript" language="JavaScript"></script>
+        <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+        <link rel="stylesheet" href="../CSS/mycss.css" type="text/css" />
+	</head>
+	<body>
+		<div class="popup-wrap" id="popupLogin" style="display: block; left: 50%; top: 50%; margin-left: -305px; margin-top: -244px;">
+		<div class="inner">
+		<div class="popup-con2 con-height2">
+		    <span class="pop-title">登录</span>
+		    <script type="text/javascript">
+		    	$(function(){
+		    		//关闭
+		    		$('#closelogin').click(function(){
+		    			$('#popupLogin').css('display','none');
+		    		});
+		    		//点击输入
+		    		$('input').bind('focus',function(){
+		    			$(this).css('color','rgb(51,51,51)');
+		    			
+		    		});
+		    		$('input').bind('blur',function(){
+		    			$(this).css('color','rgb(191,191,191)');
+		    			
+		    		});
+		    	});
+		    </script>
+		    <a id="closelogin" class="ico_pop xBtn2 closeJs" href="javascript:void(0)">关闭</a>
+		    <div class="logintab">
+	            <a class="active" hidefocus="true" href="javascript:void(0)">网站密码登录</a>
+		    </div>
+			<ul class="register logincon">
+				<input type="hidden" value="&lt;?php echo csrf_token() ?&gt;" name="_token">
+				<li>
+			    <input placeholder="请输入手机号" type="text" id="search" class="ipt-box tel-bg" style="color: rgb(191, 191, 191);">
+				</li>
+				<li>
+				    <input type="text" id="piccode_l" placeholder="请输入图片码" class="code">
+				    <a class="PageNum"><img id="vcodeimg_l" src="image.jsp"></a>
+				</li>
+				<li>
+				<input type="text" id="psw5" placeholder="请输入密码" class="ipt-box code-bg">
+				<input type="password" id="psw6" value="" class="ipt-box code-bg hide" style="display: none;">
+				</li>
+			</ul>
+			<ul class="register logincon hide">
+				<input type="hidden" value="&lt;?php echo csrf_token() ?&gt;" name="_token">
+				<li>
+				    <input type="text" id="search1" value="请输入手机号" class="ipt-box tel-bg" style="color: rgb(191, 191, 191);">
+				</li>
+				<li>
+				    <input type="text" id="piccode_r" value="请输入图片码" class="code" style="color: rgb(191, 191, 191);">
+				    <a class="PageNum"><img id="vcodeimg_r" src="http://www.xin.com/register/get_vcode/"></a>
+				</li>
+				<li>
+				    <input type="text" id="search2" value="六位数字验证码" class="code" style="color: rgb(191, 191, 191);">
+				    <input type="button" value="获取验证码" id="need_code1" class="getNum vm">
+				</li>
+			</ul>
+			<div class="btn-div">
+				<a id="login_btn" class="resBtn" href="javascript:void(0)">登录</a>
+			</div>
+			<div class="popBot abs">
+				<div class="loginWith fl">
+					<span>第三方登录：</span>
+					<a rel="nofollow" class="ico_pop tqq" href="/openapi/authqq"></a>
+					<a rel="nofollow" class="ico_pop tbd" href="http://openapi.baidu.com/oauth/2.0/authorize?response_type=code&amp;client_id=Ug5Vh2SRNiSueexjtBi95Grs&amp;redirect_uri=http%3A%2F%2Fwww.xin.com%2Fopenapi%2Fbaidu_rd%2F&amp;display=popup"></a>
+					<a rel="nofollow" class="ico_pop xwb" href="https://api.weibo.com/oauth2/authorize?client_id=415981803&amp;redirect_uri=http%3A%2F%2Fwww.xin.com%2Fopenapi%2Findex%2F&amp;response_type=code"></a>
+				 </div>
+				 <div class="forPass fr">
+					<a href="javascript:clear_invalid();$(&quot;#popupLogin&quot;).hide();show_popup(&quot;#forPass&quot;,&quot;#forPass .closeJs&quot;)">忘记密码</a><a rel="nofollow" class="noregist" href="/register/">还没注册</a>
+				 </div>
+		  </div>
+		</div>	
+	</div>
+	</div>
+	</body>
+</html>

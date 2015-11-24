@@ -1,0 +1,95 @@
+
+.popup-wrap {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+}
+
+.popup-wrap .inner {
+    padding: 20px 25px 0;
+    position: relative;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, span, i, b {
+    margin: 0;
+    padding: 0;
+}
+
+.hpop-new {
+    background-color: #f6f4f1;
+    border-radius: 8px;
+    height: 500px;
+    padding-top: 50px;
+    width: 795px;
+}
+
+.hpop-new .hpop-pic {
+    height: 460px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    width: 741px;
+}
+
+.hpop-new .hpop-con {
+    text-align: center;
+    width: 720px;
+}
+
+.hpop-new .hpop-con {
+    text-align: center;
+    width: 720px;
+}
+
+.hpop-new .hpop-pic a.h-btn {
+    background: #ff5837 none repeat scroll 0 0;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    font: 30px/55px "Microsoft YaHei";
+    height: 55px;
+    margin: 20px auto;
+    text-align: center;
+    width: 200px;
+}
+
+.hpop-new .hpop-pic ul .txt {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    width: 345px;
+}
+
+.hpop-new .hpop-pic ul .txt span {
+    color: #585858;
+    font: 18px/28px "Microsoft YaHei";
+}
+
+.hpop-new .hpop-pic ul .txt p {
+    color: #eba205;
+    font: 26px/68px "Microsoft YaHei";
+    height: 68px;
+}
+.hpop-new .hpop-con h1 {
+    background: rgba(0, 0, 0, 0) url("http://imgs.xin.com/xin/images/half/header_bg.png") no-repeat scroll 0 0;
+    color: #7b5336;
+    display: inline-block;
+    font: bold 32px/150px "Microsoft YaHei";
+    height: 150px;
+    width: 600px;
+}
+
+.hpop-new .hpop-con p {
+    color: #585858;
+    display: inline-block;
+    font: 24px/46px "Microsoft YaHei";
+    width: 550px;
+}
+
+.shade {
+    background-color: #282828;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

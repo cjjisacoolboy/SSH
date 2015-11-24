@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>点击文字弹出一个DIV层窗口代码</title> 
+        <style> 
+        .white_content { 
+            display: none; 
+            position: absolute; 
+            top: 50%;
+			margin-left:-300px; 
+            left: 50%; 
+			margin-top:-160px;
+            width: 600px; 
+            height: 315px; 
+            padding: 0px; 
+            border: 0px solid orange; 
+            background-color:#FFF; 
+            z-index:10001; 
+            overflow: auto; 
+        } 
+    	</style> 
+</head>
+
+
+<body>
+        <p>示例弹出层：<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">请点这里</a></p> 
+        <div id="light" class="white_content">
+        	<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭</a>
+        </div> 
+        <div id="fade" class="black_overlay"></div>
+    </body>
+</html>

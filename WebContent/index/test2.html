@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>register</title>
+		<script>
+		var xmlHttp = false;
+	    function aaa(){
+	     
+	     if(window.XMLHttpRequest){
+	     	xmlHttp = new XMLHttpRequest();
+	     	
+	     }
+	     //获取表单数据
+	     var txt=document.getElementsByName("account")[0].value;
+	     
+	     alert(txt);
+	     //设置请求的url路径
+	     //可以是jsp，servlet或者是struts中的action
+	     var url = 'check.jsp';
+	     //设置请求参数
+	     var data = 'val=' + txt;
+	     if(xmlHttp){
+	    	 //打开服务器连接
+	    	 xmlHttp.open("POST",url,true);
+	    	 xmlHttp.onreadystatechange = ajaxCallback;
+	    	 xmlHttp.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+	    	 //发送请求
+	    	 alert(data);
+	    	 xmlHttp.send(data);
+	     }
+	    }
+	     function ajaxCallback(){
+	    	 if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+	    		 var message = xmlHttp.responseText;
+	    		 document.getElementById("msg").innerHTML = message;
+	    	 }
+	     }
+	     </script>
+	</head>
+	
+	<body>
+	  
+		<table>
+			<tr>
+			  <td>账号：<input type="text" id="account" name="account" onchange="aaa();"/></td>
+			  <span id="msg">sda</span>
+			</tr>
+			<tr>
+			  <td>密码：<input type="text" id="password"/></td>
+			</tr>
+			<tr>
+			  <td><input type="submit" value="注册"/></td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

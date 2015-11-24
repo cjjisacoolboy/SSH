@@ -10,12 +10,14 @@ import com.icss.pojo.MerchantsStore;
 import com.icss.pojo.Seller;
 import com.icss.pojo.UserInfo;
 import com.icss.service.IVisitorService;
-
+   
+    
 public class VisitorService implements IVisitorService {
 	private ICarDao carDao;
 	private IUserDao userDao;
 	public void setUserDao(IUserDao userDao) {
 		this.userDao = userDao;
+	
 	}
 
 	public void setCarDao(ICarDao carDao) {
@@ -51,8 +53,16 @@ public class VisitorService implements IVisitorService {
 		//注入一个dao
 		System.out.println("进入了loginservice");
 //		Integer tel = userInfo.getAccount();
-		List<UserInfo> list = userDao.findUser(userInfo);
-		System.out.println(list.get(0).getRole());
+		try{
+			List<UserInfo> list = userDao.findUser(userInfo);
+			//System.out.println(list.get(0).getTel());
+			//System.out.println(list.get(0).getPassword());
+			return list;
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		
 //		userInfo.getPassword()
 //		//拿出的是List 遍历list
 //		//如果密码不正确
